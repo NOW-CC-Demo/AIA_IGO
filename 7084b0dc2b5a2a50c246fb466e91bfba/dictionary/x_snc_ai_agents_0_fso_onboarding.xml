@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="40f47cdc2b5a2a50c246fb466e91bf99" extends="sn_bom_case" label="FSO Onboarding" max_length="40" name="x_snc_ai_agents_0_fso_onboarding" type="collection"/>
+</database>
