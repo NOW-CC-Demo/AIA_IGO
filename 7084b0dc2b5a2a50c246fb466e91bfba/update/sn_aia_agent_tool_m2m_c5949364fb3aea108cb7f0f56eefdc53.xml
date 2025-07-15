@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="IMA Data Validation Agent (DocIntel)">455212ecfb32ea108cb7f0f56eefdc90</agent>
+        <description>Tool to Retrieve Case Details for Notification</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Retrieve Case Details for Notification</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:28:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c5949364fb3aea108cb7f0f56eefdc53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve Case Details for Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_c5949364fb3aea108cb7f0f56eefdc53</sys_update_name>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:28:23</sys_updated_on>
+        <tool display_value="Retrieve Case Details for Notification">49941364fb3aea108cb7f0f56eefdce7</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>

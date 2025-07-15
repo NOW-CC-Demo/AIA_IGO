@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>retrieve_case_details_for_notification</internal_name>
+        <label_cache>[{"name":"{{action.casenumber}}","label":"action➛casenumber","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].assigned_to_name}}","label":"step➛Script step➛assigned_to_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].opened_by_name}}","label":"step➛Script step➛opened_by_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>24645f24fb3aea108cb7f0f56eefdc01</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Retrieve Case Details for Notification</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1da353e0fb3aea108cb7f0f56eefdc5f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Retrieve Case Details for Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_1da353e0fb3aea108cb7f0f56eefdc5f</sys_update_name>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>1da353e0fb3aea108cb7f0f56eefdc5f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>1fa35be0fb3aea108cb7f0f56eefdc91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">9fa35be0fb3aea108cb7f0f56eefdc86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>1da353e0fb3aea108cb7f0f56eefdc5f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>57a35be0fb3aea108cb7f0f56eefdc92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"306524fc-012c-4fce-9d23-66001ace2ca8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">17a35be0fb3aea108cb7f0f56eefdc81</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>assigned_to_name</field>
+        <id>1da353e0fb3aea108cb7f0f56eefdc5f</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:11</sys_created_on>
+        <sys_id>13445b24fb3aea108cb7f0f56eefdc7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:11</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</table>
+        <value>{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].assigned_to_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>opened_by_name</field>
+        <id>1da353e0fb3aea108cb7f0f56eefdc5f</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:11</sys_created_on>
+        <sys_id>5f445b24fb3aea108cb7f0f56eefdc7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:11</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</table>
+        <value>{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].opened_by_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>1da353e0fb3aea108cb7f0f56eefdc5f</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>9ba35be0fb3aea108cb7f0f56eefdc91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>1da353e0fb3aea108cb7f0f56eefdc5f</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>d3a35be0fb3aea108cb7f0f56eefdc91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=1da353e0fb3aea108cb7f0f56eefdc5f^sys_idNOT IN8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</action>
+        <cid>98fa6e0d-8fab-4bb0-9f30-d9464369ca20</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:09</sys_created_on>
+        <sys_id>8f445b24fb3aea108cb7f0f56eefdc23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f445b24fb3aea108cb7f0f56eefdc23</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>8f445b24fb3aea108cb7f0f56eefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    // Query the onboarding case by 'number' field&#13;
+    var gr = new GlideRecord('x_snc_ai_agents_0_fso_sma_onboarding');&#13;
+    gr.addQuery('number', inputs.casenumber);&#13;
+    gr.query();&#13;
+&#13;
+    if (gr.next()) {&#13;
+        // Get display values for assigned_to and opened_by&#13;
+        outputs.assigned_to_name = gr.getDisplayValue('assigned_to');&#13;
+        outputs.opened_by_name = gr.getDisplayValue('opened_by');&#13;
+    } else {&#13;
+        outputs.assigned_to_name = '';&#13;
+        outputs.opened_by_name = '';&#13;
+        gs.info('[Flow Step] No onboarding case found for Case Number: ' + inputs.casenumber);&#13;
+    }&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f445b24fb3aea108cb7f0f56eefdc23</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>cb445b24fb3aea108cb7f0f56eefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8f445b24fb3aea108cb7f0f56eefdc23</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>87445b24fb3aea108cb7f0f56eefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>casenumber</field>
+        <id>8f445b24fb3aea108cb7f0f56eefdc23</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>4b445b24fb3aea108cb7f0f56eefdc4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8f445b24fb3aea108cb7f0f56eefdc23</table>
+        <value>{{action.casenumber}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8f445b24fb3aea108cb7f0f56eefdc23</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>4b445b24fb3aea108cb7f0f56eefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8f445b24fb3aea108cb7f0f56eefdc23^id=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8f445b24fb3aea108cb7f0f56eefdc23^sys_idNOT IN4b445b24fb3aea108cb7f0f56eefdc29"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>casenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8f445b24fb3aea108cb7f0f56eefdc23</model>
+        <model_id>8f445b24fb3aea108cb7f0f56eefdc23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8f445b24fb3aea108cb7f0f56eefdc23</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>4b445b24fb3aea108cb7f0f56eefdc29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8f445b24fb3aea108cb7f0f56eefdc23^sys_idNOT IN03445b24fb3aea108cb7f0f56eefdc3f,0f445b24fb3aea108cb7f0f56eefdc2d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d78b5fe6-b648-4015-b84f-067f55009c30</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>opened_by_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>opened_by_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8f445b24fb3aea108cb7f0f56eefdc23</model>
+        <model_id>8f445b24fb3aea108cb7f0f56eefdc23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8f445b24fb3aea108cb7f0f56eefdc23</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>03445b24fb3aea108cb7f0f56eefdc3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0c05c56-70c2-48da-9c74-cb74601d669c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assigned_to_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8f445b24fb3aea108cb7f0f56eefdc23</model>
+        <model_id>8f445b24fb3aea108cb7f0f56eefdc23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8f445b24fb3aea108cb7f0f56eefdc23</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>0f445b24fb3aea108cb7f0f56eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f445b24fb3aea108cb7f0f56eefdc23"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to_name</element>
+        <help/>
+        <hint/>
+        <label>assigned_to_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_8f445b24fb3aea108cb7f0f56eefdc23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>03445b24fb3aea108cb7f0f56eefdc3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>opened_by_name</element>
+        <help/>
+        <hint/>
+        <label>opened_by_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_8f445b24fb3aea108cb7f0f56eefdc23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>cb445b24fb3aea108cb7f0f56eefdc41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=1da353e0fb3aea108cb7f0f56eefdc5f^sys_idNOT IN9fa31be0fb3aea108cb7f0f56eefdc71"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4d6a0559-2ec3-4f4c-b293-2b72ed240281</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>casenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>casenumber</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</model>
+        <model_id>1da353e0fb3aea108cb7f0f56eefdc5f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:26</sys_created_on>
+        <sys_id>9fa31be0fb3aea108cb7f0f56eefdc71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9fa31be0fb3aea108cb7f0f56eefdc71"/>
+    <sys_hub_action_output action="delete_multiple" query="model=1da353e0fb3aea108cb7f0f56eefdc5f^sys_idNOT IN17445b24fb3aea108cb7f0f56eefdc56,17a35be0fb3aea108cb7f0f56eefdc81,9fa35be0fb3aea108cb7f0f56eefdc86,df445b24fb3aea108cb7f0f56eefdc4d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=74a992e9-2536-4ca4-a006-da17f1241f71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assigned_to_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</model>
+        <model_id>1da353e0fb3aea108cb7f0f56eefdc5f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>17445b24fb3aea108cb7f0f56eefdc56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17445b24fb3aea108cb7f0f56eefdc56"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17445b24fb3aea108cb7f0f56eefdc56"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b159ffad-59ae-43f2-a5ee-df88a8df7a00</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</model>
+        <model_id>1da353e0fb3aea108cb7f0f56eefdc5f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>17a35be0fb3aea108cb7f0f56eefdc81</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17a35be0fb3aea108cb7f0f56eefdc81"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17a35be0fb3aea108cb7f0f56eefdc81"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=da35814b-4def-46ba-9ed9-46bb75c959c2,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</model>
+        <model_id>1da353e0fb3aea108cb7f0f56eefdc5f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>9fa35be0fb3aea108cb7f0f56eefdc86</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9fa35be0fb3aea108cb7f0f56eefdc86"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9fa35be0fb3aea108cb7f0f56eefdc86"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b0ce591f-33a2-47a1-b369-1b450606e644</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>opened_by_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>opened_by_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</model>
+        <model_id>1da353e0fb3aea108cb7f0f56eefdc5f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>df445b24fb3aea108cb7f0f56eefdc4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df445b24fb3aea108cb7f0f56eefdc4d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=df445b24fb3aea108cb7f0f56eefdc4d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=1da353e0fb3aea108cb7f0f56eefdc5f^sys_idNOT INdba35be0fb3aea108cb7f0f56eefdc93"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</action_type_id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>dba35be0fb3aea108cb7f0f56eefdc93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=dba35be0fb3aea108cb7f0f56eefdc93"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>casenumber</element>
+        <help/>
+        <hint/>
+        <label>casenumber</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:26</sys_created_on>
+        <sys_id>5fa31be0fb3aea108cb7f0f56eefdc76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>13a35be0fb3aea108cb7f0f56eefdc8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>opened_by_name</element>
+        <help/>
+        <hint/>
+        <label>opened_by_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>93445b24fb3aea108cb7f0f56eefdc52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to_name</element>
+        <help/>
+        <hint/>
+        <label>assigned_to_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:10</sys_created_on>
+        <sys_id>9b445b24fb3aea108cb7f0f56eefdc59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:24:27</sys_created_on>
+        <sys_id>9fa35be0fb3aea108cb7f0f56eefdc85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:24:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_1da353e0fb3aea108cb7f0f56eefdc5f"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=1da353e0fb3aea108cb7f0f56eefdc5f^sys_idNOT IN49645f24fb3aea108cb7f0f56eefdca9"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"49645f24fb3aea108cb7f0f56eefdca9","name":"plan","plan_signature":null}}</plan>
+        <snapshot>f8645f24fb3aea108cb7f0f56eefdc68</snapshot>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49645f24fb3aea108cb7f0f56eefdca9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:34</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>retrieve_case_details_for_notification</internal_name>
+        <label_cache>[{"name":"{{action.casenumber}}","label":"action➛casenumber","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].assigned_to_name}}","label":"step➛Script step➛assigned_to_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].opened_by_name}}","label":"step➛Script step➛opened_by_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Retrieve Case Details for Notification</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Retrieve Case Details for Notification">1da353e0fb3aea108cb7f0f56eefdc5f</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24645f24fb3aea108cb7f0f56eefdc01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:32</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_variable_value action="delete_multiple" query="document_key=24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>24645f24fb3aea108cb7f0f56eefdc01</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>3c645f24fb3aea108cb7f0f56eefdc66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"306524fc-012c-4fce-9d23-66001ace2ca8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">f4645f24fb3aea108cb7f0f56eefdc39</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>24645f24fb3aea108cb7f0f56eefdc01</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>78645f24fb3aea108cb7f0f56eefdc66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">34645f24fb3aea108cb7f0f56eefdc42</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>assigned_to_name</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc01</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>70645f24fb3aea108cb7f0f56eefdc66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</table>
+        <value>{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].assigned_to_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>opened_by_name</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc01</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>bc645f24fb3aea108cb7f0f56eefdc65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</table>
+        <value>{{step[98fa6e0d-8fab-4bb0-9f30-d9464369ca20].opened_by_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc01</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f4645f24fb3aea108cb7f0f56eefdc66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc01</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>34645f24fb3aea108cb7f0f56eefdc66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=24645f24fb3aea108cb7f0f56eefdc01^sys_idNOT IN24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</action>
+        <cid>98fa6e0d-8fab-4bb0-9f30-d9464369ca20</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:32</sys_created_on>
+        <sys_id>24645f24fb3aea108cb7f0f56eefdc0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>24645f24fb3aea108cb7f0f56eefdc0d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>38645f24fb3aea108cb7f0f56eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>24645f24fb3aea108cb7f0f56eefdc0d</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f8645f24fb3aea108cb7f0f56eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    // Query the onboarding case by 'number' field&#13;
+    var gr = new GlideRecord('x_snc_ai_agents_0_fso_sma_onboarding');&#13;
+    gr.addQuery('number', inputs.casenumber);&#13;
+    gr.query();&#13;
+&#13;
+    if (gr.next()) {&#13;
+        // Get display values for assigned_to and opened_by&#13;
+        outputs.assigned_to_name = gr.getDisplayValue('assigned_to');&#13;
+        outputs.opened_by_name = gr.getDisplayValue('opened_by');&#13;
+    } else {&#13;
+        outputs.assigned_to_name = '';&#13;
+        outputs.opened_by_name = '';&#13;
+        gs.info('[Flow Step] No onboarding case found for Case Number: ' + inputs.casenumber);&#13;
+    }&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc0d</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f0645f24fb3aea108cb7f0f56eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>casenumber</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc0d</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>34645f24fb3aea108cb7f0f56eefdc31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_24645f24fb3aea108cb7f0f56eefdc0d</table>
+        <value>{{action.casenumber}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>24645f24fb3aea108cb7f0f56eefdc0d</id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>b4645f24fb3aea108cb7f0f56eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_24645f24fb3aea108cb7f0f56eefdc0d^id=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=24645f24fb3aea108cb7f0f56eefdc0d^sys_idNOT IN64645f24fb3aea108cb7f0f56eefdc11"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>casenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>casenumber</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">24645f24fb3aea108cb7f0f56eefdc0d</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc0d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_24645f24fb3aea108cb7f0f56eefdc0d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:32</sys_created_on>
+        <sys_id>64645f24fb3aea108cb7f0f56eefdc11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=24645f24fb3aea108cb7f0f56eefdc0d^sys_idNOT IN38645f24fb3aea108cb7f0f56eefdc1a,f0645f24fb3aea108cb7f0f56eefdc16"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d78b5fe6-b648-4015-b84f-067f55009c30</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>opened_by_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>opened_by_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">24645f24fb3aea108cb7f0f56eefdc0d</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc0d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_24645f24fb3aea108cb7f0f56eefdc0d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>38645f24fb3aea108cb7f0f56eefdc1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0c05c56-70c2-48da-9c74-cb74601d669c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assigned_to_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">24645f24fb3aea108cb7f0f56eefdc0d</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc0d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_24645f24fb3aea108cb7f0f56eefdc0d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f0645f24fb3aea108cb7f0f56eefdc16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=24645f24fb3aea108cb7f0f56eefdc0d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to_name</element>
+        <help/>
+        <hint/>
+        <label>assigned_to_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_24645f24fb3aea108cb7f0f56eefdc0d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>38645f24fb3aea108cb7f0f56eefdc19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>opened_by_name</element>
+        <help/>
+        <hint/>
+        <label>opened_by_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_24645f24fb3aea108cb7f0f56eefdc0d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f0645f24fb3aea108cb7f0f56eefdc1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=24645f24fb3aea108cb7f0f56eefdc01^sys_idNOT IN20645f24fb3aea108cb7f0f56eefdc04"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4d6a0559-2ec3-4f4c-b293-2b72ed240281</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>casenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>casenumber</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc01</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:32</sys_created_on>
+        <sys_id>20645f24fb3aea108cb7f0f56eefdc04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=20645f24fb3aea108cb7f0f56eefdc04"/>
+    <sys_hub_action_output action="delete_multiple" query="model=24645f24fb3aea108cb7f0f56eefdc01^sys_idNOT IN34645f24fb3aea108cb7f0f56eefdc42,b4645f24fb3aea108cb7f0f56eefdc34,bc645f24fb3aea108cb7f0f56eefdc3d,f4645f24fb3aea108cb7f0f56eefdc39"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=da35814b-4def-46ba-9ed9-46bb75c959c2,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc01</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>34645f24fb3aea108cb7f0f56eefdc42</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=34645f24fb3aea108cb7f0f56eefdc42"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=34645f24fb3aea108cb7f0f56eefdc42"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=b0ce591f-33a2-47a1-b369-1b450606e644</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>opened_by_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>opened_by_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc01</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>b4645f24fb3aea108cb7f0f56eefdc34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4645f24fb3aea108cb7f0f56eefdc34"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b4645f24fb3aea108cb7f0f56eefdc34"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=74a992e9-2536-4ca4-a006-da17f1241f71</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assigned_to_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assigned_to_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc01</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>bc645f24fb3aea108cb7f0f56eefdc3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc645f24fb3aea108cb7f0f56eefdc3d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc645f24fb3aea108cb7f0f56eefdc3d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b159ffad-59ae-43f2-a5ee-df88a8df7a00</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</model>
+        <model_id>24645f24fb3aea108cb7f0f56eefdc01</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f4645f24fb3aea108cb7f0f56eefdc39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4645f24fb3aea108cb7f0f56eefdc39"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f4645f24fb3aea108cb7f0f56eefdc39"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=24645f24fb3aea108cb7f0f56eefdc01^sys_idNOT IN38645f24fb3aea108cb7f0f56eefdc68"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Retrieve Case Details for Notification">24645f24fb3aea108cb7f0f56eefdc01</action_type_id>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>38645f24fb3aea108cb7f0f56eefdc68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=38645f24fb3aea108cb7f0f56eefdc68"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>casenumber</element>
+        <help/>
+        <hint/>
+        <label>casenumber</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:32</sys_created_on>
+        <sys_id>a0645f24fb3aea108cb7f0f56eefdc08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assigned_to_name</element>
+        <help/>
+        <hint/>
+        <label>assigned_to_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>34645f24fb3aea108cb7f0f56eefdc41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>b8645f24fb3aea108cb7f0f56eefdc60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>bc645f24fb3aea108cb7f0f56eefdc3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>opened_by_name</element>
+        <help/>
+        <hint/>
+        <label>opened_by_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>rick.berzle</sys_created_by>
+        <sys_created_on>2025-07-14 18:27:33</sys_created_on>
+        <sys_id>f4645f24fb3aea108cb7f0f56eefdc38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:27:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_24645f24fb3aea108cb7f0f56eefdc01"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>1da353e0fb3aea108cb7f0f56eefdc5f</sys_id>
+        <latest_snapshot>24645f24fb3aea108cb7f0f56eefdc01</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
