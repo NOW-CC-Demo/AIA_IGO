@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Initial Problem Analysis**
+  - Upon receiving a request or mission from the user, use the 'Content Analysis' tool to analyze and synthesize the user's input.
+    - Input for 'Content Analysis': Provide a detailed analysis of the user's request, focusing on determining if the problem relates to investor suitability and if it can be addressed using the available tools.
+    - If the analysis reveals that the problem is outside the scope of investor suitability or cannot be addressed with the available tools, proceed to Step 2.
+    - If the analysis confirms the problem is within scope and actionable, proceed to Step 3.
+
+- **Step 2: Out-of-Scope Handling**
+  - If the problem is determined to be out of scope or unresolvable with the current tools, use the 'User Output' tool to inform the user that their request cannot be fulfilled due to limitations in available tools or scope.
+    - Input for 'User Output': Clearly state that the mission is outside the agent's capabilities.
+  - After informing the user, use the 'Finish' tool to conclude the execution.
+
+- **Step 3: Information Gathering**
+  - If additional information is required to determine investor suitability (e.g., missing user details, unclear objectives), use the 'User Input' tool to request the necessary information from the user.
+    - Input for 'User Input': Craft a prompt message that specifically asks for the missing or unclear information needed to proceed with the suitability assessment.
+  - Upon receiving the user's input, return to Step 1 to re-analyze the problem with the new information.
+
+- **Step 4: Suitability Assessment and Synthesis**
+  - Once all necessary information is available, use the 'Content Analysis' tool to synthesize the collected data and perform a detailed investor suitability assessment.
+    - Input for 'Content Analysis': Provide a comprehensive analysis of the user's profile, objectives, and any other relevant data to determine suitability.
+    - Use this tool to break down complex suitability criteria, compare user data against standards, and formulate a clear assessment.
+
+- **Step 5: Communicating Results**
+  - After completing the suitability assessment, use the 'User Output' tool to present the findings to the user.
+    - Input for 'User Output': Summarize the suitability assessment results in a clear, informative manner. If applicable, include references to any sources or criteria used in the analysis.
+    - Do not ask questions or request further input in this step; only provide information.
+
+- **Step 6: User Feedback and Iteration**
+  - If the user provides feedback, requests clarification, or asks for a reassessment, use the 'Content Analysis' tool to analyze the feedback and determine the next steps.
+    - Input for 'Content Analysis': Analyze the user's feedback or new requirements, and decide if further information is needed or if another assessment is required.
+  - If more information is needed, return to Step 3.
+  - If a new or revised assessment is needed, return to Step 4.
+
+- **Step 7: Completion**
+  - Once the user is satisfied with the assessment and no further action is required, use the 'Finish' tool to conclude the execution.
+
+---
+
+### Tool Usage Scenarios
+
+- **Content Analysis**
+  - Use this tool whenever you need to analyze, synthesize, or break down complex information, including:
+    - Initial problem analysis to determine scope and approach.
+    - Assessing investor suitability based on user-provided data.
+    - Analyzing user feedback or new information.
+    - Self-reflection or planning your next steps.
+  - Input: Provide a detailed description of the subject or problem you are analyzing.
+
+- **User Input**
+  - Use this tool whenever you need to collect information from the user that is missing, unclear, or required for further analysis.
+  - Input: A clear, specific prompt message asking the user for the required information.
+
+- **User Output**
+  - Use this tool to present information, results, or status updates to the user.
+  - Do not use this tool to ask questions or collect input.
+  - Input: A message summarizing the findings, results, or status. Optionally, include references if detailed plans or summaries are provided.
+
+- **Finish**
+  - Use this tool only when the mission has been successfully completed or when the process must be concluded (e.g., out-of-scope scenarios).
+  - This step must always be executed as a separate, final action.
+```</compiled_handbook>
+        <description>This agent exists to determine the investor suitability.</description>
+        <external_agent_configuration/>
+        <instructions/>
+        <internal_name>global.x_snc_ai_agents_0.Investor Suitability Agent</internal_name>
+        <name>Investor Suitability Agent</name>
+        <processing_message/>
+        <proficiency>- Expertly assesses and determines the suitability of investment opportunities for various investors, ensuring alignment with investor profiles, risk tolerance, and investment objectives, as defined by the agent's core role.</proficiency>
+        <record_type>custom</record_type>
+        <role>This agent is skilled at determining investor suitability.</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 16:29:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f23c06322bdee690c246fb466e91bf80</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Investor Suitability Agent</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_f23c06322bdee690c246fb466e91bf80</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 16:32:34</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_agent_f23c06322bdee690c246fb466e91bf80</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent"><sn_aia_agent action="INSERT_OR_UPDATE"><agent_type>internal</agent_type><compiled_handbook>```markdown
+- **Step 1: Initial Problem Analysis**
+  - Upon receiving a request or mission from the user, use the 'Content Analysis' tool to analyze and synthesize the user's input.
+    - Input for 'Content Analysis': Provide a detailed analysis of the user's request, focusing on determining if the problem relates to investor suitability and if it can be addressed using the available tools.
+    - If the analysis reveals that the problem is outside the scope of investor suitability or cannot be addressed with the available tools, proceed to Step 2.
+    - If the analysis confirms the problem is within scope and actionable, proceed to Step 3.
+
+- **Step 2: Out-of-Scope Handling**
+  - If the problem is determined to be out of scope or unresolvable with the current tools, use the 'User Output' tool to inform the user that their request cannot be fulfilled due to limitations in available tools or scope.
+    - Input for 'User Output': Clearly state that the mission is outside the agent's capabilities.
+  - After informing the user, use the 'Finish' tool to conclude the execution.
+
+- **Step 3: Information Gathering**
+  - If additional information is required to determine investor suitability (e.g., missing user details, unclear objectives), use the 'User Input' tool to request the necessary information from the user.
+    - Input for 'User Input': Craft a prompt message that specifically asks for the missing or unclear information needed to proceed with the suitability assessment.
+  - Upon receiving the user's input, return to Step 1 to re-analyze the problem with the new information.
+
+- **Step 4: Suitability Assessment and Synthesis**
+  - Once all necessary information is available, use the 'Content Analysis' tool to synthesize the collected data and perform a detailed investor suitability assessment.
+    - Input for 'Content Analysis': Provide a comprehensive analysis of the user's profile, objectives, and any other relevant data to determine suitability.
+    - Use this tool to break down complex suitability criteria, compare user data against standards, and formulate a clear assessment.
+
+- **Step 5: Communicating Results**
+  - After completing the suitability assessment, use the 'User Output' tool to present the findings to the user.
+    - Input for 'User Output': Summarize the suitability assessment results in a clear, informative manner. If applicable, include references to any sources or criteria used in the analysis.
+    - Do not ask questions or request further input in this step; only provide information.
+
+- **Step 6: User Feedback and Iteration**
+  - If the user provides feedback, requests clarification, or asks for a reassessment, use the 'Content Analysis' tool to analyze the feedback and determine the next steps.
+    - Input for 'Content Analysis': Analyze the user's feedback or new requirements, and decide if further information is needed or if another assessment is required.
+  - If more information is needed, return to Step 3.
+  - If a new or revised assessment is needed, return to Step 4.
+
+- **Step 7: Completion**
+  - Once the user is satisfied with the assessment and no further action is required, use the 'Finish' tool to conclude the execution.
+
+---
+
+### Tool Usage Scenarios
+
+- **Content Analysis**
+  - Use this tool whenever you need to analyze, synthesize, or break down complex information, including:
+    - Initial problem analysis to determine scope and approach.
+    - Assessing investor suitability based on user-provided data.
+    - Analyzing user feedback or new information.
+    - Self-reflection or planning your next steps.
+  - Input: Provide a detailed description of the subject or problem you are analyzing.
+
+- **User Input**
+  - Use this tool whenever you need to collect information from the user that is missing, unclear, or required for further analysis.
+  - Input: A clear, specific prompt message asking the user for the required information.
+
+- **User Output**
+  - Use this tool to present information, results, or status updates to the user.
+  - Do not use this tool to ask questions or collect input.
+  - Input: A message summarizing the findings, results, or status. Optionally, include references if detailed plans or summaries are provided.
+
+- **Finish**
+  - Use this tool only when the mission has been successfully completed or when the process must be concluded (e.g., out-of-scope scenarios).
+  - This step must always be executed as a separate, final action.
+```</compiled_handbook><description>This agent exists to determine the investor suitability.</description><external_agent_configuration/><instructions/><internal_name>global.x_snc_ai_agents_0.Investor Suitability Agent</internal_name><name>Investor Suitability Agent</name><processing_message/><proficiency>- Expertly assesses and determines the suitability of investment opportunities for various investors, ensuring alignment with investor profiles, risk tolerance, and investment objectives, as defined by the agent's core role.</proficiency><record_type>custom</record_type><role>This agent is skilled at determining investor suitability.</role><strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy><sys_class_name>sn_aia_agent</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-26 16:29:14</sys_created_on><sys_domain>global</sys_domain><sys_id>f23c06322bdee690c246fb466e91bf80</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Investor Suitability Agent</sys_name><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sn_aia_agent_f23c06322bdee690c246fb466e91bf80</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-26 16:32:34</sys_updated_on></sn_aia_agent></record_update>]]></payload>
+        <payload_hash>619559926</payload_hash>
+        <record_name>Investor Suitability Agent</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 16:32:34</sys_created_on>
+        <sys_id>497d4a7a3312e690adf5b6919e5c7ba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197ad1577ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 16:32:34</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>017d4a7a8412e690c2e8a60366de60a1</update_guid>
+        <update_guid_history>017d4a7a8412e690c2e8a60366de60a1:619559926,d26d0a7a1d12e6900eaa68a0c6bce7cd:-456742674,b96d82b21edee690ce3dc3252f757953:781841629,febcce32d0dee69039199fb9d3e7a9b4:1008804434,81bc0a3acb12e690f3c1a61d904c975d:-815369679,dcbcce3235dee6907b72a09ad7bccc85:69703009</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Investor Suitability Agent">3fcee5cd3b2266104c5b3fb693e45aee</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 14:05:01</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>73ff228d0e2342e8845012a113786810</sys_id>
+        <sys_metadata>f23c06322bdee690c246fb466e91bf80</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Investor Suitability Agent</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_f23c06322bdee690c246fb466e91bf80</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_f23c06322bdee690c246fb466e91bf80">497d4a7a3312e690adf5b6919e5c7ba1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 14:05:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

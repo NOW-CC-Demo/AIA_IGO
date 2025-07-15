@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Individual Account Holder Agent">cd59d2813b6666104c5b3fb693e45aa8</agent>
+        <description>This tool exists to associate the new source of wealth with the primary account holder.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Associate SOW with Primary Account Holder</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 13:55:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>59362443fbaa22108cb7f0f56eefdce1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Associate SOW with Primary Account Holder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 13:55:40</sys_updated_on>
+        <tool display_value="Associate SOW with Primary Account Holder">9136ec03fbaa22108cb7f0f56eefdc46</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>

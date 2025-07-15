@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="db715bca2b1ee290c246fb466e91bf7c" extends="customer_contact" label="SMA Onboarding Contact" max_length="40" name="x_snc_ai_agents_0_sma_onboarding_contact" type="collection">
+        <element label="Postal Code" max_length="40" name="postal_code" type="string"/>
+        <element label="State of Taxation (if applicable)" max_length="40" name="state_of_taxation_if_applicable" type="string"/>
+        <element choice="3" label="Contact Type" max_length="40" name="contact_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Joint Account Holder" sequence="1" value="Joint Account Holder"/>
+                <element inactive_on_update="false" label="Primary Account Holder" sequence="0" value="Primary Account Holder"/>
+            </choice>
+        </element>
+        <element label="Source of Wealth" max_length="32" name="source_of_wealth" reference="x_snc_ai_agents_0_source_of_wealth" type="reference"/>
+        <element label="Countries of Citizenship" max_length="40" name="countries_of_citizenship" type="string"/>
+        <element label="Country" max_length="40" name="countr0" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="SSN" max_length="40" name="ssn" type="string"/>
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <index name="index">
+            <element name="source_of_wealth"/>
+        </index>
+    </element>
+</database>

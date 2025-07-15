@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="investment_strategy" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>investment_strategy</element>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-26 16:44:30</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>investment_strategy</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_choice_x_snc_ai_agents_0_fso_sma_onboarding_investment_strategy</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-26 16:44:30</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investment_strategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>70 US Large Cap/30 Non US Developed – ADR</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-26 16:44:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-26 16:44:30</sys_updated_on>
+            <value>us_large_cap_30_non_us_developed_adr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investment_strategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>85 US All Cap/15 Global ex US - ADR</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-26 16:44:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-26 16:44:30</sys_updated_on>
+            <value>us_all_cap_15_global_ex_us_adr</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

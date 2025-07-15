@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-23 15:38:39</sys_created_on>
+        <sys_id>3954e27533566290adf5b6919e5c7b98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ai_agents_0_sma_onboarding_case_task.x_snc_ai_agents_0.admin</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_security_acl display_value="x_snc_ai_agents_0_sma_onboarding_case_task">7d54a27533566290adf5b6919e5c7bb1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_3954e27533566290adf5b6919e5c7b98</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-23 15:38:39</sys_updated_on>
+        <sys_user_role display_value="x_snc_ai_agents_0.admin" name="x_snc_ai_agents_0.admin">7c84f0dc2b5a2a50c246fb466e91bf01</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sys_security_acl_role_3954e27533566290adf5b6919e5c7b98</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-23 15:38:39</sys_created_on><sys_id>3954e27533566290adf5b6919e5c7b98</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_ai_agents_0_sma_onboarding_case_task.x_snc_ai_agents_0.admin</sys_name><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_security_acl display_value="x_snc_ai_agents_0_sma_onboarding_case_task">7d54a27533566290adf5b6919e5c7bb1</sys_security_acl><sys_update_name>sys_security_acl_role_3954e27533566290adf5b6919e5c7b98</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-23 15:38:39</sys_updated_on><sys_user_role display_value="x_snc_ai_agents_0.admin" name="x_snc_ai_agents_0.admin">7c84f0dc2b5a2a50c246fb466e91bf01</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1022033260</payload_hash>
+        <record_name>x_snc_ai_agents_0_sma_onboarding_case_task.x_snc_ai_agents_0.admin</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-23 15:38:39</sys_created_on>
+        <sys_id>7554e27533566290adf5b6919e5c7b9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1979d7107540000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-23 15:38:39</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7954e27509566290194c7ab16c81dc9d</update_guid>
+        <update_guid_history>7954e27509566290194c7ab16c81dc9d:1022033260</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_ai_agents_0_sma_onboarding_case_task.x_snc_ai_agents_0.admin">935de88ffbaa22108cb7f0f56eefdcb6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 14:26:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>08ed9f9f8c8c453c8f7aaf23841df110</sys_id>
+        <sys_metadata>3954e27533566290adf5b6919e5c7b98</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ai_agents_0_sma_onboarding_case_task.x_snc_ai_agents_0.admin</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent display_value="">7d54a27533566290adf5b6919e5c7bb1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_3954e27533566290adf5b6919e5c7b98</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_3954e27533566290adf5b6919e5c7b98">7554e27533566290adf5b6919e5c7b9e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 14:26:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

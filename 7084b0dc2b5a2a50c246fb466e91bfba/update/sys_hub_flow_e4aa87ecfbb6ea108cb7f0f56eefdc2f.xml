@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1083000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>b224380ffbea22108cb7f0f56eefdca1</copied_from>
+        <copied_from_name>Data Validation Notifications</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>data_validation_notifications_doc_intel</internal_name>
+        <label_cache>[{"name":"91811a1f-3222-425e-8cf6-bbdb576b8fd8.kb_link","label":"2 - Create hRef Link to Knowledge➛kb_link","reference_display":"kb_link","type":"string","base_type":"string","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"74f85702-5ed8-49d2-ba66-ad0da0abb405"}},{"name":"subflow.emaildraft1","label":"Input➛emaildraft","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cd758da7-0cfb-4f95-8833-8b5cfb5cf52e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.case","label":"Input➛case","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","column_name":"","usedInstances":{"5d0bd584-53bd-4907-aa8d-2d7a0c161155":["target_record"],"7167d3dc-93f5-4fac-a706-a084b19b1d50":["sysid"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7bd89137-8b94-4e01-8bcf-f47844e6b6b7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a1cb9458-5407-4021-86f3-f222d0f4a451.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"5d0bd584-53bd-4907-aa8d-2d7a0c161155":["email_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.case.opened_by.email","label":"Input➛case➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":["ah_to"]}},{"name":"subflow.case.assigned_to.email","label":"Input➛case➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":["ah_to"]}},{"name":"subflow.case.number","label":"Input➛case➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_ai_agents_0_fso_sma_onboarding","column_name":"number","usedInstances":{"7167d3dc-93f5-4fac-a706-a084b19b1d50":["number"]}},{"name":"7167d3dc-93f5-4fac-a706-a084b19b1d50.case_link","label":"1 - Create hRef Link to Case➛case_link","reference_display":"case_link","type":"string","base_type":"string","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4c038590-68dc-4ee5-90f6-b52782b0e168"}},{"name":"subflow.case.contact.name","label":"Input➛case➛Primary Account Contact➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"customer_contact","column_name":"name","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]}}]</label_cache>
+        <master_snapshot>dcba0becfbb6ea108cb7f0f56eefdcde</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Data Validation Notifications (Doc Intel)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4aa87ecfbb6ea108cb7f0f56eefdc2f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Data Validation Notifications (Doc Intel)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_hub_flow_e4aa87ecfbb6ea108cb7f0f56eefdc2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:02</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e4aa87ecfbb6ea108cb7f0f56eefdc2f^sys_idNOT INe8aa87ecfbb6ea108cb7f0f56eefdc32"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e4aa87ecfbb6ea108cb7f0f56eefdc2f</id>
+        <name>Data Validation Notifications (Doc Intel)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:56</sys_created_on>
+        <sys_id>e8aa87ecfbb6ea108cb7f0f56eefdc32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:44:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e8aa87ecfbb6ea108cb7f0f56eefdc32"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e4aa87ecfbb6ea108cb7f0f56eefdc2f^sys_idNOT IN20aa87ecfbb6ea108cb7f0f56eefdc44,8dcacbecfbb6ea108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7bd89137-8b94-4e01-8bcf-f47844e6b6b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</model>
+        <model_id>e4aa87ecfbb6ea108cb7f0f56eefdc2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4aa87ecfbb6ea108cb7f0f56eefdc2f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ai_agents_0_fso_sma_onboarding">x_snc_ai_agents_0_fso_sma_onboarding</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:56</sys_created_on>
+        <sys_id>20aa87ecfbb6ea108cb7f0f56eefdc44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:44:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=20aa87ecfbb6ea108cb7f0f56eefdc44"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=cd758da7-0cfb-4f95-8833-8b5cfb5cf52e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>emaildraft1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>emaildraft</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</model>
+        <model_id>e4aa87ecfbb6ea108cb7f0f56eefdc2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4aa87ecfbb6ea108cb7f0f56eefdc2f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:31</sys_created_on>
+        <sys_id>8dcacbecfbb6ea108cb7f0f56eefdcdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8dcacbecfbb6ea108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e4aa87ecfbb6ea108cb7f0f56eefdc2f^sys_idNOT IN050e83a4fbf6ea108cb7f0f56eefdc22,30aa87ecfbb6ea108cb7f0f56eefdcb1,3caa87ecfbb6ea108cb7f0f56eefdcb4,f8aa87ecfbb6ea108cb7f0f56eefdcb3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create hRef Link to Knowledge">7dad8764fbf6ea108cb7f0f56eefdc65</action_type>
+        <action_type_parent display_value="Create hRef Link to Knowledge">346c83e0fbf6ea108cb7f0f56eefdc06</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7dad8764fbf6ea108cb7f0f56eefdc65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:59:43</sys_created_on>
+        <sys_id>050e83a4fbf6ea108cb7f0f56eefdc22</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:19:10</sys_updated_on>
+        <ui_id>91811a1f-3222-425e-8cf6-bbdb576b8fd8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create hRef Link to Case">5946b003fb2e22108cb7f0f56eefdcc1</action_type>
+        <action_type_parent display_value="Create hRef Link to Case">bc65f88ffbea22108cb7f0f56eefdc00</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5946b003fb2e22108cb7f0f56eefdcc1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>30aa87ecfbb6ea108cb7f0f56eefdcb1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:19:10</sys_updated_on>
+        <ui_id>7167d3dc-93f5-4fac-a706-a084b19b1d50</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1T227bMAz9Fz3bhuNbk74NLQoM2FZg3fpSFAEtUYkAWXYtKW0W5N9Hxc4F2a0F9jTskYekeHjE87BhSrBLVoqiqtM0l3WGWTZJp7y+kKksK0QpOC9YxAw0SJV2bakjYivQPsSbjfW11O1zwsHidkspoWynYX3/6wq+VFr0aNjlw2PEOujpbYc9u9ycpV5LTkON+oTdGVm37nah65VZjPGHseVuD7a9CBQmEcMXh0YgzZagLUasASPAtf36gPQI4tboI7BUxtFrLBS/WPWN5k3TNA2VEmkfjkP2EM5HmQZYXoMDouK58/1Yypet4mgHJQRK8NpdnWJDwW3nVGuGFge13ne32jfm0yAEOzyw/xVCvCUS2IVVA/dxEXm3bJ8/71neKLNTZUzqloM+ROBIu9q7wGfDvPpyJvOA/CA0amxo4ryBriNk3vXtSu2mEOkmWWgKknAwxM6qhUmAhw0T+gJIbgi/3sH30Kuw7kd6hprDuK9GPXl8H46GA4iLSV7Gkk9lXAAv47pIZ3FaVCXOEKaTkrNtFE7kSoO1R6Hoh+ZPPqw5yDYKNB80Di28V517R6RWOGqxjUYjTSa/vVU43qbxTb2j/XMnJUP+z4Y6LXybr17Bde+rA9lz8m9xVvbfWf+Cs1Dk2azKeQw8y+MiF+SsLK3jrK5yOqasrPjsLzrr8TtwZRKrpAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>3caa87ecfbb6ea108cb7f0f56eefdcb4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:19:10</sys_updated_on>
+        <ui_id>5d0bd584-53bd-4907-aa8d-2d7a0c161155</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0XPjvFXljhvo1lhsK3Qlr6UYq4lORHIsqaPtFnIf9+V7bilC6OMPfbxnvt1zpHuw4EIRlZkUZdzKGgCizzN8yRZZmVZ52WTLBdlktZzEhEFLcdK3oKQleG0MwzRHUgf4MMBUlqXxXw5mxfJYlYkWTpbfmryWZNlGUuaAop5GvfdxyM2MmG1hP392I8I3QrJDFdk9fAYEQ0GFzpuyOrwJvVexhJqLrH0S1h6cXOifF6I2+uAso76litXiRP4bZyyHjMXX9eYwaZALY0If3ZcMY6cGpCWR6QFxcB1Zk9WzngEDAd2reR+qtgK5QbNLTxb8QsX51moaziKpKMfU1iNXg1wswYHtziZOm8m6zpBuR3sYbwBL93la2wouNZOdGpocVDLU3cnfat+DLaQacCrp/EWSXAddAbmo4zmdts93ZxYXgnVWzImZUdBThE4Z0TtXeBzIF7cnXObS94HLWgt1KbSptuJfiZSbOONxCBuZPeEXKzYqBho0BOj2xBfIb7u4XswIoj7jmOwGd8Kva+Y6bQeNYdnIceI2L29lGDti3T0vPrpA/HBiFFyNbgWWqgR2n3GxTs+qjtG4xHVzV+/JLz8PQdmw925K7K+DgpjCjj4f9zJO0id7uSuZ/XHobwl+2+Xkn1cyselPP4GoCdvwHAGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>f8aa87ecfbb6ea108cb7f0f56eefdcb3</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>rick.berzle</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:19:10</sys_updated_on>
+        <ui_id>a1cb9458-5407-4021-86f3-f222d0f4a451</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e4aa87ecfbb6ea108cb7f0f56eefdc2f^sys_idNOT IN34aa87ecfbb6ea108cb7f0f56eefdcb8,3caa87ecfbb6ea108cb7f0f56eefdcb7,450e83a4fbf6ea108cb7f0f56eefdc26,b0aa87ecfbb6ea108cb7f0f56eefdcb8"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e4aa87ecfbb6ea108cb7f0f56eefdc2f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7167d3dc-93f5-4fac-a706-a084b19b1d50.case_link}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>34aa87ecfbb6ea108cb7f0f56eefdcb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:44:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0d4317d8-8fac-4721-9d39-3231a5b17063</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e4aa87ecfbb6ea108cb7f0f56eefdc2f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.case.contact.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>3caa87ecfbb6ea108cb7f0f56eefdcb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:44:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a539aafd-d0b7-4c40-8cc4-9cb96fe73e27</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e4aa87ecfbb6ea108cb7f0f56eefdc2f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{91811a1f-3222-425e-8cf6-bbdb576b8fd8.kb_link}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:59:43</sys_created_on>
+        <sys_id>450e83a4fbf6ea108cb7f0f56eefdc26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:59:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c84da4da-1e19-4e29-98fb-71d13387d943</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e4aa87ecfbb6ea108cb7f0f56eefdc2f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.emaildraft1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>b0aa87ecfbb6ea108cb7f0f56eefdcb8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9e628bdf-9ae6-4bd9-831d-7bb488d28b6e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>emaildraft1</element>
+        <help/>
+        <hint/>
+        <label>emaildraft</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4aa87ecfbb6ea108cb7f0f56eefdc2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:31</sys_created_on>
+        <sys_id>41cacbecfbb6ea108cb7f0f56eefdce3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4aa87ecfbb6ea108cb7f0f56eefdc2f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:44:57</sys_created_on>
+        <sys_id>6caa87ecfbb6ea108cb7f0f56eefdc47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:44:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=167317000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>b224380ffbea22108cb7f0f56eefdca1</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>data_validation_notifications_doc_intel</internal_name>
+        <label_cache>[{"name":"91811a1f-3222-425e-8cf6-bbdb576b8fd8.kb_link","label":"2 - Create hRef Link to Knowledge➛kb_link","reference_display":"kb_link","type":"string","base_type":"string","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"74f85702-5ed8-49d2-ba66-ad0da0abb405"}},{"name":"subflow.emaildraft1","label":"Input➛emaildraft","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cd758da7-0cfb-4f95-8833-8b5cfb5cf52e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.case","label":"Input➛case","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","column_name":"","usedInstances":{"5d0bd584-53bd-4907-aa8d-2d7a0c161155":["target_record"],"7167d3dc-93f5-4fac-a706-a084b19b1d50":["sysid"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7bd89137-8b94-4e01-8bcf-f47844e6b6b7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a1cb9458-5407-4021-86f3-f222d0f4a451.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"5d0bd584-53bd-4907-aa8d-2d7a0c161155":["email_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.case.opened_by.email","label":"Input➛case➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":["ah_to"]}},{"name":"subflow.case.assigned_to.email","label":"Input➛case➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":["ah_to"]}},{"name":"subflow.case.number","label":"Input➛case➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_ai_agents_0_fso_sma_onboarding","column_name":"number","usedInstances":{"7167d3dc-93f5-4fac-a706-a084b19b1d50":["number"]}},{"name":"7167d3dc-93f5-4fac-a706-a084b19b1d50.case_link","label":"1 - Create hRef Link to Case➛case_link","reference_display":"case_link","type":"string","base_type":"string","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4c038590-68dc-4ee5-90f6-b52782b0e168"}},{"name":"subflow.case.contact.name","label":"Input➛case➛Primary Account Contact➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"customer_contact","column_name":"name","usedInstances":{"a1cb9458-5407-4021-86f3-f222d0f4a451":[null]}}]</label_cache>
+        <master>true</master>
+        <name>Data Validation Notifications (Doc Intel)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcba0becfbb6ea108cb7f0f56eefdcde</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:01</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dcba0becfbb6ea108cb7f0f56eefdcde^sys_idNOT IN90ba0becfbb6ea108cb7f0f56eefdce0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dcba0becfbb6ea108cb7f0f56eefdcde</id>
+        <name>Data Validation Notifications (Doc Intel)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:11</sys_created_on>
+        <sys_id>90ba0becfbb6ea108cb7f0f56eefdce0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=90ba0becfbb6ea108cb7f0f56eefdce0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dcba0becfbb6ea108cb7f0f56eefdcde^sys_idNOT INb1da8fecfbb6ea108cb7f0f56eefdc8f,d0ba0becfbb6ea108cb7f0f56eefdcee"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=cd758da7-0cfb-4f95-8833-8b5cfb5cf52e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>emaildraft1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>emaildraft</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</model>
+        <model_id>dcba0becfbb6ea108cb7f0f56eefdcde</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dcba0becfbb6ea108cb7f0f56eefdcde</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:50</sys_created_on>
+        <sys_id>b1da8fecfbb6ea108cb7f0f56eefdc8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b1da8fecfbb6ea108cb7f0f56eefdc8f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7bd89137-8b94-4e01-8bcf-f47844e6b6b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</model>
+        <model_id>dcba0becfbb6ea108cb7f0f56eefdcde</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dcba0becfbb6ea108cb7f0f56eefdcde</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ai_agents_0_fso_sma_onboarding">x_snc_ai_agents_0_fso_sma_onboarding</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:11</sys_created_on>
+        <sys_id>d0ba0becfbb6ea108cb7f0f56eefdcee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d0ba0becfbb6ea108cb7f0f56eefdcee"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dcba0becfbb6ea108cb7f0f56eefdcde^sys_idNOT IN54ba4becfbb6ea108cb7f0f56eefdc0c,55cecfe4fbf6ea108cb7f0f56eefdc57,94ba4becfbb6ea108cb7f0f56eefdc0a,94ba4becfbb6ea108cb7f0f56eefdc0d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>54ba4becfbb6ea108cb7f0f56eefdc0c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:01</sys_updated_on>
+        <ui_id>a1cb9458-5407-4021-86f3-f222d0f4a451</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create hRef Link to Knowledge">7dad8764fbf6ea108cb7f0f56eefdc65</action_type>
+        <action_type_parent display_value="Create hRef Link to Knowledge">346c83e0fbf6ea108cb7f0f56eefdc06</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7dad8764fbf6ea108cb7f0f56eefdc65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 18:03:01</sys_created_on>
+        <sys_id>55cecfe4fbf6ea108cb7f0f56eefdc57</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:01</sys_updated_on>
+        <ui_id>91811a1f-3222-425e-8cf6-bbdb576b8fd8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create hRef Link to Case">5946b003fb2e22108cb7f0f56eefdcc1</action_type>
+        <action_type_parent display_value="Create hRef Link to Case">bc65f88ffbea22108cb7f0f56eefdc00</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5946b003fb2e22108cb7f0f56eefdcc1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>94ba4becfbb6ea108cb7f0f56eefdc0a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:12</sys_updated_on>
+        <ui_id>7167d3dc-93f5-4fac-a706-a084b19b1d50</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1T227bMAz9Fz3bhuNbk74NLQoM2FZg3fpSFAEtUYkAWXYtKW0W5N9Hxc4F2a0F9jTskYekeHjE87BhSrBLVoqiqtM0l3WGWTZJp7y+kKksK0QpOC9YxAw0SJV2bakjYivQPsSbjfW11O1zwsHidkspoWynYX3/6wq+VFr0aNjlw2PEOujpbYc9u9ycpV5LTkON+oTdGVm37nah65VZjPGHseVuD7a9CBQmEcMXh0YgzZagLUasASPAtf36gPQI4tboI7BUxtFrLBS/WPWN5k3TNA2VEmkfjkP2EM5HmQZYXoMDouK58/1Yypet4mgHJQRK8NpdnWJDwW3nVGuGFge13ne32jfm0yAEOzyw/xVCvCUS2IVVA/dxEXm3bJ8/71neKLNTZUzqloM+ROBIu9q7wGfDvPpyJvOA/CA0amxo4ryBriNk3vXtSu2mEOkmWWgKknAwxM6qhUmAhw0T+gJIbgi/3sH30Kuw7kd6hprDuK9GPXl8H46GA4iLSV7Gkk9lXAAv47pIZ3FaVCXOEKaTkrNtFE7kSoO1R6Hoh+ZPPqw5yDYKNB80Di28V517R6RWOGqxjUYjTSa/vVU43qbxTb2j/XMnJUP+z4Y6LXybr17Bde+rA9lz8m9xVvbfWf+Cs1Dk2azKeQw8y+MiF+SsLK3jrK5yOqasrPjsLzrr8TtwZRKrpAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Data Validation Notifications (Doc Intel)">dcba0becfbb6ea108cb7f0f56eefdcde</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>94ba4becfbb6ea108cb7f0f56eefdc0d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:01</sys_updated_on>
+        <ui_id>5d0bd584-53bd-4907-aa8d-2d7a0c161155</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0XPjvFXljhvo1lhsK3Qlr6UYq4lORHIsqaPtFnIf9+V7bilC6OMPfbxnvt1zpHuw4EIRlZkUZdzKGgCizzN8yRZZmVZ52WTLBdlktZzEhEFLcdK3oKQleG0MwzRHUgf4MMBUlqXxXw5mxfJYlYkWTpbfmryWZNlGUuaAop5GvfdxyM2MmG1hP392I8I3QrJDFdk9fAYEQ0GFzpuyOrwJvVexhJqLrH0S1h6cXOifF6I2+uAso76litXiRP4bZyyHjMXX9eYwaZALY0If3ZcMY6cGpCWR6QFxcB1Zk9WzngEDAd2reR+qtgK5QbNLTxb8QsX51moaziKpKMfU1iNXg1wswYHtziZOm8m6zpBuR3sYbwBL93la2wouNZOdGpocVDLU3cnfat+DLaQacCrp/EWSXAddAbmo4zmdts93ZxYXgnVWzImZUdBThE4Z0TtXeBzIF7cnXObS94HLWgt1KbSptuJfiZSbOONxCBuZPeEXKzYqBho0BOj2xBfIb7u4XswIoj7jmOwGd8Kva+Y6bQeNYdnIceI2L29lGDti3T0vPrpA/HBiFFyNbgWWqgR2n3GxTs+qjtG4xHVzV+/JLz8PQdmw925K7K+DgpjCjj4f9zJO0id7uSuZ/XHobwl+2+Xkn1cyselPP4GoCdvwHAGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dcba0becfbb6ea108cb7f0f56eefdcde^sys_idNOT IN10ba4becfbb6ea108cb7f0f56eefdc0e,1cba4becfbb6ea108cb7f0f56eefdc0d,9cba4becfbb6ea108cb7f0f56eefdc0d,d9cecfe4fbf6ea108cb7f0f56eefdc96"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dcba0becfbb6ea108cb7f0f56eefdcde</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{7167d3dc-93f5-4fac-a706-a084b19b1d50.case_link}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>10ba4becfbb6ea108cb7f0f56eefdc0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0d4317d8-8fac-4721-9d39-3231a5b17063</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dcba0becfbb6ea108cb7f0f56eefdcde</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.case.contact.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>1cba4becfbb6ea108cb7f0f56eefdc0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:12</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a539aafd-d0b7-4c40-8cc4-9cb96fe73e27</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dcba0becfbb6ea108cb7f0f56eefdcde</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{subflow.emaildraft1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>9cba4becfbb6ea108cb7f0f56eefdc0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9e628bdf-9ae6-4bd9-831d-7bb488d28b6e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dcba0becfbb6ea108cb7f0f56eefdcde</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{91811a1f-3222-425e-8cf6-bbdb576b8fd8.kb_link}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 18:03:01</sys_created_on>
+        <sys_id>d9cecfe4fbf6ea108cb7f0f56eefdc96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:01</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c84da4da-1e19-4e29-98fb-71d13387d943</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dcba0becfbb6ea108cb7f0f56eefdcde</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_id>98ba4becfbb6ea108cb7f0f56eefdc02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>emaildraft1</element>
+        <help/>
+        <hint/>
+        <label>emaildraft</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dcba0becfbb6ea108cb7f0f56eefdcde</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:50</sys_created_on>
+        <sys_id>f9da8fecfbb6ea108cb7f0f56eefdc99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 17:45:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dcba0becfbb6ea108cb7f0f56eefdcde"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e4aa87ecfbb6ea108cb7f0f56eefdc2f</sys_id>
+        <latest_snapshot>dcba0becfbb6ea108cb7f0f56eefdcde</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e4aa87ecfbb6ea108cb7f0f56eefdc2f"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e4aa87ecfbb6ea108cb7f0f56eefdc2f^sys_idNOT IN28ba4becfbb6ea108cb7f0f56eefdc20"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"28ba4becfbb6ea108cb7f0f56eefdc20","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Data Validation Notifications (Doc Intel)">e4aa87ecfbb6ea108cb7f0f56eefdc2f</plan_id>
+        <snapshot>c6729b20fb3aea108cb7f0f56eefdc33</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 17:45:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28ba4becfbb6ea108cb7f0f56eefdc20</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:03:02</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

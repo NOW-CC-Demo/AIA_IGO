@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <graph_schema action="INSERT_OR_UPDATE" graph_id="49b237752b1aa290c246fb466e91bf73" name="source_of_wealth_kg" sys_domain="" table="sys_meta_graph" version="1">
+        <nodes>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <description>x_snc_ai_agents_0_sma_onboarding_contact</description>
+                <encoded_query/>
+                <graph display_value="Source of Wealth KG">49b237752b1aa290c246fb466e91bf73</graph>
+                <hidden>false</hidden>
+                <label>SMA Onboarding Contact</label>
+                <node_type>x_snc_ai_agents_0_sma_onboarding_contact</node_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-07-07 13:11:59</sys_created_on>
+                <sys_id>1ac5c25afb222e108cb7f0f56eefdc82</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+                <table>x_snc_ai_agents_0_sma_onboarding_contact</table>
+            </sys_meta_graph_node>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <description>x_snc_ai_agents_0_source_of_wealth</description>
+                <encoded_query/>
+                <graph display_value="Source of Wealth KG">49b237752b1aa290c246fb466e91bf73</graph>
+                <hidden>false</hidden>
+                <label>Source of Wealth</label>
+                <node_type>x_snc_ai_agents_0_source_of_wealth</node_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-07-07 13:11:59</sys_created_on>
+                <sys_id>faf2f7752b1aa290c246fb466e91bf05</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+                <table>x_snc_ai_agents_0_source_of_wealth</table>
+            </sys_meta_graph_node>
+        </nodes>
+        <edges>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>account_contact_namere</description>
+                <edge_type>account_contact_namere</edge_type>
+                <graph display_value="Source of Wealth KG">49b237752b1aa290c246fb466e91bf73</graph>
+                <label>Account Contact Name</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="Source of Wealth">faf2f7752b1aa290c246fb466e91bf05</source_node>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-07-07 13:11:59</sys_created_on>
+                <sys_id>0609825afb222e108cb7f0f56eefdc41</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+                <target_key_field>account_contact_namere</target_key_field>
+                <target_node display_value="SMA Onboarding Contact">1ac5c25afb222e108cb7f0f56eefdc82</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+        </edges>
+        <properties>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Source of Wealth KG">49b237752b1aa290c246fb466e91bf73</graph>
+                <node display_value="Source of Wealth">faf2f7752b1aa290c246fb466e91bf05</node>
+                <properties_json>[{"property":"annual_income","description":"annual_income","label":"Annual Income"},{"property":"current_employer_name","description":"current_employer_name","label":"Current Employer Name"},{"property":"employment_status","description":"employment_status","label":"Employment Status"},{"property":"former_employer_name","description":"former_employer_name","label":"Former Employer Name"},{"property":"line_of_business","description":"line_of_business","label":"Line of Business"},{"property":"unemployed_or_retired_income_source","description":"unemployed_or_retired_income_source","label":"Unemployed or Retired Income Source"}]</properties_json>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-07-07 13:11:59</sys_created_on>
+                <sys_id>8209825afb222e108cb7f0f56eefdc41</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+            </sys_meta_graph_node_property>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Source of Wealth KG">49b237752b1aa290c246fb466e91bf73</graph>
+                <node display_value="SMA Onboarding Contact">1ac5c25afb222e108cb7f0f56eefdc82</node>
+                <properties_json>[{"property":"name","description":"name","label":"Name"}]</properties_json>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-07-07 13:11:59</sys_created_on>
+                <sys_id>ce09825afb222e108cb7f0f56eefdc40</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+            </sys_meta_graph_node_property>
+        </properties>
+        <sys_meta_graph action="INSERT_OR_UPDATE">
+            <default>false</default>
+            <description/>
+            <gtop_schema>{"implementationLevel":{"implementationEdges":[{"types":["account_contact_namere"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"x_snc_ai_agents_0_source_of_wealth","destinationTableName":"x_snc_ai_agents_0_sma_onboarding_contact","attributes":[],"sourceTableColumn":"account_contact_namere"}]}]}],"implementationNodes":[{"types":["x_snc_ai_agents_0_sma_onboarding_contact"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(151)","abstractionLevelName":"name","columnName":"name"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"x_snc_ai_agents_0_sma_onboarding_contact"},{"types":["x_snc_ai_agents_0_source_of_wealth"],"restrictions":[],"attributes":[{"dataType":"DECIMAL","abstractionLevelName":"annual_income","columnName":"annual_income"},{"dataType":"VARCHAR(40)","abstractionLevelName":"current_employer_name","columnName":"current_employer_name"},{"dataType":"VARCHAR(40)","abstractionLevelName":"employment_status","columnName":"employment_status"},{"dataType":"VARCHAR(40)","abstractionLevelName":"former_employer_name","columnName":"former_employer_name"},{"dataType":"VARCHAR(40)","abstractionLevelName":"line_of_business","columnName":"line_of_business"},{"dataType":"VARCHAR(40)","abstractionLevelName":"unemployed_or_retired_income_source","columnName":"unemployed_or_retired_income_source"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"x_snc_ai_agents_0_source_of_wealth"}],"graphMetadata":{"storageLayout":"IGNORETIME","backendSystem":"RELATIONAL"}},"version":"1.0","abstractionLevel":{"abstractionEdges":[{"types":["account_contact_namere"],"directed":true,"sourceType":["x_snc_ai_agents_0_source_of_wealth"],"destinationType":["x_snc_ai_agents_0_sma_onboarding_contact"],"attributes":[]}],"abstractionNodes":[{"types":["x_snc_ai_agents_0_sma_onboarding_contact"],"attributes":["name"]},{"types":["x_snc_ai_agents_0_source_of_wealth"],"attributes":["annual_income","current_employer_name","employment_status","former_employer_name","line_of_business","unemployed_or_retired_income_source"]}]}}</gtop_schema>
+            <label>Source of Wealth KG</label>
+            <name>source_of_wealth_kg</name>
+            <parent/>
+            <schema_json>{"sys_id":"49b237752b1aa290c246fb466e91bf73","sys_updated_by":"admin","nodes":[{"sys_id":"1ac5c25afb222e108cb7f0f56eefdc82","node_type":"x_snc_ai_agents_0_sma_onboarding_contact","hidden":"false","description":"x_snc_ai_agents_0_sma_onboarding_contact","label":"SMA Onboarding Contact","encoded_query":"","table":"x_snc_ai_agents_0_sma_onboarding_contact","properties":[{"jdbc_type":"VARCHAR(151)","property":"name","description":"name","label":"Name","type":"string"}]},{"sys_id":"faf2f7752b1aa290c246fb466e91bf05","node_type":"x_snc_ai_agents_0_source_of_wealth","hidden":"false","description":"x_snc_ai_agents_0_source_of_wealth","label":"Source of Wealth","encoded_query":"","table":"x_snc_ai_agents_0_source_of_wealth","properties":[{"jdbc_type":"DECIMAL","property":"annual_income","description":"annual_income","label":"Annual Income","type":"currency"},{"jdbc_type":"VARCHAR(40)","property":"current_employer_name","description":"current_employer_name","label":"Current Employer Name","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"employment_status","description":"employment_status","label":"Employment Status","type":"choice","choices":[{"Full Time":"full_time"},{"Part-Time":"part_time"},{"Self Employed":"self_employed"},{"Unemployed":"unemployed"},{"Retired":"retired"}]},{"jdbc_type":"VARCHAR(40)","property":"former_employer_name","description":"former_employer_name","label":"Former Employer Name","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"line_of_business","description":"line_of_business","label":"Line of Business","type":"choice","choices":[{"-- None --":""},{"Advertising / Marketing / PR":"advertising_marketing_pr"},{"Aerospace":"aerospace"},{"Agriculture / Forestry / Fishing":"agriculture_forestry_fishing"},{"Arms Trading - Retail / Manufacturing":"arms_trading_retail_manufacturing"},{"Art Dealers / Antique Dealers / Auction Houses":"art_dealers_antique_dealers_auction_houses"},{"Artists, Athletes or Other Public Figures":"artists_athletes_or_other_public_figures"},{"Arts and Recreation":"arts_and_recreation"},{"Automotive":"automotive"},{"Car Dealer":"car_dealer"},{"Casinos / Gaming":"casinos_gaming"},{"Charity / Religious Group / Non-Profit / Foundation":"charity_religious_group_non_profit_foundation"},{"Chemicals":"chemicals"},{"Commodity Trading":"commodity_trading"},{"Computers / Electronics / Technology":"computers_electronics_technology"},{"Construction":"construction"},{"Consumer / Retail":"consumer_retail"},{"Crowdfunding":"crowdfunding"},{"Cryptocurrency":"cryptocurrency"},{"E-commerce":"e_commerce"},{"Education":"education"},{"Elder Care":"elder_care"},{"Entertainment / Adult Industry":"entertainment_adult_industry"},{"Financial Services / Products":"financial_services_products"},{"Government / Military / Public":"government_military_public"},{"Hospitality / Recreation":"hospitality_recreation"},{"Import and Export of Physical Commodities":"import_and_export_of_physical_commodities"},{"Information and Telecommunication":"information_and_telecommunication"},{"Intellectual Property / Patents / Royalties":"intellectual_property_patents_royalties"},{"Internet Café / Call Shop":"internet_caf_call_shop"},{"Jewelry / Gems / Precious Metals - Dealers / Wholesalers":"jewelry_gems_precious_metals_dealers_wholesalers"},{"Jewelry / Gems / Precious Metals - Manufacturing":"jewelry_gems_precious_metals_manufacturing"},{"Law":"law"},{"Managers / Agents of Artists, Athletes or Other Public Figures":"managers_agents_of_artists_athletes_or_other_public_figures"},{"Manufacturing":"manufacturing"},{"Marijuana Services":"marijuana_services"},{"Media / Publishing / Entertainment":"media_publishing_entertainment"},{"Medical / Health / Social Assistance":"medical_health_social_assistance"},{"Mining":"mining"},{"Money Service Business":"money_service_business"},{"Offshore / Dredging":"offshore_dredging"},{"Pharmaceuticals":"pharmaceuticals"},{"Professional Org. for Artists, Athletes or Other Public Figures":"professional_org_for_artists_athletes_or_other_public_figures"},{"Professional Services":"professional_services"},{"Real Estate, Rental and Leasing":"real_estate_rental_and_leasing"},{"Services / Research":"services_research"},{"Stock Promotion":"stock_promotion"},{"Student":"student"},{"Technology":"technology"},{"Telecommunications / Networking":"telecommunications_networking"},{"Travel Agency":"travel_agency"},{"Travel / Transportation / Storage":"travel_transportation_storage"},{"Utilities / Energy":"utilities_energy"},{"Waste Management":"waste_management"},{"Wholesalers":"wholesalers"}]},{"jdbc_type":"VARCHAR(40)","property":"unemployed_or_retired_income_source","description":"unemployed_or_retired_income_source","label":"Unemployed or Retired Income Source","type":"choice","choices":[{"-- None --":""},{"Retirement / Pension":"retirement_pension"},{"Partner / Spouse":"partner_spouse"},{"Inheritance / Gift":"inheritance_gift"},{"Parental Support":"parental_support"},{"Personal Investments":"personal_investments"},{"Assets":"assets"},{"Divorce":"divorce"},{"Government Benefits":"government_benefits"},{"Legal Settlement":"legal_settlement"},{"Lottery / Gaming":"lottery_gaming"},{"Entrepreneur":"entrepreneur"},{"Prior Employment":"prior_employment"}]}]}],"sys_created_on":"2025-06-23 21:21:01","name":"source_of_wealth_kg","edges":[{"sys_id":"0609825afb222e108cb7f0f56eefdc41","target_key_field":"account_contact_namere","passthru_to_edge":"","source_node":"x_snc_ai_agents_0_source_of_wealth","mapping_table":"","description":"account_contact_namere","source_key_field":"","type_key_field":"","label":"Account Contact Name","target_node":"x_snc_ai_agents_0_sma_onboarding_contact","edge_type":"account_contact_namere"}],"description":"","sys_scope":"x_snc_ai_agents_0","label":"Source of Wealth KG","sys_updated_on":"2025-07-07 13:11:59","version":"1.1","sys_created_by":"admin"}</schema_json>
+            <scope>7084b0dc2b5a2a50c246fb466e91bfba</scope>
+            <sys_class_name>sys_meta_graph</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 21:21:01</sys_created_on>
+            <sys_id>49b237752b1aa290c246fb466e91bf73</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>Source of Wealth KG</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_meta_graph_49b237752b1aa290c246fb466e91bf73</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 13:11:59</sys_updated_on>
+        </sys_meta_graph>
+    </graph_schema>
+</record_update>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="2814aa3533566290adf5b6919e5c7b26" sys_domain="global" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 15:37:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e014aa3533566290adf5b6919e5c7b4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">6814aa3533566290adf5b6919e5c7b39</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 15:37:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca99b3ec3b3a6a104c5b3fb693e45a94</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Description" display_value="Description" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">4e9973ec3b3a6a104c5b3fb693e45ac7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 16:31:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84707a3933966290adf5b6919e5c7b06</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Assignment" display_value="Assignment" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">c4703a3933966290adf5b6919e5c7b48</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 16:59:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>97c63ef533d66290adf5b6919e5c7b4b</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Investment Details" display_value="Investment Details" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">9bc63ef533d66290adf5b6919e5c7b47</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 16:38:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4512f6f933966290adf5b6919e5c7b74</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Advisor Information" display_value="Advisor Information" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">cd12f6f933966290adf5b6919e5c7b70</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-24 16:40:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>781c3b8e2b122690c246fb466e91bfc6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Correspondence Contact Info" display_value="Correspondence Contact Info" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">381c3b8e2b122690c246fb466e91bfc1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 17:28:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f36dfeb1331a6290adf5b6919e5c7b03</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 15:37:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e014aa3533566290adf5b6919e5c7b39</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">e814aa3533566290adf5b6919e5c7b31</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 15:37:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b814aa3533566290adf5b6919e5c7b53</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">6814aa3533566290adf5b6919e5c7b4b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 15:37:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6414aa3533566290adf5b6919e5c7b31</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_ai_agents_0_fso_sma_onboarding" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">2814aa3533566290adf5b6919e5c7b26</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">a014aa3533566290adf5b6919e5c7b29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 15:37:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2814aa3533566290adf5b6919e5c7b26</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ai_agents_0_fso_sma_onboarding</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2814aa3533566290adf5b6919e5c7b26</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 15:37:28</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">cd4610235c6312104f3496f8659cf696</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

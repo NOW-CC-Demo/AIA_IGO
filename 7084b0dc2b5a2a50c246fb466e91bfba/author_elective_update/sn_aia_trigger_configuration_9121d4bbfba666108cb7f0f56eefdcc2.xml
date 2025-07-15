@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>false</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_ai_agents_0_fso_sma_onboarding">active=true^contact_type=email^state=10<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="Email" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="email"/>
+            <item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name/>
+        <name>Ready for Validation</name>
+        <objective_template><![CDATA[Help me validate this case ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>false</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 20:19:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9121d4bbfba666108cb7f0f56eefdcc2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_ai_agents_0_fso_sma_onboarding</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_9121d4bbfba666108cb7f0f56eefdcc2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 20:31:28</sys_updated_on>
+        <target_table>x_snc_ai_agents_0_fso_sma_onboarding</target_table>
+        <trigger_flow/>
+        <trigger_flow_definition_type>record_create_or_update</trigger_flow_definition_type>
+        <usecase display_value="">undefined</usecase>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_trigger_configuration_9121d4bbfba666108cb7f0f56eefdcc2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;business_rule/&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="x_snc_ai_agents_0_fso_sma_onboarding"&gt;active=true^contact_type=email^state=10&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item display_value="Email" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="email"/&gt;&lt;item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/&gt;&lt;/condition&gt;&lt;description/&gt;&lt;enable_discovery&gt;false&lt;/enable_discovery&gt;&lt;internal_name/&gt;&lt;name&gt;Ready for Validation&lt;/name&gt;&lt;objective_template&gt;&lt;![CDATA[Help me validate this case ${number}]]&gt;&lt;/objective_template&gt;&lt;portal/&gt;&lt;profile/&gt;&lt;run_as&gt;assigned_to&lt;/run_as&gt;&lt;run_as_script/&gt;&lt;run_dayofmonth/&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start/&gt;&lt;run_time/&gt;&lt;show_notifications&gt;false&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-11 20:19:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;9121d4bbfba666108cb7f0f56eefdcc2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_ai_agents_0_fso_sma_onboarding&lt;/sys_name&gt;&lt;sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AI Agents - IMA In-Good-Order"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_9121d4bbfba666108cb7f0f56eefdcc2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-11 20:31:28&lt;/sys_updated_on&gt;&lt;target_table&gt;x_snc_ai_agents_0_fso_sma_onboarding&lt;/target_table&gt;&lt;trigger_flow/&gt;&lt;trigger_flow_definition_type&gt;record_create_or_update&lt;/trigger_flow_definition_type&gt;&lt;usecase display_value=""&gt;undefined&lt;/usecase&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-439367725</payload_hash>
+        <record_name>x_snc_ai_agents_0_fso_sma_onboarding</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 13:39:38</sys_created_on>
+        <sys_id>d3721eecfb32ea108cb7f0f56eefdc18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19809299b480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 13:39:38</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>36f350b727e66610e28ff0938520401f</update_guid>
+        <update_guid_history>36f350b727e66610e28ff0938520401f:-315086654,36f350b727e66610e28ff0938520401f:-315086654,1521d4bbf3a666104acb8dc9f35d41c5:2141940916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_ai_agents_0_fso_sma_onboarding">37721eecfb32ea108cb7f0f56eefdce2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 13:39:40</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>6dd8411ff7654bc89a0c70ecbae27c40</sys_id>
+        <sys_metadata>9121d4bbfba666108cb7f0f56eefdcc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ai_agents_0_fso_sma_onboarding</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_9121d4bbfba666108cb7f0f56eefdcc2</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_9121d4bbfba666108cb7f0f56eefdcc2">d3721eecfb32ea108cb7f0f56eefdc18</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 13:39:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

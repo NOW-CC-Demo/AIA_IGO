@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Retrieve Advisor Information**
+  - Begin by leveraging the 'Advisor Knowledge Graph' tool to retrieve advisor information for the currently logged-in user.
+  - Use the following inputs for the tool:
+    - `query`: Formulate a direct query to retrieve advisor information for the logged-in user. For example, "Retrieve advisor information for the current user."
+    - `knowledge_graph`: Use the value `47152d542b9e2a50c246fb466e91bf0e` as the knowledge graph source.
+    - `show_column_properties`: Set this to `true` to include column properties in the output.
+    - `group_by_table`: Set this to `true` to group the results by table.
+  - If the tool successfully retrieves the advisor information, proceed to the next step.
+  - If the tool fails or returns an unexpected result, use the 'Content Analysis' tool to analyze the issue and determine the next course of action. Provide the following input:
+    - `analysis`: Describe the issue encountered with the 'Advisor Knowledge Graph' tool and analyze potential reasons for failure.
+
+- **Step 2: Display Advisor Information**
+  - Use the 'User Output' tool to display the retrieved advisor information to the user in a markdown format.
+  - Provide the following input:
+    - `message`: Format the advisor information into a clear and readable markdown structure. For example:
+      ```
+      ### Advisor Information
+      - **Name**: [Advisor Name]
+      - **Firm**: [Firm Name]
+      - **Contact**: [Contact Details]
+      ```
+    - `references`: If applicable, include citations or references to the original source of the information.
+
+- **Step 3: Confirm with the User**
+  - Use the 'User Input' tool to ask the user for confirmation on the displayed information.
+  - Provide the following input:
+    - `promptMessage`: "Does this look right?"
+
+- **Step 4: Handle User Feedback**
+  - If the user confirms that the information is correct, proceed to the next step.
+  - If the user indicates that the information is incorrect or incomplete:
+    - Use the 'Content Analysis' tool to analyze the feedback and determine the issue. Provide the following input:
+      - `analysis`: Include the user's feedback and the retrieved advisor information to identify discrepancies or missing details.
+    - Based on the analysis, refine the query and re-execute the 'Advisor Knowledge Graph' tool to retrieve updated information. Repeat Steps 1 to 3 as necessary.
+
+- **Step 5: Completion**
+  - Once the user confirms that the information is correct, use the 'Finish' tool to conclude the execution.
+```</compiled_handbook>
+        <description>This agent exists for discrete testing of individual agentic capabilities</description>
+        <external_agent_configuration/>
+        <instructions>1. Leverage existing tool to determine the advisor information for the currently logged in user initiating the request.  
+2. Display the output of this information in a markdown format. 
+3. Ask the user "Does this look right?"</instructions>
+        <internal_name>global.x_snc_ai_agents_0.Advisor Information Lookup Agent</internal_name>
+        <name>Advisor Information Lookup Agent</name>
+        <processing_message/>
+        <proficiency>- The agent specializes in retrieving and presenting information about advisors and investor firms for users, ensuring accurate and relevant data is provided based on the user's request.
+- The agent is capable of identifying the logged-in user and using this context to query relevant advisor information, ensuring personalized and user-specific results.
+- The agent can format and display advisor information in markdown, providing a user-friendly and visually structured output for better comprehension.
+- The agent is capable of engaging in a feedback loop with the user by asking for confirmation, ensuring the information provided meets the user's expectations and requirements.
+- The agent can use the 'Advisor Knowledge Graph' tool to query and retrieve advisor information based on user requests, leveraging a structured knowledge graph source for accurate data.
+- The agent can interpret user requests and convert them into precise search queries for the 'Advisor Knowledge Graph' tool, ensuring accurate and relevant data retrieval.
+- The agent is capable of utilizing the specified knowledge graph source ('47152d542b9e2a50c246fb466e91bf0e') to retrieve advisor information, ensuring consistency and reliability in data sourcing.
+- The agent can optionally display column properties in the retrieved advisor information, providing more granular details to the user when requested.
+- The agent can optionally group advisor information by table, offering a structured and organized view of the data for better user understanding.</proficiency>
+        <record_type>custom</record_type>
+        <role>This agent exists to lookup information advisor and investor firm information for a user.</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-19 13:41:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e8b2a96c2b56aa50c246fb466e91bff9</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Advisor Information Lookup Agent</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_e8b2a96c2b56aa50c246fb466e91bff9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-24 17:09:16</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

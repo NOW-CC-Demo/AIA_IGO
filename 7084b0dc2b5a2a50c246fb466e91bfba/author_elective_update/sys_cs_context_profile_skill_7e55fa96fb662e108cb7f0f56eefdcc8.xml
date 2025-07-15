@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill">
+    <sys_cs_context_profile_skill action="DELETE">
+        <context_profile display_value="Now Assist in Virtual Agent (default)">e13840cf77d53110569156391e5a99ba</context_profile>
+        <skill_id display_value="Scratchpad Agent">3555ba96fb662e108cb7f0f56eefdcee</skill_id>
+        <sys_class_name>sys_cs_context_profile_skill</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 16:25:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7e55fa96fb662e108cb7f0f56eefdcc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_cs_context_profile_skill_7e55fa96fb662e108cb7f0f56eefdcc8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 16:25:38</sys_updated_on>
+    </sys_cs_context_profile_skill>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sys_cs_context_profile_skill_7e55fa96fb662e108cb7f0f56eefdcc8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill"><sys_cs_context_profile_skill action="INSERT_OR_UPDATE"><context_profile display_value="Now Assist in Virtual Agent (default)">e13840cf77d53110569156391e5a99ba</context_profile><skill_id display_value="Scratchpad Agent">3555ba96fb662e108cb7f0f56eefdcee</skill_id><sys_class_name>sys_cs_context_profile_skill</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-07 16:25:38</sys_created_on><sys_domain>global</sys_domain><sys_id>7e55fa96fb662e108cb7f0f56eefdcc8</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sys_cs_context_profile_skill_7e55fa96fb662e108cb7f0f56eefdcc8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-07 16:25:38</sys_updated_on></sys_cs_context_profile_skill></record_update>]]></payload>
+        <payload_hash>-517068878</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 16:25:38</sys_created_on>
+        <sys_id>ba55fa96fb662e108cb7f0f56eefdccb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197e5b512210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 16:25:38</sys_updated_on>
+        <type>Profile and Skill Mapping</type>
+        <update_guid>7e55fa9625662e106640c927d9f510ca</update_guid>
+        <update_guid_history>7e55fa9625662e106640c927d9f510ca:-517068878</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 17:46:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_context_profile_skill">sys_cs_context_profile_skill</sys_db_object>
+        <sys_id>3102a4475d7449e683406516f1e41539</sys_id>
+        <sys_metadata>7e55fa96fb662e108cb7f0f56eefdcc8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sys_cs_context_profile_skill_7e55fa96fb662e108cb7f0f56eefdcc8</sys_update_name>
+        <sys_update_version display_value="sys_cs_context_profile_skill_7e55fa96fb662e108cb7f0f56eefdcc8">ba55fa96fb662e108cb7f0f56eefdccb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 17:46:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

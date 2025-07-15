@@ -1,0 +1,3281 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1373355000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>sma_onboarding_case_creation</internal_name>
+        <label_cache>[{"name":"subflow.advisorrepname","label":"Input➛advisorrepname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["representative_name"],"eb22805d-f6d0-4240-bf47-df7950894530":["advisorname"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"557af9dc-debe-4cd1-b856-59a1f4e9ce9e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactemailaddress","label":"Input➛contactemailaddress","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_1_email_address"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5740f744-2c1d-44cc-b942-ddcac75242a8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactrole","label":"Input➛contactrole","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_1_role"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5c48482b-006a-4824-a3aa-67b53fb60f24","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactname","label":"Input➛contactname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_name_1","account_type"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9511c300-46e2-4f2d-b570-6fd9a7ce41fb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.clientcustodianaccountnumber","label":"Input➛clientcustodianaccountnumber","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["client_or_custodian_account"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d0c2c3c6-ef4f-4b9e-9c12-ea79e66cbd89","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.custodianname","label":"Input➛custodianname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["custodian_name"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"45f9a88f-209d-4759-8119-4b61e8e28ea2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"eb22805d-f6d0-4240-bf47-df7950894530.advisorsysid","label":"1 - Query Advisor Sysid➛advisorsysid","reference_display":"advisorsysid","type":"string","base_type":"string","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["representative_name"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b690d913-e52c-4b45-9e26-791039a6ee94"}},{"name":"0386bff3-b00a-4567-adea-54a577d8ba9e.record","label":"2 - Create Record➛FSO SMA Onboarding Record","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","usedInstances":{"55393ef0-7bc9-4cf6-b241-7f85b316ad45":["output-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0386bff3-b00a-4567-adea-54a577d8ba9e.record.number","label":"2 - Create Record➛FSO SMA Onboarding Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"55393ef0-7bc9-4cf6-b241-7f85b316ad45":["output-0"]},"attributes":{}},{"name":"subflow.accountregsysid","label":"Input➛accountregsysid","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["account"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"96e07f97-61c0-4a64-bdee-eb735fc15bdc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.fundingamount","label":"Input➛fundingamount","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["funding_amount"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2d310a9e-a71d-41b9-b513-6a7b47a51deb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.investmentstrategy","label":"Input➛investmentstrategy","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"investment_strategy","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"70 US Large Cap/30 Non US Developed – ADR","value":"us_large_cap_30_non_us_developed_adr","order":1.0},{"label":"85 US All Cap/15 Global ex US - ADR","value":"us_all_cap_15_global_ex_us_adr","order":2.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["investment_strategy"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1ba13f13-3bc1-47a0-a23d-eebacbe2e5b0","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.investmentbenchmark","label":"Input➛investmentbenchmark","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"investment_benchmark","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"S\u0026P 500 70 / MSCI EAFE 30","value":"s_p_500_70_msci_eafe_30","order":1.0},{"label":"Russell 3000 85 / MSCI ACWI ex USA 15","value":"russell_3000_85_msci_acwi_ex_usa_15","order":2.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["investment_benchmark"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e1287a45-dfac-4f32-b0de-3ea32c7bf5d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.accounttype","label":"Input➛accounttype","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"account_type","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Individual","value":"Individual","order":1.0},{"label":"Joint - Tenants by the Entirety","value":"Joint - Tenants by the Entirety","order":2.0},{"label":"Joint - Tenants in Common","value":"Joint - Tenants in Common","order":3.0},{"label":"Joint - Community Property","value":"Joint - Community Property","order":4.0},{"label":"Joint - Rights of Survivorship","value":"Joint - Rights of Survivorship","order":5.0},{"label":"Trust","value":"Trust","order":6.0},{"label":"Entity - Personal Holding or PIV","value":"Entity - Personal Holding","order":7.0},{"label":"Entity - Private Operating Company","value":"Entity - Private Operating Company","order":8.0},{"label":"Entity - Other","value":"Entity - Other","order":9.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["account_type"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"124ff03a-7212-459b-b1d4-52171d3a3ae4","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>e16e34a62bde6690c246fb466e91bfd8</master_snapshot>
+        <master_snapshot_digest/>
+        <name>SMA Onboarding Case Creation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:44:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3d8f06e2b9e6690c246fb466e91bf1a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>SMA Onboarding Case Creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_hub_flow_b3d8f06e2b9e6690c246fb466e91bf1a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:52</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_b3d8f06e2b9e6690c246fb466e91bf1a^id=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT INb7d8f06e2b9e6690c246fb466e91bf1d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3d8f06e2b9e6690c246fb466e91bf1a</id>
+        <name>SMA Onboarding Case Creation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:44:32</sys_created_on>
+        <sys_id>b7d8f06e2b9e6690c246fb466e91bf1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:44:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b7d8f06e2b9e6690c246fb466e91bf1d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT IN066f62e3fb2e26108cb7f0f56eefdc61,15f9f8ae2b9e6690c246fb466e91bf99,3f8dfc262bde6690c246fb466e91bf1d,48bfaae3fb2e26108cb7f0f56eefdccf,4e6f62e3fb2e26108cb7f0f56eefdc43,51f9f8ae2b9e6690c246fb466e91bf9c,95f9f8ae2b9e6690c246fb466e91bf84,9df9f8ae2b9e6690c246fb466e91bf9e,c14f702a2bde6690c246fb466e91bf47,d1f9f8ae2b9e6690c246fb466e91bf87,db265ab22b122a90c246fb466e91bff4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=e1287a45-dfac-4f32-b0de-3ea32c7bf5d7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>investment_benchmark</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>investmentbenchmark</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>investmentbenchmark</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:12:03</sys_created_on>
+        <sys_id>066f62e3fb2e26108cb7f0f56eefdc61</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:12:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=066f62e3fb2e26108cb7f0f56eefdc61"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9511c300-46e2-4f2d-b570-6fd9a7ce41fb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>15f9f8ae2b9e6690c246fb466e91bf99</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=15f9f8ae2b9e6690c246fb466e91bf99"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=557af9dc-debe-4cd1-b856-59a1f4e9ce9e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>advisorrepname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>advisorrepname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:05:02</sys_created_on>
+        <sys_id>3f8dfc262bde6690c246fb466e91bf1d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f8dfc262bde6690c246fb466e91bf1d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=124ff03a-7212-459b-b1d4-52171d3a3ae4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>account_type</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>accounttype</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>accounttype</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:17</sys_created_on>
+        <sys_id>48bfaae3fb2e26108cb7f0f56eefdccf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=48bfaae3fb2e26108cb7f0f56eefdccf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=1ba13f13-3bc1-47a0-a23d-eebacbe2e5b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>investment_strategy</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>investmentstrategy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>investmentstrategy</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:12:03</sys_created_on>
+        <sys_id>4e6f62e3fb2e26108cb7f0f56eefdc43</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:12:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e6f62e3fb2e26108cb7f0f56eefdc43"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5c48482b-006a-4824-a3aa-67b53fb60f24</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactrole</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactrole</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>51f9f8ae2b9e6690c246fb466e91bf9c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51f9f8ae2b9e6690c246fb466e91bf9c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=45f9a88f-209d-4759-8119-4b61e8e28ea2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>custodianname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>custodianname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>95f9f8ae2b9e6690c246fb466e91bf84</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95f9f8ae2b9e6690c246fb466e91bf84"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5740f744-2c1d-44cc-b942-ddcac75242a8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactemailaddress</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactemailaddress</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>9df9f8ae2b9e6690c246fb466e91bf9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9df9f8ae2b9e6690c246fb466e91bf9e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=96e07f97-61c0-4a64-bdee-eb735fc15bdc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>accountregsysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>accountregsysid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:12:29</sys_created_on>
+        <sys_id>c14f702a2bde6690c246fb466e91bf47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c14f702a2bde6690c246fb466e91bf47"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d0c2c3c6-ef4f-4b9e-9c12-ea79e66cbd89</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>clientcustodianaccountnumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>clientcustodianaccountnumber</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>d1f9f8ae2b9e6690c246fb466e91bf87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d1f9f8ae2b9e6690c246fb466e91bf87"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2d310a9e-a71d-41b9-b513-6a7b47a51deb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fundingamount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>fundingamount</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 17:10:41</sys_created_on>
+        <sys_id>db265ab22b122a90c246fb466e91bff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db265ab22b122a90c246fb466e91bff4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT INc65ef0a62bde6690c246fb466e91bf23"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1dce2649-648c-4c35-a5b7-0c4701c73a28</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</model>
+        <model_id>b3d8f06e2b9e6690c246fb466e91bf1a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:27</sys_created_on>
+        <sys_id>c65ef0a62bde6690c246fb466e91bf23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c65ef0a62bde6690c246fb466e91bf23"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT IN0c9dfc262bde6690c246fb466e91bf3a,253af0ee2b9e6690c246fb466e91bfc0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Query Advisor Sysid">fb6df8262bde6690c246fb466e91bf82</action_type>
+        <action_type_parent display_value="Query Advisor Sysid">aa7c30e22bde6690c246fb466e91bf47</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>fb6df8262bde6690c246fb466e91bf82</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:05:02</sys_created_on>
+        <sys_id>0c9dfc262bde6690c246fb466e91bf3a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:47:26</sys_updated_on>
+        <ui_id>eb22805d-f6d0-4240-bf47-df7950894530</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41SXWvjMBD8L3p2jJ04xsnb0VIo9K5wvetLKWEtrRKBLLn6SJsz+e+3ip30aO+hL4adndXOzPppYEqwNZOyFrKZ1/NWYF2vCj6vatlWdY2rspXNkmXMQIfEBLFX3rpTlbE96JjQYfCxldq+5lPfYZ8oxyORhPK9hsPjV7h8p7RwaNj66TljPThqBHRsPXxofVW2hhb1J93/NRMOfQJ9cMpsp/puGn84g9aJJKfMGL4FNAJJhwTtMWMdGAHBusMFcQji3uh3YKdMoNdYIr959Yf2NUVRJKZE8sZx7F7KzRTeCMtrCEBSIg/RTVS+s4qjH1MRKCHqcPUvNhLu+6CsGUcCtPo8bXXszI8xDnZ54HwrQqInEdgnq0n7ZEQ+7Ozrz7PKG2VOqUxNbTnoSwWBsmtjSHoGFtWvDzGPyKegUWNHGzcd9D0hm97ZvTptIdFdvtVU5Ok3InVebU0OPDnM6QSQ3xB+fYIfwalk9zs9Q8Np3W+jXiLeph9oXje8oiPNlgVfzKpysZw1FZb04fViVQpEsWLHjPmDv9Lg/XtQdKHNS0w2x9imgDZjxmmEO9WHbyRqj1MWx+e/DEznsXADAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:50:24</sys_created_on>
+        <sys_id>253af0ee2b9e6690c246fb466e91bfc0</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:47:26</sys_updated_on>
+        <ui_id>0386bff3-b00a-4567-adea-54a577d8ba9e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4HOSWDnq2luRYuc1gZYhl66TqAtOhEmS54kp82C/PdRtvPRpsE2oJcCzU3kI/UeTZF52DAp2ISNYoyGl/Eo7cf9fi+KeuNBnIz6SdwTfUAcsDbTkCMhPSQKeXVosxWoMhifudMpB8lhgdo7HvHMGe5y4EYnBqyQekFwIV2hYH3fRE3ns9b89qo1O8akS6mERc0mD49tVoClmzxaNtm8cv0rbwUJKoJ+C8TP6PDr4k3bl+PY1l3tMFYEPlGb4bNHLZCIZKActlkOWoA3ds0m3pZksAhiptV6j1hK7SkhC9hnJ3/TteMo4DIkZSnWvv2RNyWrzdkNeJhT5tSXtoGmSyNTdHVNBGZQKn99bKsBs8JLo+uQSmYTbVSZ67u6JGyfYPeFyFI6IoFF0BmYNzKy+dI8fd2xnEpdlaRxKpOC2p/AeyuT0gc+G4YKc0rEcygK+uC8sGYlq2DikncXig7dTJknutTJhe5CGoh3qazQnZL9pjLfg5VBxS2loeBtm7m1u1bg3EELFZH/KgOTWlmjgddlCCGplYW/ogtW2NDdtncPQmB0ebax4uTQSNUbcEePIS2dN0KCrjrpexlFfbHZuDIJsrp7b3Butz9SJStSlh/iIE1Nqf1JaAXdwxqULvMELWWyWFh0hIAg6MXlmPR642goOtlIRJ1BbxB1kmxw0RHZxeUwGl8Ohv2oC2IlnbFUSCkCMUOZUl/l4fEJl9q7E9FgY26NOpVce4PrBRZzkIqDoDft3JmgCtNAKPhMZRqzxcWOfVbqMFA45G/hG2/tJLTUK3S+akznLXhcrF+HHCA7xMu4hB7CMgf783zgHnIQwsOUOaMmuLbb07H52V+f/fWu/fWfK/fvk3G3cqcSlXBvjMrdvsWcGtsjr0fnq53bOFv3jbPZu/F77d14FFW/D7R9a3Effvke/c86s4Yf/wDPAx8ZmQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT IN4e5ef0a62bde6690c246fb466e91bf2d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ce5ef0a62bde6690c246fb466e91bf2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:27</sys_created_on>
+        <sys_id>4e5ef0a62bde6690c246fb466e91bf2d</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:47</sys_updated_on>
+        <ui_id>55393ef0-7bc9-4cf6-b241-7f85b316ad45</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTwY7aMBD9F59JFCBxgNtK1UortUXq0r1UVTSxJ2DVsbO2A0sR/94xCeyK00o9zvP4zXtv7BOzfej64Df2wXu1NWz168SUZCsmeIFNBnxWS+R8mYlZzps65xyX07qZzdmEGWiROgcKqveg+wicTtl8weummSd1lkGSF7xMQCIkRQ5FWcpFDUtMHQrrZGr6tkZ3PhOBVL7TcHz5Xx6xU1o6jG5+T1gHjoQGdGx1ujsKxw4rDTVqGvccnDJbuv5Z/9eL62sA94FEeqr9lZhkRhXTCcO3gEYiDWpAe5ywFoyEYN3xhjgEuTb6HdgpE4iNxeY3r/4S9SLLstjZIFkSOJzeymrMc4DFziqB6y4oawYkQK3HO8LqvjXfB/1xE9hAr8N1E4T0nviwi6qjjFFT87yzhx/XgY/KXAyOh9oK0LcKAsVQ9wF93EOvNnfhDMjX+2WgxpYmVi10HSFV5+xeXaaQ6DbdairSRtsDqYsvOAURHaaUJqSPhH+5wC/gVLT7jWjochz306jXHp/isqdS4Izny4TnC5HkYl4kUNRlkom8zKainMNswc6XaKvXPpoaQhrjqIZEqcELp7rwQBL2ODo/0ztTJn6y4c3tRyVjKVEoT4I3EXv60CeP9JyU+AgdrPsTrb5j53/JBbqtwgMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>investmentbenchmark</element>
+        <help/>
+        <hint/>
+        <label>investmentbenchmark</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:12:03</sys_created_on>
+        <sys_id>0e6f62e3fb2e26108cb7f0f56eefdc65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:12:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactemailaddress</element>
+        <help/>
+        <hint/>
+        <label>contactemailaddress</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>11f9f8ae2b9e6690c246fb466e91bfa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:49:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>custodianname</element>
+        <help/>
+        <hint/>
+        <label>custodianname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>19f9f8ae2b9e6690c246fb466e91bf86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:49:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>clientcustodianaccountnumber</element>
+        <help/>
+        <hint/>
+        <label>clientcustodianaccountnumber</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>1df9f8ae2b9e6690c246fb466e91bf95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:49:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>accounttype</element>
+        <help/>
+        <hint/>
+        <label>accounttype</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:17</sys_created_on>
+        <sys_id>80bfaae3fb2e26108cb7f0f56eefdcd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>investmentstrategy</element>
+        <help/>
+        <hint/>
+        <label>investmentstrategy</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:12:03</sys_created_on>
+        <sys_id>8a6f62e3fb2e26108cb7f0f56eefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:12:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactname</element>
+        <help/>
+        <hint/>
+        <label>contactname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>95f9f8ae2b9e6690c246fb466e91bf9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:49:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>fundingamount</element>
+        <help/>
+        <hint/>
+        <label>fundingamount</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 17:10:41</sys_created_on>
+        <sys_id>9b265ab22b122a90c246fb466e91bffa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:10:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>advisorrepname</element>
+        <help/>
+        <hint/>
+        <label>advisorrepname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:05:02</sys_created_on>
+        <sys_id>c89dfc262bde6690c246fb466e91bf20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:05:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>accountregsysid</element>
+        <help/>
+        <hint/>
+        <label>accountregsysid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:12:29</sys_created_on>
+        <sys_id>c94f702a2bde6690c246fb466e91bf49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:12:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactrole</element>
+        <help/>
+        <hint/>
+        <label>contactrole</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 15:49:17</sys_created_on>
+        <sys_id>d1f9f8ae2b9e6690c246fb466e91bf9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 15:49:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT IN528fa6e3fb2e26108cb7f0f56eefdc8e,5a8fa6e3fb2e26108cb7f0f56eefdc90,fdcf6ee3fb2e26108cb7f0f56eefdc68"/>
+    <sys_choice field="accounttype" table="var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fdcf6ee3fb2e26108cb7f0f56eefdc68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:41</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="investmentbenchmark" table="var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentbenchmark</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:12:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a8fa6e3fb2e26108cb7f0f56eefdc90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:12:37</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="investmentstrategy" table="var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentstrategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:12:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>528fa6e3fb2e26108cb7f0f56eefdc8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:12:37</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b3d8f06e2b9e6690c246fb466e91bf1a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:27</sys_created_on>
+        <sys_id>825ef0a62bde6690c246fb466e91bf27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>sma_onboarding_case_creation</internal_name>
+        <label_cache>[{"name":"subflow.advisorrepname","label":"Input➛advisorrepname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["representative_name"],"eb22805d-f6d0-4240-bf47-df7950894530":["advisorname"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"557af9dc-debe-4cd1-b856-59a1f4e9ce9e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactemailaddress","label":"Input➛contactemailaddress","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_1_email_address"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5740f744-2c1d-44cc-b942-ddcac75242a8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactrole","label":"Input➛contactrole","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_1_role"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5c48482b-006a-4824-a3aa-67b53fb60f24","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.contactname","label":"Input➛contactname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["contact_name_1","account_type"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9511c300-46e2-4f2d-b570-6fd9a7ce41fb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.clientcustodianaccountnumber","label":"Input➛clientcustodianaccountnumber","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["client_or_custodian_account"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d0c2c3c6-ef4f-4b9e-9c12-ea79e66cbd89","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.custodianname","label":"Input➛custodianname","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["custodian_name"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"45f9a88f-209d-4759-8119-4b61e8e28ea2","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"eb22805d-f6d0-4240-bf47-df7950894530.advisorsysid","label":"1 - Query Advisor Sysid➛advisorsysid","reference_display":"advisorsysid","type":"string","base_type":"string","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["representative_name"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b690d913-e52c-4b45-9e26-791039a6ee94"}},{"name":"0386bff3-b00a-4567-adea-54a577d8ba9e.record","label":"2 - Create Record➛FSO SMA Onboarding Record","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","usedInstances":{"55393ef0-7bc9-4cf6-b241-7f85b316ad45":["output-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0386bff3-b00a-4567-adea-54a577d8ba9e.record.number","label":"2 - Create Record➛FSO SMA Onboarding Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"55393ef0-7bc9-4cf6-b241-7f85b316ad45":["output-0"]},"attributes":{}},{"name":"subflow.accountregsysid","label":"Input➛accountregsysid","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["account"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"96e07f97-61c0-4a64-bdee-eb735fc15bdc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.fundingamount","label":"Input➛fundingamount","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["funding_amount"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2d310a9e-a71d-41b9-b513-6a7b47a51deb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.investmentstrategy","label":"Input➛investmentstrategy","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"investment_strategy","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"70 US Large Cap/30 Non US Developed – ADR","value":"us_large_cap_30_non_us_developed_adr","order":1.0},{"label":"85 US All Cap/15 Global ex US - ADR","value":"us_all_cap_15_global_ex_us_adr","order":2.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["investment_strategy"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1ba13f13-3bc1-47a0-a23d-eebacbe2e5b0","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.investmentbenchmark","label":"Input➛investmentbenchmark","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"investment_benchmark","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"S\u0026P 500 70 / MSCI EAFE 30","value":"s_p_500_70_msci_eafe_30","order":1.0},{"label":"Russell 3000 85 / MSCI ACWI ex USA 15","value":"russell_3000_85_msci_acwi_ex_usa_15","order":2.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["investment_benchmark"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e1287a45-dfac-4f32-b0de-3ea32c7bf5d7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.accounttype","label":"Input➛accounttype","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"account_type","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Individual","value":"Individual","order":1.0},{"label":"Joint - Tenants by the Entirety","value":"Joint - Tenants by the Entirety","order":2.0},{"label":"Joint - Tenants in Common","value":"Joint - Tenants in Common","order":3.0},{"label":"Joint - Community Property","value":"Joint - Community Property","order":4.0},{"label":"Joint - Rights of Survivorship","value":"Joint - Rights of Survivorship","order":5.0},{"label":"Trust","value":"Trust","order":6.0},{"label":"Entity - Personal Holding or PIV","value":"Entity - Personal Holding","order":7.0},{"label":"Entity - Private Operating Company","value":"Entity - Private Operating Company","order":8.0},{"label":"Entity - Other","value":"Entity - Other","order":9.0}],"usedInstances":{"0386bff3-b00a-4567-adea-54a577d8ba9e":["account_type"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"124ff03a-7212-459b-b1d4-52171d3a3ae4","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>SMA Onboarding Case Creation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e16e34a62bde6690c246fb466e91bfd8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:52</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e16e34a62bde6690c246fb466e91bfd8^id=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e16e34a62bde6690c246fb466e91bfd8^sys_idNOT IN696e34a62bde6690c246fb466e91bfd9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e16e34a62bde6690c246fb466e91bfd8</id>
+        <name>SMA Onboarding Case Creation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:41</sys_created_on>
+        <sys_id>696e34a62bde6690c246fb466e91bfd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=696e34a62bde6690c246fb466e91bfd9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e16e34a62bde6690c246fb466e91bfd8^sys_idNOT IN216e74a62bde6690c246fb466e91bf14,3fcfaee3fb2e26108cb7f0f56eefdcdf,656e74a62bde6690c246fb466e91bf2a,6d6e74a62bde6690c246fb466e91bf22,73cfeee3fb2e26108cb7f0f56eefdc09,756e74a62bde6690c246fb466e91bf3e,846f342a2bde6690c246fb466e91bf88,84dfeee3fb2e26108cb7f0f56eefdc32,a56e74a62bde6690c246fb466e91bf1b,d06612f22b122a90c246fb466e91bf5c,e96e74a62bde6690c246fb466e91bf0c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d0c2c3c6-ef4f-4b9e-9c12-ea79e66cbd89</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>clientcustodianaccountnumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>clientcustodianaccountnumber</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:41</sys_created_on>
+        <sys_id>216e74a62bde6690c246fb466e91bf14</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=216e74a62bde6690c246fb466e91bf14"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=1ba13f13-3bc1-47a0-a23d-eebacbe2e5b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>investment_strategy</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>investmentstrategy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>investmentstrategy</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+        <sys_id>3fcfaee3fb2e26108cb7f0f56eefdcdf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3fcfaee3fb2e26108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5c48482b-006a-4824-a3aa-67b53fb60f24</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactrole</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactrole</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>656e74a62bde6690c246fb466e91bf2a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=656e74a62bde6690c246fb466e91bf2a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9511c300-46e2-4f2d-b570-6fd9a7ce41fb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>6d6e74a62bde6690c246fb466e91bf22</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d6e74a62bde6690c246fb466e91bf22"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=e1287a45-dfac-4f32-b0de-3ea32c7bf5d7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>investment_benchmark</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>investmentbenchmark</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>investmentbenchmark</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+        <sys_id>73cfeee3fb2e26108cb7f0f56eefdc09</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73cfeee3fb2e26108cb7f0f56eefdc09"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5740f744-2c1d-44cc-b942-ddcac75242a8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contactemailaddress</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>contactemailaddress</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>756e74a62bde6690c246fb466e91bf3e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=756e74a62bde6690c246fb466e91bf3e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=96e07f97-61c0-4a64-bdee-eb735fc15bdc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>accountregsysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>accountregsysid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:12:58</sys_created_on>
+        <sys_id>846f342a2bde6690c246fb466e91bf88</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=846f342a2bde6690c246fb466e91bf88"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=124ff03a-7212-459b-b1d4-52171d3a3ae4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>account_type</choice_field>
+        <choice_table>x_snc_ai_agents_0_fso_sma_onboarding</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>accounttype</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>accounttype</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+        <sys_id>84dfeee3fb2e26108cb7f0f56eefdc32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=84dfeee3fb2e26108cb7f0f56eefdc32"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=557af9dc-debe-4cd1-b856-59a1f4e9ce9e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>advisorrepname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>advisorrepname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>a56e74a62bde6690c246fb466e91bf1b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a56e74a62bde6690c246fb466e91bf1b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2d310a9e-a71d-41b9-b513-6a7b47a51deb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>fundingamount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>fundingamount</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 17:11:34</sys_created_on>
+        <sys_id>d06612f22b122a90c246fb466e91bf5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d06612f22b122a90c246fb466e91bf5c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=45f9a88f-209d-4759-8119-4b61e8e28ea2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>custodianname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>custodianname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:41</sys_created_on>
+        <sys_id>e96e74a62bde6690c246fb466e91bf0c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e96e74a62bde6690c246fb466e91bf0c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e16e34a62bde6690c246fb466e91bfd8^sys_idNOT INfd6e74a62bde6690c246fb466e91bf48"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1dce2649-648c-4c35-a5b7-0c4701c73a28</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</model>
+        <model_id>e16e34a62bde6690c246fb466e91bfd8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_e16e34a62bde6690c246fb466e91bfd8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>fd6e74a62bde6690c246fb466e91bf48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fd6e74a62bde6690c246fb466e91bf48"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e16e34a62bde6690c246fb466e91bfd8^sys_idNOT IN396e74a62bde6690c246fb466e91bf54,396e74a62bde6690c246fb466e91bf55"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Query Advisor Sysid">fb6df8262bde6690c246fb466e91bf82</action_type>
+        <action_type_parent display_value="Query Advisor Sysid">aa7c30e22bde6690c246fb466e91bf47</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>fb6df8262bde6690c246fb466e91bf82</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>396e74a62bde6690c246fb466e91bf54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <ui_id>eb22805d-f6d0-4240-bf47-df7950894530</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41SXWvjMBD8L3p2jJ04xsnb0VIo9K5wvetLKWEtrRKBLLn6SJsz+e+3ip30aO+hL4adndXOzPppYEqwNZOyFrKZ1/NWYF2vCj6vatlWdY2rspXNkmXMQIfEBLFX3rpTlbE96JjQYfCxldq+5lPfYZ8oxyORhPK9hsPjV7h8p7RwaNj66TljPThqBHRsPXxofVW2hhb1J93/NRMOfQJ9cMpsp/puGn84g9aJJKfMGL4FNAJJhwTtMWMdGAHBusMFcQji3uh3YKdMoNdYIr959Yf2NUVRJKZE8sZx7F7KzRTeCMtrCEBSIg/RTVS+s4qjH1MRKCHqcPUvNhLu+6CsGUcCtPo8bXXszI8xDnZ54HwrQqInEdgnq0n7ZEQ+7Ozrz7PKG2VOqUxNbTnoSwWBsmtjSHoGFtWvDzGPyKegUWNHGzcd9D0hm97ZvTptIdFdvtVU5Ok3InVebU0OPDnM6QSQ3xB+fYIfwalk9zs9Q8Np3W+jXiLeph9oXje8oiPNlgVfzKpysZw1FZb04fViVQpEsWLHjPmDv9Lg/XtQdKHNS0w2x9imgDZjxmmEO9WHbyRqj1MWx+e/DEznsXADAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>396e74a62bde6690c246fb466e91bf55</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:52</sys_updated_on>
+        <ui_id>0386bff3-b00a-4567-adea-54a577d8ba9e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4HOSWDnq2luRYuc1gZYhl66TqAtOhEmS54kp82C/PdRtvPRpsE2oJcCzU3kI/UeTZF52DAp2ISNYoyGl/Eo7cf9fi+KeuNBnIz6SdwTfUAcsDbTkCMhPSQKeXVosxWoMhifudMpB8lhgdo7HvHMGe5y4EYnBqyQekFwIV2hYH3fRE3ns9b89qo1O8akS6mERc0mD49tVoClmzxaNtm8cv0rbwUJKoJ+C8TP6PDr4k3bl+PY1l3tMFYEPlGb4bNHLZCIZKActlkOWoA3ds0m3pZksAhiptV6j1hK7SkhC9hnJ3/TteMo4DIkZSnWvv2RNyWrzdkNeJhT5tSXtoGmSyNTdHVNBGZQKn99bKsBs8JLo+uQSmYTbVSZ67u6JGyfYPeFyFI6IoFF0BmYNzKy+dI8fd2xnEpdlaRxKpOC2p/AeyuT0gc+G4YKc0rEcygK+uC8sGYlq2DikncXig7dTJknutTJhe5CGoh3qazQnZL9pjLfg5VBxS2loeBtm7m1u1bg3EELFZH/KgOTWlmjgddlCCGplYW/ogtW2NDdtncPQmB0ebax4uTQSNUbcEePIS2dN0KCrjrpexlFfbHZuDIJsrp7b3Butz9SJStSlh/iIE1Nqf1JaAXdwxqULvMELWWyWFh0hIAg6MXlmPR642goOtlIRJ1BbxB1kmxw0RHZxeUwGl8Ohv2oC2IlnbFUSCkCMUOZUl/l4fEJl9q7E9FgY26NOpVce4PrBRZzkIqDoDft3JmgCtNAKPhMZRqzxcWOfVbqMFA45G/hG2/tJLTUK3S+akznLXhcrF+HHCA7xMu4hB7CMgf783zgHnIQwsOUOaMmuLbb07H52V+f/fWu/fWfK/fvk3G3cqcSlXBvjMrdvsWcGtsjr0fnq53bOFv3jbPZu/F77d14FFW/D7R9a3Effvke/c86s4Yf/wDPAx8ZmQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e16e34a62bde6690c246fb466e91bfd8^sys_idNOT IN396e74a62bde6690c246fb466e91bf53"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ce5ef0a62bde6690c246fb466e91bf2c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SMA Onboarding Case Creation">e16e34a62bde6690c246fb466e91bfd8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>396e74a62bde6690c246fb466e91bf53</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:52</sys_updated_on>
+        <ui_id>55393ef0-7bc9-4cf6-b241-7f85b316ad45</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VT227iMBD9Fz+TKEAuwFvVqlKl7iJt2b6sVmhiT8Cq46S+QFnEv++YJIDal5X2zXM8l3PO2EfWeNd6Z1fNnbVyo9ni15FJwRaM5xlWCeSTUmCezxM+SfOqTPMc5+OymkzZiGmokTK7FhTvQPkAHI/JdJaXVTWNyiSBKM3yIgKBEGUpZEUhZiXMMTbIGyNi7esSzelEDYS0rYLD6//24VuphMGg5veItWCIqEPDFqRN00GDepb6jUZ8Sf5X7QpKVJS6HMR/NsMd2hBbZ6Te9PFzX/QygMQ70BqPGH441AJpegXK4ojVoAW4xhwuiEEQS62uwJbEdBpq+LDyD82bJUkSMiskRRy720u47g3u4OoBHBAVz503OJjRSI6280JgBV65+1usS1i2Tja6K3FQqqG6Ub7W3zsn2KXBsE9CvCUS2AapgXsvpHrZNvsfA8tHqc+u9Jeq4aAuETjyrvQu8DkyL1efbO6QL0ajwpomrmtoW0LWrWl28jyFSNfxRlEQV6rZE7vwD2LgQWFMK4D4kfCHM/wKRga536gNFYdxP7V89/gUns1YcJzk6TzK0xmPUj7NIsjKIkp4WiRjXkxhMmOnEbMHe6/A2qtRtKH1uw8yO9t6g9adx6GEG9m6OyK1w96LU3itOnzebjO7nttleVxakrAK2NNNnjjQU5X8Fto35i2Iv2KnvxillqgaBAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>investmentbenchmark</element>
+        <help/>
+        <hint/>
+        <label>investmentbenchmark</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+        <sys_id>04dfeee3fb2e26108cb7f0f56eefdc16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>fundingamount</element>
+        <help/>
+        <hint/>
+        <label>fundingamount</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-26 17:11:34</sys_created_on>
+        <sys_id>1c6612f22b122a90c246fb466e91bf66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-26 17:11:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactrole</element>
+        <help/>
+        <hint/>
+        <label>contactrole</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>256e74a62bde6690c246fb466e91bf2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>clientcustodianaccountnumber</element>
+        <help/>
+        <hint/>
+        <label>clientcustodianaccountnumber</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>2d6e74a62bde6690c246fb466e91bf18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactemailaddress</element>
+        <help/>
+        <hint/>
+        <label>contactemailaddress</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>756e74a62bde6690c246fb466e91bf43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>custodianname</element>
+        <help/>
+        <hint/>
+        <label>custodianname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:41</sys_created_on>
+        <sys_id>a56e74a62bde6690c246fb466e91bf11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>investmentstrategy</element>
+        <help/>
+        <hint/>
+        <label>investmentstrategy</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+        <sys_id>b7cfaee3fb2e26108cb7f0f56eefdcf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>accountregsysid</element>
+        <help/>
+        <hint/>
+        <label>accountregsysid</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:12:58</sys_created_on>
+        <sys_id>c46f342a2bde6690c246fb466e91bf8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:12:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>accounttype</element>
+        <help/>
+        <hint/>
+        <label>accounttype</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+        <sys_id>c8dfeee3fb2e26108cb7f0f56eefdc51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>advisorrepname</element>
+        <help/>
+        <hint/>
+        <label>advisorrepname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>e16e74a62bde6690c246fb466e91bf20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>contactname</element>
+        <help/>
+        <hint/>
+        <label>contactname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>e96e74a62bde6690c246fb466e91bf27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8^sys_idNOT IN00dfeee3fb2e26108cb7f0f56eefdc0f,00dfeee3fb2e26108cb7f0f56eefdc3e,0cdfeee3fb2e26108cb7f0f56eefdc3a,33cfaee3fb2e26108cb7f0f56eefdce4,3bcfaee3fb2e26108cb7f0f56eefdce6,44dfeee3fb2e26108cb7f0f56eefdc0d,44dfeee3fb2e26108cb7f0f56eefdc38,48dfeee3fb2e26108cb7f0f56eefdc3b,4cdfeee3fb2e26108cb7f0f56eefdc0f,4cdfeee3fb2e26108cb7f0f56eefdc3e,80dfeee3fb2e26108cb7f0f56eefdc39,84dfeee3fb2e26108cb7f0f56eefdc3c,88dfeee3fb2e26108cb7f0f56eefdc36,c0dfeee3fb2e26108cb7f0f56eefdc3d,ccdfeee3fb2e26108cb7f0f56eefdc39,fbcfaee3fb2e26108cb7f0f56eefdce5"/>
+    <sys_choice field="accounttype" table="var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Private Operating Company</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00dfeee3fb2e26108cb7f0f56eefdc3e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Entity - Private Operating Company</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Community Property</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cdfeee3fb2e26108cb7f0f56eefdc3a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Joint - Community Property</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Individual</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44dfeee3fb2e26108cb7f0f56eefdc38</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Individual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Rights of Survivorship</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48dfeee3fb2e26108cb7f0f56eefdc3b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Joint - Rights of Survivorship</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Other</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cdfeee3fb2e26108cb7f0f56eefdc3e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Entity - Other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Tenants by the Entirety</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80dfeee3fb2e26108cb7f0f56eefdc39</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Joint - Tenants by the Entirety</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Trust</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84dfeee3fb2e26108cb7f0f56eefdc3c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Trust</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88dfeee3fb2e26108cb7f0f56eefdc36</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Personal Holding or PIV</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0dfeee3fb2e26108cb7f0f56eefdc3d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Entity - Personal Holding</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>accounttype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Tenants in Common</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccdfeee3fb2e26108cb7f0f56eefdc39</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>Joint - Tenants in Common</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="investmentbenchmark" table="var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentbenchmark</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>S&amp;P 500 70 / MSCI EAFE 30</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00dfeee3fb2e26108cb7f0f56eefdc0f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>s_p_500_70_msci_eafe_30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentbenchmark</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>44dfeee3fb2e26108cb7f0f56eefdc0d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentbenchmark</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Russell 3000 85 / MSCI ACWI ex USA 15</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cdfeee3fb2e26108cb7f0f56eefdc0f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>russell_3000_85_msci_acwi_ex_usa_15</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="investmentstrategy" table="var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentstrategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33cfaee3fb2e26108cb7f0f56eefdce4</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentstrategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>85 US All Cap/15 Global ex US - ADR</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3bcfaee3fb2e26108cb7f0f56eefdce6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>us_all_cap_15_global_ex_us_adr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>investmentstrategy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>70 US Large Cap/30 Non US Developed – ADR</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_e16e34a62bde6690c246fb466e91bfd8</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-11 13:13:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fbcfaee3fb2e26108cb7f0f56eefdce5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-11 13:13:51</sys_updated_on>
+            <value>us_large_cap_30_non_us_developed_adr</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e16e34a62bde6690c246fb466e91bfd8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:42</sys_created_on>
+        <sys_id>fd6e74a62bde6690c246fb466e91bf4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-25 16:08:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e16e34a62bde6690c246fb466e91bfd8"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b3d8f06e2b9e6690c246fb466e91bf1a</sys_id>
+        <latest_snapshot>e16e34a62bde6690c246fb466e91bfd8</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b3d8f06e2b9e6690c246fb466e91bf1a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b3d8f06e2b9e6690c246fb466e91bf1a^sys_idNOT IN356e74a62bde6690c246fb466e91bf71"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"356e74a62bde6690c246fb466e91bf71","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="SMA Onboarding Case Creation">b3d8f06e2b9e6690c246fb466e91bf1a</plan_id>
+        <snapshot>54877ea3fb6e26108cb7f0f56eefdca3</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-25 16:08:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>356e74a62bde6690c246fb466e91bf71</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:13:52</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

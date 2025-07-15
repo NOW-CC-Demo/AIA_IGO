@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_details/>
+        <description/>
+        <display_name>Contact Role</display_name>
+        <group_index>1</group_index>
+        <key_config/>
+        <key_group display_value="Test">b559ba1ffba2e2108cb7f0f56eefdcda</key_group>
+        <mandatory>false</mandatory>
+        <metadata/>
+        <name>testcontactrole</name>
+        <order>2</order>
+        <prediction_method/>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:16:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7d59fa9ffba2e2108cb7f0f56eefdc59</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Contact Role</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_di_key_7d59fa9ffba2e2108cb7f0f56eefdc59</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:16:59</sys_updated_on>
+        <target_field>contact_1_role</target_field>
+        <target_table>x_snc_ai_agents_0_fso_sma_onboarding</target_table>
+        <task_definition display_value="Test 2">8ff77a1ffba2e2108cb7f0f56eefdca9</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+</record_update>

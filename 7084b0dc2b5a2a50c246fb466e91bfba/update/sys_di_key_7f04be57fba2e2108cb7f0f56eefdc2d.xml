@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_details/>
+        <description>Determine what time horizon the investor intends to keep assets. &lt;2 = Less than 2 years. 2 - 5 = 2 to 5 years and &gt;5 = Greater than 5 years</description>
+        <display_name>Time Horizon </display_name>
+        <group_index>0</group_index>
+        <key_config/>
+        <key_group/>
+        <mandatory>true</mandatory>
+        <metadata/>
+        <name>timehorizon</name>
+        <order>14</order>
+        <prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 18:53:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7f04be57fba2e2108cb7f0f56eefdc2d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Time Horizon </sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_di_key_7f04be57fba2e2108cb7f0f56eefdc2d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 14:10:46</sys_updated_on>
+        <target_field>time_horizon</target_field>
+        <target_table>x_snc_ai_agents_0_fso_sma_onboarding</target_table>
+        <task_definition display_value="Onboarding Case ">9b10fedffb62e2108cb7f0f56eefdc64</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="DELETE">
+        <agent display_value="IMA Data Validation Agent (DocIntel)">455212ecfb32ea108cb7f0f56eefdc90</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 14:06:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>40b8d26cfb72ea108cb7f0f56eefdc07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_team_member_40b8d26cfb72ea108cb7f0f56eefdc07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 14:06:43</sys_updated_on>
+        <team display_value="Conversational Account Onboarding Workflow (Copy)">98585a2cfb72ea108cb7f0f56eefdc87</team>
+    </sn_aia_team_member>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_team_member_40b8d26cfb72ea108cb7f0f56eefdc07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member"><sn_aia_team_member action="INSERT_OR_UPDATE"><agent display_value="IMA Data Validation Agent (DocIntel)">455212ecfb32ea108cb7f0f56eefdc90</agent><sys_class_name>sn_aia_team_member</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-14 14:06:43</sys_created_on><sys_domain>global</sys_domain><sys_id>40b8d26cfb72ea108cb7f0f56eefdc07</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sn_aia_team_member_40b8d26cfb72ea108cb7f0f56eefdc07</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-14 14:06:43</sys_updated_on><team display_value="Conversational Account Onboarding Workflow (Copy)">98585a2cfb72ea108cb7f0f56eefdc87</team></sn_aia_team_member></record_update>]]></payload>
+        <payload_hash>-1005857020</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 14:06:43</sys_created_on>
+        <sys_id>44b8d26cfb72ea108cb7f0f56eefdc09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198094269030000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 14:06:43</sys_updated_on>
+        <type>Team Member</type>
+        <update_guid>48b8d26c8d72ea10de4ba40e94b9d908</update_guid>
+        <update_guid_history>48b8d26c8d72ea10de4ba40e94b9d908:-1005857020</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">412e93e83b766a104c5b3fb693e45ae9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 19:10:10</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_team_member">sn_aia_team_member</sys_db_object>
+        <sys_id>5a1dd0a60eee48c09134b6d64c89ea90</sys_id>
+        <sys_metadata>40b8d26cfb72ea108cb7f0f56eefdc07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_team_member_40b8d26cfb72ea108cb7f0f56eefdc07</sys_update_name>
+        <sys_update_version display_value="sn_aia_team_member_40b8d26cfb72ea108cb7f0f56eefdc07">44b8d26cfb72ea108cb7f0f56eefdc09</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 19:10:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

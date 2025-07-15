@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Initial Data Intake Agent (Knowledge Test)">43546f472bde6a90c246fb466e91bf35</agent>
+        <description>This tool exists to lookup advisor information via Knowledge Graph</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"query","description":"Query to the knowledge graph.  It should be a direct translation of request into a search query(include verb as well) without any added interpretations."},{"name":"knowledge_graph","value":"47152d542b9e2a50c246fb466e91bf0e","description":"Knowledge graph source"},{"name":"show_column_properties","value":"true","description":"Show column properties"},{"name":"group_by_table","value":"true","description":"Group by table"}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Advisor Knowledge Graph Lookup</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-27 17:30:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4b546f472bde6a90c246fb466e91bf8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Advisor Knowledge Graph Lookup</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_4b546f472bde6a90c246fb466e91bf8d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-27 17:30:45</sys_updated_on>
+        <tool display_value="AIA Knowledge Graph">3b8c4f4fc3e022100e94313a05013167</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>

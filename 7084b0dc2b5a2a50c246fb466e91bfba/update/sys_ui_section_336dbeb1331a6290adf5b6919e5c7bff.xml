@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Investor Suitability" section_id="336dbeb1331a6290adf5b6919e5c7bff" sys_domain="global" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3" view="workspace">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>1699b3ec3b3a6a104c5b3fb693e45ab1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <text>&lt;p&gt;&lt;span style="text-decoration: underline; font-size: 11pt;"&gt;&lt;em&gt;&lt;strong&gt;Acknowledgement&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt; -&amp;nbsp;&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td valign="top"&gt;
+&lt;p&gt;Do you confirm that you understand that this firm does not have transparency into your complete financial position or your complete investment portfolio? Accordingly, we cannot do a comprehensive suitability analysis on the basis of your overall portfolio. Our responsibilities to you shall be solely with respect to the investment of the Account in accordance with the investment management agreement between you and the firm.&amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</text>
+            <type display_value="Header">accb50bb675333001409624ad585ef72</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>5299b3ec3b3a6a104c5b3fb693e45ab1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <text>&lt;p&gt;&lt;span style="text-decoration: underline; font-size: 11pt;"&gt;&lt;em&gt;&lt;strong&gt;Portfolio Goals&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style="font-size: 11pt;"&gt; -&amp;nbsp;&lt;em&gt;&lt;strong&gt;Time Horizon&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td valign="top"&gt;
+&lt;p&gt;Over what time horizon do you intend to keep your assets invested in the Account in order to achieve your financial goals?&amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+            <type display_value="Header">accb50bb675333001409624ad585ef72</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9e99b3ec3b3a6a104c5b3fb693e45ab0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <text>&lt;p&gt;&lt;span style="text-decoration: underline; font-size: 11pt;"&gt;&lt;em&gt;&lt;strong&gt;Portfolio Goals&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style="font-size: 11pt;"&gt; -&amp;nbsp;&lt;em&gt;&lt;strong&gt;Risk Tolerance&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;table cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td valign="top"&gt;
+&lt;p&gt;What is the level of market fluctuation or capital loss that you could tolerate in the Account during a one-year period in the event of a significant market dislocation?&amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+            <type display_value="Header">accb50bb675333001409624ad585ef72</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>c299b3ec3b3a6a104c5b3fb693e45ab0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <text>&lt;p&gt;&lt;span style="text-decoration: underline;"&gt;&lt;span style="font-size: 12pt;"&gt;&lt;em&gt;&lt;strong&gt;Tax Status&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12pt;"&gt; -&lt;/span&gt;&lt;/p&gt;</text>
+            <type display_value="Header">accb50bb675333001409624ad585ef72</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>d699b3ec3b3a6a104c5b3fb693e45ab1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <text>&lt;p&gt;&lt;span style="text-decoration: underline; font-size: 11pt;"&gt;&lt;em&gt;&lt;strong&gt;Affiliations&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt; -&amp;nbsp;&lt;/p&gt;
+&lt;table style="width: 99.944%;" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 100%;" valign="top"&gt;
+&lt;p&gt;Is any beneficial owner or authorized person of the Account an employee or immediate family member of an employee of the firm. or one of its affiliates?&amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td valign="top"&gt;
+&lt;p&gt;Is any beneficial owner or authorized person of the Account, a director, policymaker, or a 10% or greater stakeholder of a publicly traded company?&amp;nbsp;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</text>
+            <type display_value="Header">accb50bb675333001409624ad585ef72</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>c299b3ec3b3a6a104c5b3fb693e45ab0</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45acf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tax_exemp0</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45acf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>erisa_ira</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>expect_capital_gains</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>9e99b3ec3b3a6a104c5b3fb693e45ab0</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tolerance</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>5299b3ec3b3a6a104c5b3fb693e45ab1</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_horizon</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>1699b3ec3b3a6a104c5b3fb693e45ab1</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acknowledgement</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>d699b3ec3b3a6a104c5b3fb693e45ab1</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_or_immediate_family_membe0</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>director_policy_10_stakeholder</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9299b3ec3b3a6a104c5b3fb693e45ad5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cusip</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-14 21:10:07</sys_created_on>
+            <sys_id>9a99b3ec3b3a6a104c5b3fb693e45ad5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investor Suitability" display_value="Investor Suitability" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">336dbeb1331a6290adf5b6919e5c7bff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-14 21:10:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Investor Suitability</caption>
+            <header>false</header>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 17:28:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>336dbeb1331a6290adf5b6919e5c7bff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ai_agents_0_fso_sma_onboarding</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_ui_section_336dbeb1331a6290adf5b6919e5c7bff</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 17:28:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">cd4610235c6312104f3496f8659cf696</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

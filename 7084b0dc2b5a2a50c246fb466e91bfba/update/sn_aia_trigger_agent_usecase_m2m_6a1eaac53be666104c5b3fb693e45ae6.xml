@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m">
+    <sn_aia_trigger_agent_usecase_m2m action="INSERT_OR_UPDATE">
+        <objective_template><![CDATA[Help me onboard a client]]></objective_template>
+        <related_resource_record>696df3822b522690c246fb466e91bf95</related_resource_record>
+        <related_resource_table>sn_aia_usecase</related_resource_table>
+        <sys_class_name>sn_aia_trigger_agent_usecase_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 18:41:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6a1eaac53be666104c5b3fb693e45ae6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_6a1eaac53be666104c5b3fb693e45ae6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 18:41:33</sys_updated_on>
+        <trigger_configuration display_value="x_snc_ai_agents_0_fso_sma_onboarding">2e1eaac53be666104c5b3fb693e45ae2</trigger_configuration>
+    </sn_aia_trigger_agent_usecase_m2m>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m">
+    <sn_aia_trigger_agent_usecase_m2m action="DELETE">
+        <objective_template><![CDATA[Help me validate this case ${number}]]></objective_template>
+        <related_resource_record>4998d42e2bda6690c246fb466e91bfb8</related_resource_record>
+        <related_resource_table>sn_aia_agent</related_resource_table>
+        <sys_class_name>sn_aia_trigger_agent_usecase_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 20:19:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5921d4bbfba666108cb7f0f56eefdcc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_5921d4bbfba666108cb7f0f56eefdcc6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 20:19:05</sys_updated_on>
+        <trigger_configuration display_value="x_snc_ai_agents_0_fso_sma_onboarding">9121d4bbfba666108cb7f0f56eefdcc2</trigger_configuration>
+    </sn_aia_trigger_agent_usecase_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_trigger_agent_usecase_m2m_5921d4bbfba666108cb7f0f56eefdcc6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m"&gt;&lt;sn_aia_trigger_agent_usecase_m2m action="INSERT_OR_UPDATE"&gt;&lt;objective_template&gt;&lt;![CDATA[Help me validate this case ${number}]]&gt;&lt;/objective_template&gt;&lt;related_resource_record&gt;4998d42e2bda6690c246fb466e91bfb8&lt;/related_resource_record&gt;&lt;related_resource_table&gt;sn_aia_agent&lt;/related_resource_table&gt;&lt;sys_class_name&gt;sn_aia_trigger_agent_usecase_m2m&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-11 20:19:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5921d4bbfba666108cb7f0f56eefdcc6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AI Agents - IMA In-Good-Order"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_agent_usecase_m2m_5921d4bbfba666108cb7f0f56eefdcc6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-11 20:19:05&lt;/sys_updated_on&gt;&lt;trigger_configuration display_value="x_snc_ai_agents_0_fso_sma_onboarding"&gt;9121d4bbfba666108cb7f0f56eefdcc2&lt;/trigger_configuration&gt;&lt;/sn_aia_trigger_agent_usecase_m2m&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1380868545</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-11 20:19:05</sys_created_on>
+        <sys_id>1521d4bbfba666108cb7f0f56eefdcc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197fb243bf80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-11 20:19:05</sys_updated_on>
+        <type>Trigger M2M</type>
+        <update_guid>d521d4bbe0a66610d9e8b1fc26c0a4c8</update_guid>
+        <update_guid_history>d521d4bbe0a66610d9e8b1fc26c0a4c8:1380868545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3e72daecfb32ea108cb7f0f56eefdcc6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 13:39:36</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_agent_usecase_m2m">sn_aia_trigger_agent_usecase_m2m</sys_db_object>
+        <sys_id>1f91d1cfacbf48249e28de9a42001184</sys_id>
+        <sys_metadata>5921d4bbfba666108cb7f0f56eefdcc6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_5921d4bbfba666108cb7f0f56eefdcc6</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_agent_usecase_m2m_5921d4bbfba666108cb7f0f56eefdcc6">1521d4bbfba666108cb7f0f56eefdcc9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 13:39:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

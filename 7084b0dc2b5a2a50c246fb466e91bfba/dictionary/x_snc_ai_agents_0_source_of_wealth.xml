@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="2c4538102b9a2a50c246fb466e91bfe7" label="Source of Wealth" max_length="40" name="x_snc_ai_agents_0_source_of_wealth" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="full_time" label="Employment Status" max_length="40" name="employment_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Deceased Grantor / Settlor" sequence="5" value="deceased_grantor_settlor"/>
+                <element inactive_on_update="false" label="Self Employed" sequence="2" value="self_employed"/>
+                <element inactive_on_update="false" label="Unemployed" sequence="3" value="unemployed"/>
+                <element inactive_on_update="false" label="Full Time" sequence="0" value="full_time"/>
+                <element inactive_on_update="false" label="Retired" sequence="4" value="retired"/>
+                <element inactive_on_update="false" label="Part-Time" sequence="1" value="part_time"/>
+            </choice>
+        </element>
+        <element label="Former Employer Name" max_length="40" name="former_employer_name" type="string"/>
+        <element label="Current Employer Name" max_length="40" name="current_employer_name" type="string"/>
+        <element label="Account Contact Name" max_length="32" name="account_contact_namere" reference="x_snc_ai_agents_0_sma_onboarding_contact" type="reference"/>
+        <element choice="1" label="Line of Business" max_length="40" name="line_of_business" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Chemicals" sequence="11" value="chemicals"/>
+                <element inactive_on_update="false" label="Intellectual Property / Patents / Royalties" sequence="27" value="intellectual_property_patents_royalties"/>
+                <element inactive_on_update="false" label="Real Estate, Rental and Leasing" sequence="43" value="real_estate_rental_and_leasing"/>
+                <element inactive_on_update="false" label="Consumer / Retail" sequence="15" value="consumer_retail"/>
+                <element inactive_on_update="false" label="Law" sequence="31" value="law"/>
+                <element inactive_on_update="false" label="Technology" sequence="47" value="technology"/>
+                <element inactive_on_update="false" label="Arms Trading - Retail / Manufacturing" sequence="3" value="arms_trading_retail_manufacturing"/>
+                <element inactive_on_update="false" label="Education" sequence="19" value="education"/>
+                <element inactive_on_update="false" label="Media / Publishing / Entertainment" sequence="35" value="media_publishing_entertainment"/>
+                <element inactive_on_update="false" label="Utilities / Energy" sequence="51" value="utilities_energy"/>
+                <element inactive_on_update="false" label="Automotive" sequence="7" value="automotive"/>
+                <element inactive_on_update="false" label="Government / Military / Public" sequence="23" value="government_military_public"/>
+                <element inactive_on_update="false" label="Offshore / Dredging" sequence="39" value="offshore_dredging"/>
+                <element inactive_on_update="false" label="Crowdfunding" sequence="16" value="crowdfunding"/>
+                <element inactive_on_update="false" label="Managers / Agents of Artists, Athletes or Other Public Figures" sequence="32" value="managers_agents_of_artists_athletes_or_other_public_figures"/>
+                <element inactive_on_update="false" label="Telecommunications / Networking" sequence="48" value="telecommunications_networking"/>
+                <element inactive_on_update="false" label="Advertising / Marketing / PR" sequence="0" value="advertising_marketing_pr"/>
+                <element inactive_on_update="false" label="Art Dealers / Antique Dealers / Auction Houses" sequence="4" value="art_dealers_antique_dealers_auction_houses"/>
+                <element inactive_on_update="false" label="Elder Care" sequence="20" value="elder_care"/>
+                <element inactive_on_update="false" label="Medical / Health / Social Assistance" sequence="36" value="medical_health_social_assistance"/>
+                <element inactive_on_update="false" label="Waste Management" sequence="52" value="waste_management"/>
+                <element inactive_on_update="false" label="Car Dealer" sequence="8" value="car_dealer"/>
+                <element inactive_on_update="false" label="Hospitality / Recreation" sequence="24" value="hospitality_recreation"/>
+                <element inactive_on_update="false" label="Pharmaceuticals" sequence="40" value="pharmaceuticals"/>
+                <element inactive_on_update="false" label="Commodity Trading" sequence="12" value="commodity_trading"/>
+                <element inactive_on_update="false" label="Internet Café / Call Shop" sequence="28" value="internet_caf_call_shop"/>
+                <element inactive_on_update="false" label="Services / Research" sequence="44" value="services_research"/>
+                <element inactive_on_update="false" label="Artists, Athletes or Other Public Figures" sequence="5" value="artists_athletes_or_other_public_figures"/>
+                <element inactive_on_update="false" label="Entertainment / Adult Industry" sequence="21" value="entertainment_adult_industry"/>
+                <element inactive_on_update="false" label="Mining" sequence="37" value="mining"/>
+                <element inactive_on_update="false" label="Wholesalers" sequence="53" value="wholesalers"/>
+                <element inactive_on_update="false" label="Casinos / Gaming" sequence="9" value="casinos_gaming"/>
+                <element inactive_on_update="false" label="Import and Export of Physical Commodities" sequence="25" value="import_and_export_of_physical_commodities"/>
+                <element inactive_on_update="false" label="Professional Org. for Artists, Athletes or Other Public Figures" sequence="41" value="professional_org_for_artists_athletes_or_other_public_figures"/>
+                <element inactive_on_update="false" label="Computers / Electronics / Technology" sequence="13" value="computers_electronics_technology"/>
+                <element inactive_on_update="false" label="Jewelry / Gems / Precious Metals - Dealers / Wholesalers" sequence="29" value="jewelry_gems_precious_metals_dealers_wholesalers"/>
+                <element inactive_on_update="false" label="Stock Promotion" sequence="45" value="stock_promotion"/>
+                <element inactive_on_update="false" label="Aerospace" sequence="1" value="aerospace"/>
+                <element inactive_on_update="false" label="Cryptocurrency" sequence="17" value="cryptocurrency"/>
+                <element inactive_on_update="false" label="Manufacturing" sequence="33" value="manufacturing"/>
+                <element inactive_on_update="false" label="Travel Agency" sequence="49" value="travel_agency"/>
+                <element inactive_on_update="false" label="Charity / Religious Group / Non-Profit / Foundation" sequence="10" value="charity_religious_group_non_profit_foundation"/>
+                <element inactive_on_update="false" label="Information and Telecommunication" sequence="26" value="information_and_telecommunication"/>
+                <element inactive_on_update="false" label="Professional Services" sequence="42" value="professional_services"/>
+                <element inactive_on_update="false" label="Construction" sequence="14" value="construction"/>
+                <element inactive_on_update="false" label="Jewelry / Gems / Precious Metals - Manufacturing" sequence="30" value="jewelry_gems_precious_metals_manufacturing"/>
+                <element inactive_on_update="false" label="Student" sequence="46" value="student"/>
+                <element inactive_on_update="false" label="Agriculture / Forestry / Fishing" sequence="2" value="agriculture_forestry_fishing"/>
+                <element inactive_on_update="false" label="E-commerce" sequence="18" value="e_commerce"/>
+                <element inactive_on_update="false" label="Marijuana Services" sequence="34" value="marijuana_services"/>
+                <element inactive_on_update="false" label="Travel / Transportation / Storage" sequence="50" value="travel_transportation_storage"/>
+                <element inactive_on_update="false" label="Arts and Recreation" sequence="6" value="arts_and_recreation"/>
+                <element inactive_on_update="false" label="Financial Services / Products" sequence="22" value="financial_services_products"/>
+                <element inactive_on_update="false" label="Money Service Business" sequence="38" value="money_service_business"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Annual Income" max_length="40" name="annual_income" type="currency"/>
+        <element choice="1" label="Unemployed or Retired Income Source" max_length="40" name="unemployed_or_retired_income_source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Personal Investments" sequence="4" value="personal_investments"/>
+                <element inactive_on_update="false" label="Legal Settlement" sequence="8" value="legal_settlement"/>
+                <element inactive_on_update="false" label="Partner / Spouse" sequence="1" value="partner_spouse"/>
+                <element inactive_on_update="false" label="Assets" sequence="5" value="assets"/>
+                <element inactive_on_update="false" label="Lottery / Gaming" sequence="9" value="lottery_gaming"/>
+                <element inactive_on_update="false" label="Divorce" sequence="6" value="divorce"/>
+                <element inactive_on_update="false" label="Entrepreneur" sequence="10" value="entrepreneur"/>
+                <element inactive_on_update="false" label="Inheritance / Gift" sequence="2" value="inheritance_gift"/>
+                <element inactive_on_update="false" label="Prior Employment" sequence="11" value="prior_employment"/>
+                <element inactive_on_update="false" label="Retirement / Pension" sequence="0" value="retirement_pension"/>
+                <element inactive_on_update="false" label="Parental Support" sequence="3" value="parental_support"/>
+                <element inactive_on_update="false" label="Government Benefits" sequence="7" value="government_benefits"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="account_contact_namere"/>
+        </index>
     </element>
 </database>

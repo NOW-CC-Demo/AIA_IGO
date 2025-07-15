@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="account_type" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>account_type</element>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>account_type</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_choice_x_snc_ai_agents_0_fso_sma_onboarding_account_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:29</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Individual</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:29</sys_updated_on>
+            <value>Individual</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Tenants by the Entirety</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:29</sys_updated_on>
+            <value>Joint - Tenants by the Entirety</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Tenants in Common</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Joint - Tenants in Common</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Community Property</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Joint - Community Property</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint - Rights of Survivorship</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Joint - Rights of Survivorship</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Trust</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Trust</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Personal Holding or PIV</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Entity - Personal Holding</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Private Operating Company</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Entity - Private Operating Company</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>account_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entity - Other</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 19:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 19:54:30</sys_updated_on>
+            <value>Entity - Other</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

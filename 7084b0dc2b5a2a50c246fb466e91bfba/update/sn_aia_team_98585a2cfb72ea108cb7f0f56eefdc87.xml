@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team">
+    <sn_aia_team action="INSERT_OR_UPDATE">
+        <description>This workflow autonomously facilitates the validation of investment management agreements (IMA) for operations agents &amp; financial advisors.</description>
+        <name>Investment Management Agreement Data Validation</name>
+        <sys_class_name>sn_aia_team</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 14:05:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>98585a2cfb72ea108cb7f0f56eefdc87</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Investment Management Agreement Data Validation</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_team_98585a2cfb72ea108cb7f0f56eefdc87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 14:06:44</sys_updated_on>
+    </sn_aia_team>
+</record_update>

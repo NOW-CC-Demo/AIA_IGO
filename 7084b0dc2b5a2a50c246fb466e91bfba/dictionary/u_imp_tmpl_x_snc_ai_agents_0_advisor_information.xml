@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="19faa1102bde2a50c246fb466e91bf2d" extends="sys_import_set_row" label="Imp Tmpl X Snc Ai Agents 0 Advisor Information" max_length="40" name="u_imp_tmpl_x_snc_ai_agents_0_advisor_information" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Branch Number" label="Branch Number" max_length="40" name="u_branch_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sales Contact Name" label="Sales Contact Name" max_length="40" name="u_sales_contact_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Address" label="Address" max_length="40" name="u_address" type="string"/>
+        <element attributes="import_attribute_name=Zip Code" label="Zip Code" max_length="40" name="u_zip_code" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Buying Unit or Team" label="Buying Unit or Team" max_length="40" name="u_buying_unit_or_team" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Representative Name" label="Representative Name" max_length="40" name="u_representative_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone" label="Phone" max_length="40" name="u_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Investment Advisor Firm Name" label="Investment Advisor Firm Name" max_length="40" name="u_investment_advisor_firm_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Email Address" label="Email Address" max_length="40" name="u_email_address" type="string"/>
+        <element attributes="import_attribute_name=CRD ID" label="CRD ID" max_length="40" name="u_crd_id" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
+    </element>
+</database>

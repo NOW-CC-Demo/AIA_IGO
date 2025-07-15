@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2472000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>e0b9ab9feb702110f2549bf12a5228e6</copied_from>
+        <copied_from_name>Task Processing Flow Template</copied_from_name>
+        <description>DocDataExtractor Flow Template for processing a task</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>docintel_task_processing_flow__onboarding_case___populate_onboarding_case_details</internal_name>
+        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>971eba97fbe2e2108cb7f0f56eefdcdf</master_snapshot>
+        <master_snapshot_digest/>
+        <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>2f1efa97fbe2e2108cb7f0f56eefdc31</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_hub_flow_2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_ai_agents_0_fso_sma_onboarding">active=true^state=1<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f1efa97fbe2e2108cb7f0f56eefdc31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:51</sys_updated_on>
+        <table>x_snc_ai_agents_0_fso_sma_onboarding</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>2f3dbe17fbe2e2108cb7f0f56eefdc03</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 20:15:17</sys_created_on>
+        <sys_id>bba64f57fb26e2108cb7f0f56eefdc2d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
+        <trigger display_value="">2f1efa97fbe2e2108cb7f0f56eefdc31</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT INbba64f57fb26e2108cb7f0f56eefdc2d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT INa73dbe17fbe2e2108cb7f0f56eefdc06"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2f3dbe17fbe2e2108cb7f0f56eefdc03</id>
+        <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_id>a73dbe17fbe2e2108cb7f0f56eefdc06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:34:02</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a73dbe17fbe2e2108cb7f0f56eefdc06"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN7b3dbe17fbe2e2108cb7f0f56eefdc25,eb3dbe17fbe2e2108cb7f0f56eefdc19"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</model>
+        <model_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2f3dbe17fbe2e2108cb7f0f56eefdc03</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_id>7b3dbe17fbe2e2108cb7f0f56eefdc25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7b3dbe17fbe2e2108cb7f0f56eefdc25"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</model>
+        <model_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2f3dbe17fbe2e2108cb7f0f56eefdc03</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_id>eb3dbe17fbe2e2108cb7f0f56eefdc19</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eb3dbe17fbe2e2108cb7f0f56eefdc19"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN373dbe17fbe2e2108cb7f0f56eefdc75"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:03</sys_created_on>
+        <sys_id>373dbe17fbe2e2108cb7f0f56eefdc75</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:49:05</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203reNuHNEtQImkLlUlXopS4i/x7h7pZ1sWXOOnayYsBkfRwzvDMmSHvvuky9KdTGo54JDH36O0yGhH9QjfsIRmwvk1d17BM02BWv+e4zLRw37LOe4Z+pgfYpQEsnWA3oPDtc0lDjoPJckFhWKphxPFczc0xJ1iKcKlfyDCmZzoLxXxC54sAS1jMcBDBoAgJDfUL80xP/5bbgL8nOIjV9yOKuIewj/CUchkhA7FIoGiOkeCuwCHx+RSWEz8Cw8s/8n+NuOcTWA8zCxyCZal2+aZ7Mz8gIeX6xd09uK9ge8zDjkUNzzZtyzIMgGq6A9s1LWJjarTBrrkqW9CvcNFHSTmhpITcCExIMbnhwbJcMYO4gsE0iI+R/y9YPzfUOkbBd49mc+UnysFnw95M+B69WUhf8Gwk8zObFEE8558z/1XYKMNxIIuwwUgcgT26UC4rJ3KP2O1MPIyLDT/6PEWXTwbCw0H5hSXwy40ljVTAmR9A6FEWm0jEYer9+PryZnyF/vwwufzleozG17eT8ehycn2lP6W40D+xsph5mPuCMjhP5Vl/9GmgDpDHcxe8OdMjL/QX8oMn/aQg2NPZS9D9UnDip/FsUN4rpqKqrxVyVE67iOWmPDCMkl5eZdciG3AK7q/YMGyiyPMVMMn822ymwdfr33fIgMEAY0JxRwa4rCMSLW7KlqBUkW3KhXxkl2ToGcZ3SodcyZ6bDXNBaHBVZUnGTeTzRSxVtB6wEjkpECYEVeKoloJP29Ijw/b0irkQxhy2QuVJNjMiDXgZ+U9+BEDvQAmKqKbOwDz7lJscx1wTcOTwo3lxCEGVWpE+bDQH4c+wst8KIqfBzPmX4BChOYqWEZrFLlqLKBo654456KL20FuLYJpkYPpO1++f1CnTgHqywlb2Jap+/epHkao+q/CWGNPDakAs0QHrtSKCGdTotLDeHyJsTQolNWrUZGwTQbaJm2ky5lJmGUMVE9OwgdbG0OhjRmzD8KyN1O50WNa4/ioit5/ERWmWBTvkVD3ahfOKwcE+hE3W2Z7bsRQ7ciW9PELXahXB3qsklAzNhq92J+oLN1aYJErBya6V4dWLAgvEAyjRMwqCi72/p6GIOalLprKp+VxbrdB+yCP/42kJZrU4MBHSzXjXV5wOyoPLwopEZcfLl82CkA1uk36bma5De9QAxbdB7N2+47gethgbDobUMjsJ3OrQSUj+loRJ2jKuS2NbyZi0cXgP4f/+Dh4k/zkbW8U/m3vrMv8woxwByBAFSsgbaj8NfEKLucPEoLFVsrqX1QRhBzVg547XN4dDbwgaCGrAetTFZs/qY2c4sM/723Bucky2YP9f7r1K8pUjHUrxJZs6rieh46R0RKXMnhL3bV84XA3S/2SPM9Warg5US6VKhNpnwX8ardZptxRqZ/psckIVvtrH7AJaMVB7U6hdIWeNvg2Q/gzja0jVxaTjzN/bbb+WYcl6KFtu+88J6NaXANo77zvMbi8AzNmsCt1ojr4x3FGFkk49a2vAds3ypFUsyoas3tI949xrbMpN21ua0fcblIMa4CJlO58/nuPsu2gw0n7xkC5DeUuRYNXicyU0mNBgE81nWu4tJZq71OSMwmEEcEeCDTW1+4lVnWrRbSIvU+1N487ulI1eA4a1vO0/IWAv00bU8mjjO1FLvLZ1CZQMcb9vd1wTnfqjUZtLWzw++n5hb1FJ2jRqY33cz27dZmuFrJzxOid2bAjeMOpXe/Jq8eJIa/n9fwXbRD34JAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN333dbe17fbe2e2108cb7f0f56eefdc73,bf3dbe17fbe2e2108cb7f0f56eefdc74"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
+        <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc85af9beb702110f2549bf12a5228d6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:03</sys_created_on>
+        <sys_id>333dbe17fbe2e2108cb7f0f56eefdc73</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:36</sys_updated_on>
+        <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1ca82b5feb702110f2549bf12a522896</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:03</sys_created_on>
+        <sys_id>bf3dbe17fbe2e2108cb7f0f56eefdc74</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:36</sys_updated_on>
+        <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2f3dbe17fbe2e2108cb7f0f56eefdc03</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_id>373dbe17fbe2e2108cb7f0f56eefdc24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:34:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2f3dbe17fbe2e2108cb7f0f56eefdc03</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:34:02</sys_created_on>
+        <sys_id>ff3dbe17fbe2e2108cb7f0f56eefdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:34:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=31170232000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>e0b9ab9feb702110f2549bf12a5228e6</copied_from>
+        <copied_from_name/>
+        <description>DocDataExtractor Flow Template for processing a task</description>
+        <flow_priority/>
+        <internal_name>docintel_task_processing_flow__onboarding_case___populate_onboarding_case_details</internal_name>
+        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>971eba97fbe2e2108cb7f0f56eefdcdf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_variable_value action="delete_multiple" query="document_key=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT IN9b1eba97fbe2e2108cb7f0f56eefdce0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>971eba97fbe2e2108cb7f0f56eefdcdf</id>
+        <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>9b1eba97fbe2e2108cb7f0f56eefdce0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9b1eba97fbe2e2108cb7f0f56eefdce0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT IN9f1eba97fbe2e2108cb7f0f56eefdcf9,db1eba97fbe2e2108cb7f0f56eefdce1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</model>
+        <model_id>971eba97fbe2e2108cb7f0f56eefdcdf</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_971eba97fbe2e2108cb7f0f56eefdcdf</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>9f1eba97fbe2e2108cb7f0f56eefdcf9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9f1eba97fbe2e2108cb7f0f56eefdcf9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</model>
+        <model_id>971eba97fbe2e2108cb7f0f56eefdcdf</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_971eba97fbe2e2108cb7f0f56eefdcdf</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>db1eba97fbe2e2108cb7f0f56eefdce1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db1eba97fbe2e2108cb7f0f56eefdce1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT INe71efa97fbe2e2108cb7f0f56eefdc14"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:51</sys_created_on>
+        <sys_id>e71efa97fbe2e2108cb7f0f56eefdc14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:49:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203reNuHNEtQImkLlUlXopS4i/x7h7pZ1sWXOOnayYsBkfRwzvDMmSHvvuky9KdTGo54JDH36O0yGhH9QjfsIRmwvk1d17BM02BWv+e4zLRw37LOe4Z+pgfYpQEsnWA3oPDtc0lDjoPJckFhWKphxPFczc0xJ1iKcKlfyDCmZzoLxXxC54sAS1jMcBDBoAgJDfUL80xP/5bbgL8nOIjV9yOKuIewj/CUchkhA7FIoGiOkeCuwCHx+RSWEz8Cw8s/8n+NuOcTWA8zCxyCZal2+aZ7Mz8gIeX6xd09uK9ge8zDjkUNzzZtyzIMgGq6A9s1LWJjarTBrrkqW9CvcNFHSTmhpITcCExIMbnhwbJcMYO4gsE0iI+R/y9YPzfUOkbBd49mc+UnysFnw95M+B69WUhf8Gwk8zObFEE8558z/1XYKMNxIIuwwUgcgT26UC4rJ3KP2O1MPIyLDT/6PEWXTwbCw0H5hSXwy40ljVTAmR9A6FEWm0jEYer9+PryZnyF/vwwufzleozG17eT8ehycn2lP6W40D+xsph5mPuCMjhP5Vl/9GmgDpDHcxe8OdMjL/QX8oMn/aQg2NPZS9D9UnDip/FsUN4rpqKqrxVyVE67iOWmPDCMkl5eZdciG3AK7q/YMGyiyPMVMMn822ymwdfr33fIgMEAY0JxRwa4rCMSLW7KlqBUkW3KhXxkl2ToGcZ3SodcyZ6bDXNBaHBVZUnGTeTzRSxVtB6wEjkpECYEVeKoloJP29Ijw/b0irkQxhy2QuVJNjMiDXgZ+U9+BEDvQAmKqKbOwDz7lJscx1wTcOTwo3lxCEGVWpE+bDQH4c+wst8KIqfBzPmX4BChOYqWEZrFLlqLKBo654456KL20FuLYJpkYPpO1++f1CnTgHqywlb2Jap+/epHkao+q/CWGNPDakAs0QHrtSKCGdTotLDeHyJsTQolNWrUZGwTQbaJm2ky5lJmGUMVE9OwgdbG0OhjRmzD8KyN1O50WNa4/ioit5/ERWmWBTvkVD3ahfOKwcE+hE3W2Z7bsRQ7ciW9PELXahXB3qsklAzNhq92J+oLN1aYJErBya6V4dWLAgvEAyjRMwqCi72/p6GIOalLprKp+VxbrdB+yCP/42kJZrU4MBHSzXjXV5wOyoPLwopEZcfLl82CkA1uk36bma5De9QAxbdB7N2+47gethgbDobUMjsJ3OrQSUj+loRJ2jKuS2NbyZi0cXgP4f/+Dh4k/zkbW8U/m3vrMv8woxwByBAFSsgbaj8NfEKLucPEoLFVsrqX1QRhBzVg547XN4dDbwgaCGrAetTFZs/qY2c4sM/723Bucky2YP9f7r1K8pUjHUrxJZs6rieh46R0RKXMnhL3bV84XA3S/2SPM9Warg5US6VKhNpnwX8ardZptxRqZ/psckIVvtrH7AJaMVB7U6hdIWeNvg2Q/gzja0jVxaTjzN/bbb+WYcl6KFtu+88J6NaXANo77zvMbi8AzNmsCt1ojr4x3FGFkk49a2vAds3ypFUsyoas3tI949xrbMpN21ua0fcblIMa4CJlO58/nuPsu2gw0n7xkC5DeUuRYNXicyU0mNBgE81nWu4tJZq71OSMwmEEcEeCDTW1+4lVnWrRbSIvU+1N487ulI1eA4a1vO0/IWAv00bU8mjjO1FLvLZ1CZQMcb9vd1wTnfqjUZtLWzw++n5hb1FJ2jRqY33cz27dZmuFrJzxOid2bAjeMOpXe/Jq8eJIa/n9fwXbRD34JAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT IN631efa97fbe2e2108cb7f0f56eefdc14,ef1efa97fbe2e2108cb7f0f56eefdc12"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1ca82b5feb702110f2549bf12a522896</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:51</sys_created_on>
+        <sys_id>631efa97fbe2e2108cb7f0f56eefdc14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:51</sys_updated_on>
+        <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
+        <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc85af9beb702110f2549bf12a5228d6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>ef1efa97fbe2e2108cb7f0f56eefdc12</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:50</sys_updated_on>
+        <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_971eba97fbe2e2108cb7f0f56eefdcdf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>171eba97fbe2e2108cb7f0f56eefdcf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_971eba97fbe2e2108cb7f0f56eefdcdf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:50</sys_created_on>
+        <sys_id>5b1eba97fbe2e2108cb7f0f56eefdcfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 19:37:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_971eba97fbe2e2108cb7f0f56eefdcdf"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_id>
+        <latest_snapshot>971eba97fbe2e2108cb7f0f56eefdcdf</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN6f1efa97fbe2e2108cb7f0f56eefdc33"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6f1efa97fbe2e2108cb7f0f56eefdc33","name":"plan","plan_signature":null}}</plan>
+        <plan_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</plan_id>
+        <snapshot>6cc6cf57fb26e2108cb7f0f56eefdcf9</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 19:37:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f1efa97fbe2e2108cb7f0f56eefdc33</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
+        <trigger display_value="">2f1efa97fbe2e2108cb7f0f56eefdc31</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
+</record_update>

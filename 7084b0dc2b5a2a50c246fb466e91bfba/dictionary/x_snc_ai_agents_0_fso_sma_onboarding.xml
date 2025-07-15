@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2b042a3533566290adf5b6919e5c7be0" extends="x_snc_ai_agents_0_fso_onboarding" label="FSO SMA Onboarding" max_length="40" name="x_snc_ai_agents_0_fso_sma_onboarding" type="collection">
+        <element label="Representative Name" max_length="32" name="representative_name" reference="x_snc_ai_agents_0_advisor_information" type="reference"/>
+        <element label="Contact Name 1" max_length="40" name="contact_name_1" type="string"/>
+        <element label="Contact 1 Role" max_length="40" name="contact_1_role" type="string"/>
+        <element choice="1" label="Employee (or Immediate Family Member)?" max_length="40" name="employee_or_immediate_family_membe0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="3" label="Time Horizon" max_length="40" name="time_horizon" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 years or less" sequence="0" value="2 years or less"/>
+                <element inactive_on_update="false" label="Greater than 5 years" sequence="2" value="Greater than 5 years"/>
+                <element inactive_on_update="false" label="2 to 5 years" sequence="1" value="2 to 5 years"/>
+            </choice>
+        </element>
+        <element label="Contact 2 Email Address" max_length="40" name="contact_2_email_address" type="string"/>
+        <element label="Benchmark: Russell 3000 85% / MSCI ACWI ex USA 15%" max_length="255" name="benchmark_russell_3000_85_msci_acwi_ex_usa_15" type="boolean"/>
+        <element label="Contact Name 2" max_length="40" name="contact_name_2" type="string"/>
+        <element label="Contact 1 Email Address" max_length="40" name="contact_1_email_address" type="string"/>
+        <element choice="3" default="Individual" label="Account Type" max_length="40" name="account_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Trust" sequence="5" value="Trust"/>
+                <element inactive_on_update="false" label="Entity - Private Operating Company" sequence="7" value="Entity - Private Operating Company"/>
+                <element inactive_on_update="false" label="Joint - Community Property" sequence="3" value="Joint - Community Property"/>
+                <element inactive_on_update="false" label="Individual" sequence="0" value="Individual"/>
+                <element inactive_on_update="false" label="Joint - Tenants by the Entirety" sequence="1" value="Joint - Tenants by the Entirety"/>
+                <element inactive_on_update="false" label="Entity - Personal Holding or PIV" sequence="6" value="Entity - Personal Holding"/>
+                <element inactive_on_update="false" label="Entity - Other" sequence="8" value="Entity - Other"/>
+                <element inactive_on_update="false" label="Joint - Tenants in Common" sequence="2" value="Joint - Tenants in Common"/>
+                <element inactive_on_update="false" label="Joint - Rights of Survivorship" sequence="4" value="Joint - Rights of Survivorship"/>
+            </choice>
+        </element>
+        <element label="Client or Custodian Account #" max_length="40" name="client_or_custodian_account" type="string"/>
+        <element label="Contact 2 Role" max_length="40" name="contact_2_role" type="string"/>
+        <element label="Custodian Name" max_length="40" name="custodian_name" type="string"/>
+        <element choice="1" label="Acknowledgement?" max_length="40" name="acknowledgement" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Funding Amount" max_length="20" name="funding_amount" type="currency"/>
+        <element label="Contact 3 Role" max_length="40" name="contact_3_role" type="string"/>
+        <element label="Benchmark: S&amp;P 500 70% / MSCI EAFE 30%" max_length="255" name="benchmark_s_p_500_70_msci_eafe_30" type="boolean"/>
+        <element label="Primary Account Holder" max_length="32" name="primary_account_holder" reference="x_snc_ai_agents_0_sma_onboarding_contact" type="reference"/>
+        <element choice="1" label="Tax Exempt?" max_length="40" name="tax_exemp0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Investment Advisor Firm Name" max_length="32" name="investment_advisor_firm_name" reference="x_snc_ai_agents_0_advisor_information" type="reference"/>
+        <element label="CUSIP" max_length="40" name="cusip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Investment Strategy" max_length="40" name="investment_strategy" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="70 US Large Cap/30 Non US Developed – ADR" sequence="0" value="us_large_cap_30_non_us_developed_adr"/>
+                <element inactive_on_update="false" label="85 US All Cap/15 Global ex US - ADR" sequence="1" value="us_all_cap_15_global_ex_us_adr"/>
+            </choice>
+        </element>
+        <element label="Contact 3 Email Address" max_length="40" name="contact_3_email_address" type="string"/>
+        <element choice="1" label="Director / Policy / &lt;10% Stakeholder?" max_length="40" name="director_policy_10_stakeholder" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Expect Capital Gains?" max_length="40" name="expect_capital_gains" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" label="Tolerance" max_length="40" name="tolerance" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Significant" sequence="2" value="Significant"/>
+                <element inactive_on_update="false" label="Minimal" sequence="0" value="Minimal"/>
+                <element inactive_on_update="false" label="Potentially Extensive" sequence="3" value="Potentially Extensive"/>
+                <element inactive_on_update="false" label="Moderate" sequence="1" value="Moderate"/>
+            </choice>
+        </element>
+        <element label="Tax Exempt" max_length="255" name="tax_exempt" type="boolean"/>
+        <element choice="1" label="ERISA / IRA?" max_length="40" name="erisa_ira" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+            </choice>
+        </element>
+        <element label="Joint Account Holder" max_length="32" name="joint_account_contact" reference="x_snc_ai_agents_0_sma_onboarding_contact" type="reference"/>
+        <element label="Contact Name 3" max_length="40" name="contact_name_3" type="string"/>
+        <element choice="1" label="Investment Benchmark" max_length="40" name="investment_benchmark" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="S&amp;P 500 70 / MSCI EAFE 30" sequence="0" value="s_p_500_70_msci_eafe_30"/>
+                <element inactive_on_update="false" label="Russell 3000 85 / MSCI ACWI ex USA 15" sequence="1" value="russell_3000_85_msci_acwi_ex_usa_15"/>
+            </choice>
+        </element>
+    </element>
+</database>

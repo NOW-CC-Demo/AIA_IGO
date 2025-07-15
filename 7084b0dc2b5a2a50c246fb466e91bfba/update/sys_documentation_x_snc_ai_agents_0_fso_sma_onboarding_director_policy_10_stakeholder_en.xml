@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="director_policy_10_stakeholder" label="Director / Policy / &lt;10% Stakeholder?" language="en" table="x_snc_ai_agents_0_fso_sma_onboarding">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>director_policy_10_stakeholder</element>
+            <help/>
+            <hint/>
+            <label>Director / Policy / &lt;10% Stakeholder?</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 21:12:05</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Director / Policy / &lt;10% Stakeholder?</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_ai_agents_0_fso_sma_onboarding_director_policy_10_stakeholder_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 21:12:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

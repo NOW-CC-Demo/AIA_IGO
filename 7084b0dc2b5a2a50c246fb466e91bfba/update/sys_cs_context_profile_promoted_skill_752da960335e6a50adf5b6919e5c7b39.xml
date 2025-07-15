@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_promoted_skill">
+    <sys_cs_context_profile_promoted_skill action="INSERT_OR_UPDATE">
+        <context_profile display_value="Now Assist in Virtual Agent (default)">e13840cf77d53110569156391e5a99ba</context_profile>
+        <order>100</order>
+        <skill_id display_value="Advisor Information Lookup Agent">b383e9ac2b56aa50c246fb466e91bf08</skill_id>
+        <sys_class_name>sys_cs_context_profile_promoted_skill</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-19 14:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>752da960335e6a50adf5b6919e5c7b39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_cs_context_profile_promoted_skill_752da960335e6a50adf5b6919e5c7b39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-19 14:25:07</sys_updated_on>
+    </sys_cs_context_profile_promoted_skill>
+</record_update>

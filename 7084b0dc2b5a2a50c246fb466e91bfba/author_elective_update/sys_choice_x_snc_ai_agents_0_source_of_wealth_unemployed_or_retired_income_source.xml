@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="unemployed_or_retired_income_source" table="x_snc_ai_agents_0_source_of_wealth" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>unemployed_or_retired_income_source</element>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>unemployed_or_retired_income_source</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_choice_x_snc_ai_agents_0_source_of_wealth_unemployed_or_retired_income_source</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retirement / Pension</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>retirement_pension</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Partner / Spouse</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>partner_spouse</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inheritance / Gift</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>inheritance_gift</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Parental Support</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>parental_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personal Investments</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>personal_investments</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assets</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>assets</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Divorce</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>divorce</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Government Benefits</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>government_benefits</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legal Settlement</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>legal_settlement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lottery / Gaming</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>lottery_gaming</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entrepreneur</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>entrepreneur</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unemployed_or_retired_income_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prior Employment</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:33</sys_updated_on>
+            <value>prior_employment</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

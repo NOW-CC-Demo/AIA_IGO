@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fa9da0cffbaa22108cb7f0f56eefdcff" extends="x_snc_ai_agents_0_fso_onboarding_case_task" label="FSO SMA Onboarding Case Task" max_length="40" name="x_snc_ai_agents_0_fso_sma_onboarding_case_task" type="collection"/>
+</database>

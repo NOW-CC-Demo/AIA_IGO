@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Check if Account Contact Exists</description>
+        <input_schema>[]</input_schema>
+        <name>Existing Account Contact Lookup</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 17:56:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>99c3a6c13ba666104c5b3fb693e45a6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Existing Account Contact Lookup</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_tool_99c3a6c13ba666104c5b3fb693e45a6b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 17:56:25</sys_updated_on>
+        <target_document>42bcdac53b6666104c5b3fb693e45a9c</target_document>
+        <target_document_table>sys_hub_action_type_definition</target_document_table>
+        <type>action</type>
+    </sn_aia_tool>
+</record_update>

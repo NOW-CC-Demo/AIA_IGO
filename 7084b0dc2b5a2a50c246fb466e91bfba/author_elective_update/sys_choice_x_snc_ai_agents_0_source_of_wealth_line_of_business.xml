@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="line_of_business" table="x_snc_ai_agents_0_source_of_wealth" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>line_of_business</element>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>line_of_business</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_choice_x_snc_ai_agents_0_source_of_wealth_line_of_business</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Advertising / Marketing / PR</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>advertising_marketing_pr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aerospace</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>aerospace</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agriculture / Forestry / Fishing</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>agriculture_forestry_fishing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arms Trading - Retail / Manufacturing</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>arms_trading_retail_manufacturing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Art Dealers / Antique Dealers / Auction Houses</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>art_dealers_antique_dealers_auction_houses</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Artists, Athletes or Other Public Figures</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>artists_athletes_or_other_public_figures</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Arts and Recreation</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>arts_and_recreation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Automotive</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>automotive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Car Dealer</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>car_dealer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Casinos / Gaming</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>casinos_gaming</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Charity / Religious Group / Non-Profit / Foundation</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>charity_religious_group_non_profit_foundation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Chemicals</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>chemicals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Commodity Trading</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>commodity_trading</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Computers / Electronics / Technology</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>13</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>computers_electronics_technology</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Construction</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>14</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>construction</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Consumer / Retail</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>consumer_retail</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Crowdfunding</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>16</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>crowdfunding</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cryptocurrency</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>17</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>cryptocurrency</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>E-commerce</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>18</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>e_commerce</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Education</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>19</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>education</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Elder Care</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>elder_care</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Entertainment / Adult Industry</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>21</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>entertainment_adult_industry</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Financial Services / Products</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>22</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>financial_services_products</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Government / Military / Public</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>23</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>government_military_public</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hospitality / Recreation</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>24</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>hospitality_recreation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Import and Export of Physical Commodities</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>25</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>import_and_export_of_physical_commodities</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Information and Telecommunication</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>26</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>information_and_telecommunication</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intellectual Property / Patents / Royalties</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>27</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>intellectual_property_patents_royalties</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internet Café / Call Shop</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>28</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>internet_caf_call_shop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jewelry / Gems / Precious Metals - Dealers / Wholesalers</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>29</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>jewelry_gems_precious_metals_dealers_wholesalers</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Jewelry / Gems / Precious Metals - Manufacturing</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>jewelry_gems_precious_metals_manufacturing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Law</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>31</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>law</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Managers / Agents of Artists, Athletes or Other Public Figures</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>32</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>managers_agents_of_artists_athletes_or_other_public_figures</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manufacturing</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>33</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>manufacturing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marijuana Services</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>34</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>marijuana_services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Media / Publishing / Entertainment</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>35</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>media_publishing_entertainment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medical / Health / Social Assistance</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>36</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>medical_health_social_assistance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mining</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>37</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>mining</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Money Service Business</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>38</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>money_service_business</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Offshore / Dredging</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>39</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>offshore_dredging</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pharmaceuticals</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>pharmaceuticals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Professional Org. for Artists, Athletes or Other Public Figures</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>41</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>professional_org_for_artists_athletes_or_other_public_figures</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Professional Services</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>42</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>professional_services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Real Estate, Rental and Leasing</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>43</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>real_estate_rental_and_leasing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Services / Research</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>44</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>services_research</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stock Promotion</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>45</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>stock_promotion</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Student</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>46</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:34</sys_updated_on>
+            <value>student</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technology</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>47</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>technology</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Telecommunications / Networking</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>48</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>telecommunications_networking</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Travel Agency</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>49</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>travel_agency</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Travel / Transportation / Storage</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>travel_transportation_storage</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Utilities / Energy</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>51</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>utilities_energy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Waste Management</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>52</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>waste_management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>line_of_business</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wholesalers</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_source_of_wealth</name>
+            <sequence>53</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:51:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:51:35</sys_updated_on>
+            <value>wholesalers</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

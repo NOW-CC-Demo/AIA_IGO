@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_snc_ai_agents_0_source_of_wealth">employment_statusINfull_time,part_time,self_employed<item display_value="full_time,part_time,self_employed" endquery="false" field="employment_status" goto="false" newquery="false" operator="IN" or="false" value="full_time,part_time,self_employed"/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {}]]></script_false>
+        <script_true><![CDATA[function onCondition() {}]]></script_true>
+        <set_values/>
+        <short_description>Hide Former Employer</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-23 21:09:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c00b3712b1aa290c246fb466e91bfcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Former Employer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_ui_policy_3c00b3712b1aa290c246fb466e91bfcc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-23 21:09:15</sys_updated_on>
+        <table>x_snc_ai_agents_0_source_of_wealth</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sys_ui_policy_3c00b3712b1aa290c246fb466e91bfcc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_snc_ai_agents_0_source_of_wealth"&gt;employment_statusINfull_time,part_time,self_employed&lt;item display_value="full_time,part_time,self_employed" endquery="false" field="employment_status" goto="false" newquery="false" operator="IN" or="false" value="full_time,part_time,self_employed"/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Hide Former Employer&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-23 21:09:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3c00b3712b1aa290c246fb466e91bfcc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Former Employer&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AI Agents - IMA In-Good-Order"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_3c00b3712b1aa290c246fb466e91bfcc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-23 21:09:15&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_ai_agents_0_source_of_wealth&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1498869522</payload_hash>
+        <record_name>Hide Former Employer</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-23 21:09:15</sys_created_on>
+        <sys_id>f400b3712b1aa290c246fb466e91bfcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1979e9fb2060000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-23 21:09:15</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>f800b3714b1aa290057613a135118ace</update_guid>
+        <update_guid_history>f800b3714b1aa290057613a135118ace:1498869522</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-07 15:42:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>06df9361fa074e40807177e95b592400</sys_id>
+        <sys_metadata>3c00b3712b1aa290c246fb466e91bfcc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Former Employer</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent display_value="Source of Wealth">2c4538102b9a2a50c246fb466e91bfe7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_3c00b3712b1aa290c246fb466e91bfcc</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_3c00b3712b1aa290c246fb466e91bfcc">f400b3712b1aa290c246fb466e91bfcf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-07 15:42:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

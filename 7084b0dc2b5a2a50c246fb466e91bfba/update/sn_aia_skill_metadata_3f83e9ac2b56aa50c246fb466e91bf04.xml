@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata">
+    <sn_aia_skill_metadata action="INSERT_OR_UPDATE">
+        <description>This agent exists for discrete testing of individual agentic capabilities</description>
+        <document_id>e8b2a96c2b56aa50c246fb466e91bff9</document_id>
+        <document_table>sn_aia_agent</document_table>
+        <internal_name>global.x_snc_ai_agents_0.Advisor Information Lookup Agent</internal_name>
+        <name>Advisor Information Lookup Agent</name>
+        <sys_class_name>sn_aia_skill_metadata</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-19 13:43:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3f83e9ac2b56aa50c246fb466e91bf04</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Advisor Information Lookup Agent</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_skill_metadata_3f83e9ac2b56aa50c246fb466e91bf04</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-19 14:31:50</sys_updated_on>
+    </sn_aia_skill_metadata>
+</record_update>

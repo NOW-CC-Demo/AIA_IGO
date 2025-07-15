@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="time_horizon" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>time_horizon</element>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:17:35</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>time_horizon</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_choice_x_snc_ai_agents_0_fso_sma_onboarding_time_horizon</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:17:35</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time_horizon</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 years or less</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:17:35</sys_updated_on>
+            <value>2 years or less</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time_horizon</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 to 5 years</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:17:35</sys_updated_on>
+            <value>2 to 5 years</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>time_horizon</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Greater than 5 years</label>
+            <language>en</language>
+            <name>x_snc_ai_agents_0_fso_sma_onboarding</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-23 20:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 20:17:35</sys_updated_on>
+            <value>Greater than 5 years</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="92d8a51c2b9e2a50c246fb466e91bf89" label="Advisor Information" max_length="40" name="x_snc_ai_agents_0_advisor_information" type="collection">
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element display="true" label="Representative Name" max_length="40" name="representative_name" type="string"/>
+        <element label="Buying Unit or Team" max_length="40" name="buying_unit_or_team" type="string"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Zip Code" max_length="40" name="zip_code" type="string"/>
+        <element label="Branch Number" max_length="40" name="branch_number" type="string"/>
+        <element label="Email Address" max_length="40" name="email_address" type="string"/>
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element label="CRD ID" max_length="40" name="crd_id" type="string"/>
+        <element label="Sales Contact Name" max_length="40" name="sales_contact_name" type="string"/>
+        <element label="Investment Advisor Firm Name" max_length="40" name="investment_advisor_firm_name" type="string"/>
+    </element>
+</database>

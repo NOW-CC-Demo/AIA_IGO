@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <delete_script><![CDATA[(function executeDelete(v_record) {
+     // Parameters:
+     //      v_record - a map of field names and values containing (among others) the
+     //              sys_id of the record that needs to be deleted on the remote system
+     //          v_record.<field_name>                  - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]></delete_script>
+        <editable>false</editable>
+        <enhanced_capacity>false</enhanced_capacity>
+        <flow/>
+        <insert_script><![CDATA[(function executeInsert(v_record) {
+     // Parameters:
+     //      v_record is a map of field names and values containing the sys_id of the
+     //              record and the fields that need to be inserted in the record on the
+     //              remote system (source of data)
+     
+     //          v_record.<field_name>                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]></insert_script>
+        <name>Advisor Info Pull</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    // Create a new RESTMessageV2 instance using the named REST integration and method
+    var r = new sn_ws.RESTMessageV2('Advisor Information', 'Default GET');
+
+    // Execute the REST call and store the response
+    var response = r.execute();
+
+    // Parse the JSON response body into a JavaScript object
+    var responseBody = JSON.parse(response.getBody());
+
+    // Access the 'data' array from the response, which contains advisor records
+    var advisors = responseBody.data;
+
+    // Loop through each advisor entry in the array
+    for (var i = 0; i < advisors.length; i++) {
+        var advisor = advisors[i]; // Get the current advisor object
+
+        // Create a row object that maps the advisor fields to table fields
+        var rowObj = {
+            'investment_advisor_firm_name': advisor.investmentAdvisorFirmName,   // Name of the advisory firm
+            'representative_name': advisor.representativeName,                 // Name of the representative
+            'phone': advisor.phone,                                           // Phone number
+            'address': advisor.address,                                       // Street address
+            'city': advisor.city,                                             // City
+            'state': advisor.state,                                           // State
+            'zip_code': advisor.zipCode,                                       // Zip or postal code
+            'crd_id': advisor.crdId,                                           // Central Registration Depository (CRD) number
+            'branch_number': advisor.branchNumber,                             // Branch office number
+            'buying_unit_or_team': advisor.buyingUnitOrTeam,                     // Team or unit name (optional)
+            'email_address': advisor.emailAddress,                             // Contact email address
+            'sales_contact_name': advisor.alectriSalesContactNames      // Internal Alectri sales contacts
+        };
+
+        // Add the populated row to the virtual table (used by ServiceNow data source previews or scripted data sources)
+        v_table.addRow(rowObj);
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-18 19:01:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf82e1902b9e2a50c246fb466e91bf6c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Advisor Info Pull</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_script_vtable_cf82e1902b9e2a50c246fb466e91bf6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-18 19:09:25</sys_updated_on>
+        <table>x_snc_ai_agents_0_st_advisor_info</table>
+        <update_script><![CDATA[(function executeUpdate(v_record, v_changed_fields) {
+     // Parameters:
+     //    v_record - a map of field names and values containing the sys_id of the record
+     //          v_record.<field_name>                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+     //    v_changed_fields - a map of field names and values containing the sys_id of the
+     //          v_changed_fields.<field_name>           - changed fields in the remote table GlideRecord
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record, v_changed_fields);]]></update_script>
+    </sys_script_vtable>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sys_script_vtable_cf82e1902b9e2a50c246fb466e91bf6c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_vtable"&gt;&lt;sys_script_vtable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;cache_isolation_level&gt;USER&lt;/cache_isolation_level&gt;&lt;cache_strategy&gt;CACHE_BY_QUERY&lt;/cache_strategy&gt;&lt;cache_ttl&gt;0&lt;/cache_ttl&gt;&lt;delete_script&gt;&lt;![CDATA[(function executeDelete(v_record) {
+     // Parameters:
+     //      v_record - a map of field names and values containing (among others) the
+     //              sys_id of the record that needs to be deleted on the remote system
+     //          v_record.&lt;field_name&gt;                  - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]&gt;&lt;/delete_script&gt;&lt;editable&gt;false&lt;/editable&gt;&lt;enhanced_capacity&gt;false&lt;/enhanced_capacity&gt;&lt;flow/&gt;&lt;insert_script&gt;&lt;![CDATA[(function executeInsert(v_record) {
+     // Parameters:
+     //      v_record is a map of field names and values containing the sys_id of the
+     //              record and the fields that need to be inserted in the record on the
+     //              remote system (source of data)
+     
+     //          v_record.&lt;field_name&gt;                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record);]]&gt;&lt;/insert_script&gt;&lt;name&gt;Advisor Info Pull&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function executeQuery(v_table, v_query) {
+    // Create a new RESTMessageV2 instance using the named REST integration and method
+    var r = new sn_ws.RESTMessageV2('Advisor Information', 'Default GET');
+
+    // Execute the REST call and store the response
+    var response = r.execute();
+
+    // Parse the JSON response body into a JavaScript object
+    var responseBody = JSON.parse(response.getBody());
+
+    // Access the 'data' array from the response, which contains advisor records
+    var advisors = responseBody.data;
+
+    // Loop through each advisor entry in the array
+    for (var i = 0; i &lt; advisors.length; i++) {
+        var advisor = advisors[i]; // Get the current advisor object
+
+        // Create a row object that maps the advisor fields to table fields
+        var rowObj = {
+            'investment_advisor_firm_name': advisor.investmentAdvisorFirmName,   // Name of the advisory firm
+            'representative_name': advisor.representativeName,                 // Name of the representative
+            'phone': advisor.phone,                                           // Phone number
+            'address': advisor.address,                                       // Street address
+            'city': advisor.city,                                             // City
+            'state': advisor.state,                                           // State
+            'zip_code': advisor.zipCode,                                       // Zip or postal code
+            'crd_id': advisor.crdId,                                           // Central Registration Depository (CRD) number
+            'branch_number': advisor.branchNumber,                             // Branch office number
+            'buying_unit_or_team': advisor.buyingUnitOrTeam,                     // Team or unit name (optional)
+            'email_address': advisor.emailAddress,                             // Contact email address
+            'sales_contact_name': advisor.alectriSalesContactNames      // Internal Alectri sales contacts
+        };
+
+        // Add the populated row to the virtual table (used by ServiceNow data source previews or scripted data sources)
+        v_table.addRow(rowObj);
+    }
+
+})(v_table, v_query);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_vtable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-18 19:01:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cf82e1902b9e2a50c246fb466e91bf6c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Advisor Info Pull&lt;/sys_name&gt;&lt;sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AI Agents - IMA In-Good-Order"&gt;7084b0dc2b5a2a50c246fb466e91bfba&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_vtable_cf82e1902b9e2a50c246fb466e91bf6c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-18 19:09:25&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_ai_agents_0_st_advisor_info&lt;/table&gt;&lt;update_script&gt;&lt;![CDATA[(function executeUpdate(v_record, v_changed_fields) {
+     // Parameters:
+     //    v_record - a map of field names and values containing the sys_id of the record
+     //          v_record.&lt;field_name&gt;                   - fields in the remote table GlideRecord
+     //          v_record.setLastErrorMessage(message)   - signal an error
+     //    v_changed_fields - a map of field names and values containing the sys_id of the
+     //          v_changed_fields.&lt;field_name&gt;           - changed fields in the remote table GlideRecord
+ 
+     // Sample code:
+     //  try {
+     //      update-external-system;
+     //      if (there-was-an-error) {
+     //          var message = ...;
+     //          v_record.setLastErrorMessage(message);
+     //      }
+     //  } catch (ex) {
+     //      var message = ex.getMessage();
+     //      v_record.setLastErrorMessage(message);
+     //  }
+  })(v_record, v_changed_fields);]]&gt;&lt;/update_script&gt;&lt;/sys_script_vtable&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>238280181</payload_hash>
+        <record_name>Advisor Info Pull</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-18 19:09:25</sys_created_on>
+        <sys_id>a4a465542b9e2a50c246fb466e91bf10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19784722f940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-18 19:09:25</sys_updated_on>
+        <type>Remote Table</type>
+        <update_guid>2ca46554549e2a5056af663ed54ffc0f</update_guid>
+        <update_guid_history>2ca46554549e2a5056af663ed54ffc0f:238280181,aa646914149e2a5017af04a32659f910:-19955177,d8e365148f9e2a5046d6d5841642b0ce:1752511606,2e832d902b9e2a50865c9ede47ee427f:-1319743007,3eb26990089e2a50b159fe284d3cdd02:1116586030</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 15:21:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_vtable">sys_script_vtable</sys_db_object>
+        <sys_id>c9832a7f1041435ab20131cc0d75c3c4</sys_id>
+        <sys_metadata>cf82e1902b9e2a50c246fb466e91bf6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Advisor Info Pull</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sys_script_vtable_cf82e1902b9e2a50c246fb466e91bf6c</sys_update_name>
+        <sys_update_version display_value="sys_script_vtable_cf82e1902b9e2a50c246fb466e91bf6c">a4a465542b9e2a50c246fb466e91bf10</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 15:21:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

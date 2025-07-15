@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <graph_schema action="INSERT_OR_UPDATE" graph_id="47152d542b9e2a50c246fb466e91bf0e" name="advisor_info_kg" sys_domain="" table="sys_meta_graph" version="1">
+        <nodes>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <description>x_snc_ai_agents_0_advisor_information</description>
+                <encoded_query/>
+                <graph display_value="Advisor Info KG">47152d542b9e2a50c246fb466e91bf0e</graph>
+                <hidden>false</hidden>
+                <label>Advisor Information</label>
+                <node_type>x_snc_ai_agents_0_advisor_information</node_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-06-23 17:56:06</sys_created_on>
+                <sys_id>433ba1102bde2a50c246fb466e91bf2c</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+                <table>x_snc_ai_agents_0_advisor_information</table>
+            </sys_meta_graph_node>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <description>sys_user</description>
+                <encoded_query/>
+                <graph display_value="Advisor Info KG">47152d542b9e2a50c246fb466e91bf0e</graph>
+                <hidden>false</hidden>
+                <label>User</label>
+                <node_type>sys_user</node_type>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-06-23 17:56:06</sys_created_on>
+                <sys_id>9e752d942b9e2a50c246fb466e91bf7b</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+                <table>sys_user</table>
+            </sys_meta_graph_node>
+        </nodes>
+        <edges>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>x_snc_ai_agents_0_firm_representative_nam0</description>
+                <edge_type>x_snc_ai_agents_0_firm_representative_nam0</edge_type>
+                <graph display_value="Advisor Info KG">47152d542b9e2a50c246fb466e91bf0e</graph>
+                <label>Advisor Firm Representative Name</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="User">9e752d942b9e2a50c246fb466e91bf7b</source_node>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-06-23 17:56:06</sys_created_on>
+                <sys_id>9bc343752bd2a290c246fb466e91bfa7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+                <target_key_field>x_snc_ai_agents_0_firm_representative_nam0</target_key_field>
+                <target_node display_value="Advisor Information">433ba1102bde2a50c246fb466e91bf2c</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+        </edges>
+        <properties>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Advisor Info KG">47152d542b9e2a50c246fb466e91bf0e</graph>
+                <node display_value="Advisor Information">433ba1102bde2a50c246fb466e91bf2c</node>
+                <properties_json>[{"property":"address","description":"address","label":"Address"},{"property":"branch_number","description":"branch_number","label":"Branch Number"},{"property":"buying_unit_or_team","description":"buying_unit_or_team","label":"Buying Unit or Team"},{"property":"city","description":"city","label":"City"},{"property":"crd_id","description":"crd_id","label":"CRD ID"},{"property":"email_address","description":"email_address","label":"Email Address"},{"property":"investment_advisor_firm_name","description":"investment_advisor_firm_name","label":"Investment Advisor Firm Name"},{"property":"phone","description":"phone","label":"Phone"},{"property":"representative_name","description":"representative_name","label":"Representative Name"},{"property":"sales_contact_name","description":"sales_contact_name","label":"Sales Contact Name"},{"property":"state","description":"state","label":"State"},{"property":"zip_code","description":"zip_code","label":"Zip Code"}]</properties_json>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-06-23 17:56:06</sys_created_on>
+                <sys_id>1bc343752bd2a290c246fb466e91bfa7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+            </sys_meta_graph_node_property>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Advisor Info KG">47152d542b9e2a50c246fb466e91bf0e</graph>
+                <node display_value="User">9e752d942b9e2a50c246fb466e91bf7b</node>
+                <properties_json>[{"property":"email","description":"email","label":"Email"},{"property":"first_name","description":"first_name","label":"First name"},{"property":"last_name","description":"last_name","label":"Last name"},{"property":"name","description":"name","label":"Name"}]</properties_json>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2025-06-23 17:56:06</sys_created_on>
+                <sys_id>57c343752bd2a290c246fb466e91bfa7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+            </sys_meta_graph_node_property>
+        </properties>
+        <sys_meta_graph action="INSERT_OR_UPDATE">
+            <default>false</default>
+            <description/>
+            <gtop_schema>{"implementationLevel":{"implementationEdges":[{"types":["x_snc_ai_agents_0_firm_representative_nam0"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"sys_user","destinationTableName":"x_snc_ai_agents_0_advisor_information","attributes":[],"sourceTableColumn":"x_snc_ai_agents_0_firm_representative_nam0"}]}]}],"implementationNodes":[{"types":["sys_user"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(100)","abstractionLevelName":"email","columnName":"email"},{"dataType":"VARCHAR(50)","abstractionLevelName":"first_name","columnName":"first_name"},{"dataType":"VARCHAR(50)","abstractionLevelName":"last_name","columnName":"last_name"},{"dataType":"VARCHAR(151)","abstractionLevelName":"name","columnName":"name"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"sys_user"},{"types":["x_snc_ai_agents_0_advisor_information"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(40)","abstractionLevelName":"address","columnName":"address"},{"dataType":"VARCHAR(40)","abstractionLevelName":"branch_number","columnName":"branch_number"},{"dataType":"VARCHAR(40)","abstractionLevelName":"buying_unit_or_team","columnName":"buying_unit_or_team"},{"dataType":"VARCHAR(40)","abstractionLevelName":"city","columnName":"city"},{"dataType":"VARCHAR(40)","abstractionLevelName":"crd_id","columnName":"crd_id"},{"dataType":"VARCHAR(40)","abstractionLevelName":"email_address","columnName":"email_address"},{"dataType":"VARCHAR(40)","abstractionLevelName":"investment_advisor_firm_name","columnName":"investment_advisor_firm_name"},{"dataType":"VARCHAR(40)","abstractionLevelName":"phone","columnName":"phone"},{"dataType":"VARCHAR(40)","abstractionLevelName":"representative_name","columnName":"representative_name"},{"dataType":"VARCHAR(40)","abstractionLevelName":"sales_contact_name","columnName":"sales_contact_name"},{"dataType":"VARCHAR(40)","abstractionLevelName":"state","columnName":"state"},{"dataType":"VARCHAR(40)","abstractionLevelName":"zip_code","columnName":"zip_code"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"x_snc_ai_agents_0_advisor_information"}],"graphMetadata":{"storageLayout":"IGNORETIME","backendSystem":"RELATIONAL"}},"version":"1.0","abstractionLevel":{"abstractionEdges":[{"types":["x_snc_ai_agents_0_firm_representative_nam0"],"directed":true,"sourceType":["sys_user"],"destinationType":["x_snc_ai_agents_0_advisor_information"],"attributes":[]}],"abstractionNodes":[{"types":["sys_user"],"attributes":["email","first_name","last_name","name"]},{"types":["x_snc_ai_agents_0_advisor_information"],"attributes":["address","branch_number","buying_unit_or_team","city","crd_id","email_address","investment_advisor_firm_name","phone","representative_name","sales_contact_name","state","zip_code"]}]}}</gtop_schema>
+            <label>Advisor Info KG</label>
+            <name>advisor_info_kg</name>
+            <parent/>
+            <schema_json>{"sys_id":"47152d542b9e2a50c246fb466e91bf0e","sys_updated_by":"admin","nodes":[{"sys_id":"9e752d942b9e2a50c246fb466e91bf7b","node_type":"sys_user","hidden":"false","description":"sys_user","label":"User","encoded_query":"","table":"sys_user","properties":[{"jdbc_type":"VARCHAR(100)","property":"email","description":"email","label":"Email","type":"email"},{"jdbc_type":"VARCHAR(50)","property":"first_name","description":"first_name","label":"First name","type":"string"},{"jdbc_type":"VARCHAR(50)","property":"last_name","description":"last_name","label":"Last name","type":"string"},{"jdbc_type":"VARCHAR(151)","property":"name","description":"name","label":"Name","type":"string"}]},{"sys_id":"433ba1102bde2a50c246fb466e91bf2c","node_type":"x_snc_ai_agents_0_advisor_information","hidden":"false","description":"x_snc_ai_agents_0_advisor_information","label":"Advisor Information","encoded_query":"","table":"x_snc_ai_agents_0_advisor_information","properties":[{"jdbc_type":"VARCHAR(40)","property":"address","description":"address","label":"Address","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"branch_number","description":"branch_number","label":"Branch Number","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"buying_unit_or_team","description":"buying_unit_or_team","label":"Buying Unit or Team","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"city","description":"city","label":"City","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"crd_id","description":"crd_id","label":"CRD ID","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"email_address","description":"email_address","label":"Email Address","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"investment_advisor_firm_name","description":"investment_advisor_firm_name","label":"Investment Advisor Firm Name","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"phone","description":"phone","label":"Phone","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"representative_name","description":"representative_name","label":"Representative Name","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"sales_contact_name","description":"sales_contact_name","label":"Sales Contact Name","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"state","description":"state","label":"State","type":"string"},{"jdbc_type":"VARCHAR(40)","property":"zip_code","description":"zip_code","label":"Zip Code","type":"string"}]}],"sys_created_on":"2025-06-18 19:11:29","name":"advisor_info_kg","edges":[{"sys_id":"9bc343752bd2a290c246fb466e91bfa7","target_key_field":"x_snc_ai_agents_0_firm_representative_nam0","passthru_to_edge":"","source_node":"sys_user","mapping_table":"","description":"x_snc_ai_agents_0_firm_representative_nam0","source_key_field":"","type_key_field":"","label":"Advisor Firm Representative Name","target_node":"x_snc_ai_agents_0_advisor_information","edge_type":"x_snc_ai_agents_0_firm_representative_nam0"}],"description":"","sys_scope":"x_snc_ai_agents_0","label":"Advisor Info KG","sys_updated_on":"2025-06-23 17:56:06","version":"1.1","sys_created_by":"admin"}</schema_json>
+            <scope>7084b0dc2b5a2a50c246fb466e91bfba</scope>
+            <sys_class_name>sys_meta_graph</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-18 19:11:29</sys_created_on>
+            <sys_id>47152d542b9e2a50c246fb466e91bf0e</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>Advisor Info KG</sys_name>
+            <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+            <sys_update_name>sys_meta_graph_47152d542b9e2a50c246fb466e91bf0e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-23 17:56:06</sys_updated_on>
+        </sys_meta_graph>
+    </graph_schema>
+</record_update>

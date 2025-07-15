@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_ai_agents_0_fso_sma_onboarding">state=2<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name/>
+        <name>Data Validation Update</name>
+        <objective_template><![CDATA[Help me validate ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 14:26:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0c4d96a4fbb2ea108cb7f0f56eefdc88</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_snc_ai_agents_0_fso_sma_onboarding</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_0c4d96a4fbb2ea108cb7f0f56eefdc88</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-14 18:07:34</sys_updated_on>
+        <target_table>x_snc_ai_agents_0_fso_sma_onboarding</target_table>
+        <trigger_flow display_value="FSO SMA Onboarding - Use case: Investment Management Agreement Data Validation - 1c4d9aa4fbb2ea108cb7f0f56eefdca1">d04d9aa4fbb2ea108cb7f0f56eefdca2</trigger_flow>
+        <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
+        <usecase display_value="Investment Management Agreement Data Validation">14585a2cfb72ea108cb7f0f56eefdc8b</usecase>
+    </sn_aia_trigger_configuration>
+</record_update>

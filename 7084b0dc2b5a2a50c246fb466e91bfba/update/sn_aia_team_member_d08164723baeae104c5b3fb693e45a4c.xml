@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="INSERT_OR_UPDATE">
+        <agent display_value="IMA Data Validation Agent">4998d42e2bda6690c246fb466e91bfb8</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 18:56:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d08164723baeae104c5b3fb693e45a4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_team_member_d08164723baeae104c5b3fb693e45a4c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 18:56:38</sys_updated_on>
+        <team display_value="Conversational Account Onboarding Workflow">b3cd7b822b522690c246fb466e91bf37</team>
+    </sn_aia_team_member>
+</record_update>
