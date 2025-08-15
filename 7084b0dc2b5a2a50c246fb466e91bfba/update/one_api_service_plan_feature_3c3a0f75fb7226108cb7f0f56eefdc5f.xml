@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="one_api_service_plan_feature">
+    <one_api_service_plan_feature action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability_condition/>
+        <applicability_condition_expression/>
+        <applicability_condition_table/>
+        <applicability_script><![CDATA[(function(currentInputs, context) {
+    /* @param {Object} currentInputs - Inputs provided for the current step.*/
+    /* @param {Object} context - Execution context, which may include:*/
+    /*						   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/
+    /*						   - Additional context information (e.g., context.getAllValues()).*/
+    /* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/
+    return true;
+})(currentInputs, context);]]></applicability_script>
+        <applicability_type>script</applicability_type>
+        <delay_output_processing>false</delay_output_processing>
+        <depends_on/>
+        <depends_on_list>b43acb75fb7226108cb7f0f56eefdcea</depends_on_list>
+        <error_policy>continue_service_plan_execution</error_policy>
+        <feature display_value="3db470f3ffe0e21029eaffffffffffc1">243acb75fb7226108cb7f0f56eefdcb9</feature>
+        <return_request>false</return_request>
+        <service_plan display_value="___$y$t3m_bu1163r___-917de35c7f35921032d293f10d866599, a69970989fe2121029ead63a6a0a1c94, 3db470f3ffe0e21029eaffffffffffc1, 0055d1109fa2121029ead63a6a0a1c8b, 08bedff09faa121029ead63a6a0a1cd1, d017ef2b9">683acb75fb7226108cb7f0f56eefdce7</service_plan>
+        <sys_class_name>one_api_service_plan_feature</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 14:55:26</sys_created_on>
+        <sys_id>3c3a0f75fb7226108cb7f0f56eefdc5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>___$y$t3m_bu1163r___-917de35c7f35921032d293f10d866599, a69970989fe2121029ead63a6a0a1c94, 3db470f3ffe0e21029eaffffffffffc1, 0055d1109fa2121029ead63a6a0a1c8b, 08bedff09faa121029ead63a6a0a1cd1, d017ef2b9: 3db470f3ffe0e21029eaffffffffffc1</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>one_api_service_plan_feature_3c3a0f75fb7226108cb7f0f56eefdc5f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 14:55:26</sys_updated_on>
+        <timeout_policy>continue_service_plan_execution</timeout_policy>
+        <timeout_sec>60</timeout_sec>
+    </one_api_service_plan_feature>
+</record_update>

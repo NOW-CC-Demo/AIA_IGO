@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Problem Analysis**
+  - Upon receiving a request or mission from the user, use the 'Content Analysis' tool to analyze and synthesize the problem or subject at hand.
+  - Input: Provide a detailed analysis of the user's request, breaking down the requirements, clarifying ambiguities, and identifying the steps needed to proceed.
+  - If the problem is unclear or lacks sufficient information, proceed to Step 2.
+
+- **Step 2: Collect Additional User Input (if needed)**
+  - If the analysis in Step 1 reveals missing, ambiguous, or unclear information, use the 'User Input' tool to request the necessary details from the user.
+  - Input: Craft a clear prompt message specifying exactly what information is needed to proceed.
+  - Upon receiving the user's input, return to Step 1 to re-analyze the problem with the new information.
+
+- **Step 3: Synthesize and Plan Next Actions**
+  - Once the problem is clearly understood, use the 'Content Analysis' tool to synthesize a plan or determine the next actionable steps toward the user's mission.
+  - Input: Provide a detailed analysis of the current understanding and outline the logical steps to achieve the mission.
+  - If the plan requires user confirmation or further input, proceed to Step 4.
+
+- **Step 4: Communicate Information to User**
+  - When it is necessary to inform the user of progress, share synthesized information, or present a plan (but not to collect input), use the 'User Output' tool.
+  - Input: Provide a message that clearly communicates the information, summary, or plan to the user. Do not include questions in this message.
+  - Optionally, include references if the information is based on external or synthesized sources.
+  - If user feedback or approval is required, proceed to Step 5.
+
+- **Step 5: Collect User Feedback or Approval**
+  - If the next step depends on user feedback, approval, or further direction, use the 'User Input' tool.
+  - Input: Prompt the user with a clear message requesting their feedback, approval, or any additional instructions.
+  - Upon receiving the user's response, return to Step 1 or Step 3 as appropriate to re-analyze or revise the plan.
+
+- **Step 6: Handle Unexpected or Out-of-Scope Scenarios**
+  - If at any point the analysis (via 'Content Analysis') determines that the user's request cannot be fulfilled with the available tools, or if an unexpected scenario arises that cannot be resolved, use the 'User Output' tool to inform the user that the mission is out of scope or cannot be completed.
+  - After informing the user, proceed to Step 7.
+
+- **Step 7: Completion**
+  - Once the user's mission has been successfully achieved, use the 'Finish' tool to conclude the execution.
+  - Do not combine this step with any other; always execute 'Finish' as a dedicated, final action.
+
+---
+
+**Tool Usage Scenarios and Guidance**
+
+- **Content Analysis**
+  - Use this tool whenever you need to analyze, synthesize, break down, or plan around any information, problem, or user request.
+  - Also use it to self-reflect on the current situation, clarify next steps, or determine if the mission is achievable.
+  - Input: Provide a detailed description of the subject, problem, or plan you are working on.
+
+- **User Input**
+  - Use this tool whenever you need to collect information, clarification, feedback, or approval from the user.
+  - Input: Provide a prompt message that clearly states what information or response you require from the user.
+
+- **User Output**
+  - Use this tool to display information, summaries, plans, or status updates to the user. Do not use it to ask questions or collect input.
+  - Input: Provide a message that is informative and not a question. Optionally, include references if applicable.
+
+- **Finish**
+  - Use this tool only when the mission has been fully completed or if the process must be terminated due to an out-of-scope or unresolvable scenario.
+  - This step must always be executed separately and not combined with any other action.
+```</compiled_handbook>
+        <description>This agent will reset the Major Incident Management Agentic Demo</description>
+        <external_agent_configuration/>
+        <instructions>test</instructions>
+        <internal_name>global.x_snc_ai_agents_0.Demo Reset</internal_name>
+        <name>Demo Reset</name>
+        <processing_message/>
+        <proficiency>- Demonstrates core proficiency in testing-related activities, including the evaluation, verification, and validation of processes, systems, or components, as defined by the agent's ROLE of 'test'. This capability ensures the agent is suitable for tasks that require a focus on testing as a primary function.</proficiency>
+        <record_type>custom</record_type>
+        <role>test</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 14:42:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>950a78b1fb0b26108cb7f0f56eefdc40</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Demo Reset</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_950a78b1fb0b26108cb7f0f56eefdc40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 14:42:27</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_agent_950a78b1fb0b26108cb7f0f56eefdc40</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent"><sn_aia_agent action="INSERT_OR_UPDATE"><agent_type>internal</agent_type><compiled_handbook>```markdown
+- **Step 1: Problem Analysis**
+  - Upon receiving a request or mission from the user, use the 'Content Analysis' tool to analyze and synthesize the problem or subject at hand.
+  - Input: Provide a detailed analysis of the user's request, breaking down the requirements, clarifying ambiguities, and identifying the steps needed to proceed.
+  - If the problem is unclear or lacks sufficient information, proceed to Step 2.
+
+- **Step 2: Collect Additional User Input (if needed)**
+  - If the analysis in Step 1 reveals missing, ambiguous, or unclear information, use the 'User Input' tool to request the necessary details from the user.
+  - Input: Craft a clear prompt message specifying exactly what information is needed to proceed.
+  - Upon receiving the user's input, return to Step 1 to re-analyze the problem with the new information.
+
+- **Step 3: Synthesize and Plan Next Actions**
+  - Once the problem is clearly understood, use the 'Content Analysis' tool to synthesize a plan or determine the next actionable steps toward the user's mission.
+  - Input: Provide a detailed analysis of the current understanding and outline the logical steps to achieve the mission.
+  - If the plan requires user confirmation or further input, proceed to Step 4.
+
+- **Step 4: Communicate Information to User**
+  - When it is necessary to inform the user of progress, share synthesized information, or present a plan (but not to collect input), use the 'User Output' tool.
+  - Input: Provide a message that clearly communicates the information, summary, or plan to the user. Do not include questions in this message.
+  - Optionally, include references if the information is based on external or synthesized sources.
+  - If user feedback or approval is required, proceed to Step 5.
+
+- **Step 5: Collect User Feedback or Approval**
+  - If the next step depends on user feedback, approval, or further direction, use the 'User Input' tool.
+  - Input: Prompt the user with a clear message requesting their feedback, approval, or any additional instructions.
+  - Upon receiving the user's response, return to Step 1 or Step 3 as appropriate to re-analyze or revise the plan.
+
+- **Step 6: Handle Unexpected or Out-of-Scope Scenarios**
+  - If at any point the analysis (via 'Content Analysis') determines that the user's request cannot be fulfilled with the available tools, or if an unexpected scenario arises that cannot be resolved, use the 'User Output' tool to inform the user that the mission is out of scope or cannot be completed.
+  - After informing the user, proceed to Step 7.
+
+- **Step 7: Completion**
+  - Once the user's mission has been successfully achieved, use the 'Finish' tool to conclude the execution.
+  - Do not combine this step with any other; always execute 'Finish' as a dedicated, final action.
+
+---
+
+**Tool Usage Scenarios and Guidance**
+
+- **Content Analysis**
+  - Use this tool whenever you need to analyze, synthesize, break down, or plan around any information, problem, or user request.
+  - Also use it to self-reflect on the current situation, clarify next steps, or determine if the mission is achievable.
+  - Input: Provide a detailed description of the subject, problem, or plan you are working on.
+
+- **User Input**
+  - Use this tool whenever you need to collect information, clarification, feedback, or approval from the user.
+  - Input: Provide a prompt message that clearly states what information or response you require from the user.
+
+- **User Output**
+  - Use this tool to display information, summaries, plans, or status updates to the user. Do not use it to ask questions or collect input.
+  - Input: Provide a message that is informative and not a question. Optionally, include references if applicable.
+
+- **Finish**
+  - Use this tool only when the mission has been fully completed or if the process must be terminated due to an out-of-scope or unresolvable scenario.
+  - This step must always be executed separately and not combined with any other action.
+```</compiled_handbook><description>This agent will reset the Major Incident Management Agentic Demo</description><external_agent_configuration/><instructions>test</instructions><internal_name>global.x_snc_ai_agents_0.Demo Reset</internal_name><name>Demo Reset</name><processing_message/><proficiency>- Demonstrates core proficiency in testing-related activities, including the evaluation, verification, and validation of processes, systems, or components, as defined by the agent's ROLE of 'test'. This capability ensures the agent is suitable for tasks that require a focus on testing as a primary function.</proficiency><record_type>custom</record_type><role>test</role><strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy><sys_class_name>sn_aia_agent</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-30 14:42:10</sys_created_on><sys_domain>global</sys_domain><sys_id>950a78b1fb0b26108cb7f0f56eefdc40</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Demo Reset</sys_name><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sn_aia_agent_950a78b1fb0b26108cb7f0f56eefdc40</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-30 14:42:27</sys_updated_on></sn_aia_agent></record_update>]]></payload>
+        <payload_hash>1341380731</payload_hash>
+        <record_name>Demo Reset</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 14:42:27</sys_created_on>
+        <sys_id>d34af8bd3b4b66104c5b3fb693e45a80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985bc8dd210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 14:42:27</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>9b4af8bd944b6610a81cbff8628bbf7f</update_guid>
+        <update_guid_history>9b4af8bd944b6610a81cbff8628bbf7f:1341380731,3c4ab8bd344b6610715acf7ffb42e1b7:546073556,973ab0f1ff0b2610556644ebf6b8fe30:-445866352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Demo Reset">41b20931fb4b26108cb7f0f56eefdc58</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 15:19:10</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>721e2c5b280647c1a57270cc9d311779</sys_id>
+        <sys_metadata>950a78b1fb0b26108cb7f0f56eefdc40</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo Reset</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_950a78b1fb0b26108cb7f0f56eefdc40</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_950a78b1fb0b26108cb7f0f56eefdc40">d34af8bd3b4b66104c5b3fb693e45a80</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 15:19:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

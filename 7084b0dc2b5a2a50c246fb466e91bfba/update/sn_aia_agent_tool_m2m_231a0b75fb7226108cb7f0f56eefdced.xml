@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Scratch Agent">0da1637c3b3eaa104c5b3fb693e45a76</agent>
+        <description>This capability is a wrapper around searching, scraping and returns synthesised answer to search query.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"search_type","value":"ai_answers","metadata":{"_MODE_":"user"}}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Tour De France</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 14:55:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>231a0b75fb7226108cb7f0f56eefdced</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tour De France</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_231a0b75fb7226108cb7f0f56eefdced</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 14:55:06</sys_updated_on>
+        <tool display_value="Tour De France">af1a8775fb7226108cb7f0f56eefdc48</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>

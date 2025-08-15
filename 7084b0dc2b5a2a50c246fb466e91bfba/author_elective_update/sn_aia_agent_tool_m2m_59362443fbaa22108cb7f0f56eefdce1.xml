@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Individual Account Holder Agent">cd59d2813b6666104c5b3fb693e45aa8</agent>
+        <description>This tool exists to associate the new source of wealth with the primary account holder.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Associate SOW with Primary Account Holder</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 13:55:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>59362443fbaa22108cb7f0f56eefdce1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Associate SOW with Primary Account Holder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 13:55:40</sys_updated_on>
+        <tool display_value="Associate SOW with Primary Account Holder">9136ec03fbaa22108cb7f0f56eefdc46</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Individual Account Holder Agent">cd59d2813b6666104c5b3fb693e45aa8</agent><description>This tool exists to associate the new source of wealth with the primary account holder.</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Associate SOW with Primary Account Holder</name><output_transformation_strategy>none</output_transformation_strategy><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-09 13:55:40</sys_created_on><sys_domain>global</sys_domain><sys_id>59362443fbaa22108cb7f0f56eefdce1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Associate SOW with Primary Account Holder</sys_name><sys_overrides/><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-09 13:55:40</sys_updated_on><tool display_value="Associate SOW with Primary Account Holder">9136ec03fbaa22108cb7f0f56eefdc46</tool><tool_attributes>{}</tool_attributes></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>2039846501</payload_hash>
+        <record_name>Associate SOW with Primary Account Holder</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 13:55:40</sys_created_on>
+        <sys_id>15362443fbaa22108cb7f0f56eefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197ef787d5a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 13:55:40</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>d536244397aa2210c9112387f0a410e7</update_guid>
+        <update_guid_history>d536244397aa2210c9112387f0a410e7:2039846501</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Associate SOW with Primary Account Holder">8f2c81053bf6ea104c5b3fb693e45acc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 21:49:22</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>3dc1c28c9a804b6ba7e6530a26945e91</sys_id>
+        <sys_metadata>59362443fbaa22108cb7f0f56eefdce1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Associate SOW with Primary Account Holder</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_59362443fbaa22108cb7f0f56eefdce1">15362443fbaa22108cb7f0f56eefdce8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 21:49:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

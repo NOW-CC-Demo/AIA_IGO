@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Scratch Agent">0da1637c3b3eaa104c5b3fb693e45a76</agent>
+        <description>Tool for Investor Suitability Record Producer</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>copilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Investor Suitability Record Producer</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 14:05:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>201223bc3b3eaa104c5b3fb693e45a23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Investor Suitability Record Producer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_201223bc3b3eaa104c5b3fb693e45a23</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 14:17:24</sys_updated_on>
+        <tool display_value="Investor Suitability Record Producer">e8126f7c3b3eaa104c5b3fb693e45ab0</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sn_aia_agent_tool_m2m_201223bc3b3eaa104c5b3fb693e45a23</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Scratch Agent">0da1637c3b3eaa104c5b3fb693e45a76</agent><description>Tool for Investor Suitability Record Producer</description><display_output>true</display_output><document_status/><execution_mode>copilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Investor Suitability Record Producer</name><output_transformation_strategy>none</output_transformation_strategy><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-15 14:05:48</sys_created_on><sys_domain>global</sys_domain><sys_id>201223bc3b3eaa104c5b3fb693e45a23</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Investor Suitability Record Producer</sys_name><sys_overrides/><sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_201223bc3b3eaa104c5b3fb693e45a23</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-15 14:17:24</sys_updated_on><tool display_value="Investor Suitability Record Producer">e8126f7c3b3eaa104c5b3fb693e45ab0</tool><tool_attributes>{}</tool_attributes></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>1709492863</payload_hash>
+        <record_name>Investor Suitability Record Producer</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 14:17:24</sys_created_on>
+        <sys_id>d6b467b03b7eaa104c5b3fb693e45afa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1980e728a4c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 14:17:24</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>1eb467b0597eaa1063707a35638d4af9</update_guid>
+        <update_guid_history>1eb467b0597eaa1063707a35638d4af9:1709492863,e41223bc3f3eaa10e225c702183de627:310212060</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Investor Suitability Record Producer">d6d9cf35fb7226108cb7f0f56eefdce8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 14:53:55</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>4c218762f87f41cb9b07cd1fb071c941</sys_id>
+        <sys_metadata>201223bc3b3eaa104c5b3fb693e45a23</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Investor Suitability Record Producer</sys_name>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_201223bc3b3eaa104c5b3fb693e45a23</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_201223bc3b3eaa104c5b3fb693e45a23">d6b467b03b7eaa104c5b3fb693e45afa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 14:53:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

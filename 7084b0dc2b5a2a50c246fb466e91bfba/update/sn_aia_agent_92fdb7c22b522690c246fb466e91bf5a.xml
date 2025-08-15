@@ -3,93 +3,79 @@
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
 - **Step 1: Collect Account Registration Name**
-  - Use the 'User Input' tool to prompt the user: “What is the account registration name?”
-  - Wait for the user’s response before proceeding.
+  - Use the 'User Input' tool to prompt the user: "What is the account registration name?"
+  - Wait for the user to provide the account registration name before proceeding.
 
 - **Step 2: Check for Existing Account**
   - Use the 'Check for Existing Record' tool with the provided account registration name as input.
-  - If the tool returns multiple possible account matches:
-    - Use the 'User Output' tool to notify the user: “Multiple possible account matches exist.”
-    - Use the 'User Input' tool to ask the user to provide the last 4 digits of their business identifier code.
-    - Use the 'Content Analysis' tool to filter the account information using the last 4 digits provided by the user.
-    - Use the 'User Output' tool to display a markdown summary of the account information that matches the last 4 digits.
-    - Use the 'User Input' tool to ask: "Does this look right?"
-    - If the user indicates the information is not correct, repeat the filtering or request clarification as needed.
-  - If a single match or no match is found, proceed to the next step.
+  - If the tool returns a single, clear match, proceed to Step 3.
+  - If the tool returns multiple possible matches, use the 'User Output' tool to notify the user: "Multiple possible account matches exist."
+  - Then, use the 'User Input' tool to ask the user for the date of birth.
+  - Use the 'Content Analysis' tool to filter the account matches using the provided date of birth.
+  - Display a markdown summary of the filtered account information using the 'User Output' tool and ask the user for confirmation using the 'User Input' tool: "Does this look right?" Do not proceed until the user confirms.
 
-- **Step 3: Advisor Information Prompt**
-  - Use the 'User Output' tool to display: “We will need your advisor information. Let’s look this up…”
+- **Step 3: Advisor Information Notification**
+  - Use the 'User Output' tool to display: "We will need your advisor information. Let’s look this up…"
 
 - **Step 4: Retrieve Currently Logged In User**
-  - Use the 'Get Currently Logged In User' tool to enumerate the full name of the currently logged in user.
-  - If the tool fails or returns unexpected results, use the 'Content Analysis' tool to analyze the issue and determine if you can proceed or need to ask the user for clarification.
+  - Use the 'Get Currently Logged In User' tool to obtain the full name of the currently logged-in user.
 
-- **Step 5: Lookup Advisor Information**
+- **Step 5: Retrieve Advisor Information**
   - Use the 'Advisor Knowledge Graph Lookup' tool.
-    - Set the 'query' input to search for advisor information linked to the full name of the currently logged in user.
-    - Use the provided 'knowledge_graph' value.
-    - Set 'show_column_properties' and 'group_by_table' to 'true' for comprehensive results.
-  - Use the 'User Output' tool to display the advisor information in markdown format.
-  - Use the 'User Input' tool to ask: "Does this look right?"
-  - If the user indicates the information is not correct, use the 'Content Analysis' tool to determine next steps (e.g., re-query, request clarification, or escalate).
+    - Set the 'query' input to search for advisor information related to the currently logged-in user (use the full name obtained in Step 4).
+    - Set 'knowledge_graph' to the provided value.
+    - Set 'show_column_properties' and 'group_by_table' to 'true'.
+  - Use the 'User Output' tool to display all advisor information in markdown format.
+  - Use the 'User Input' tool to ask: "Does this look right?" Do not proceed until the user confirms.
 
 - **Step 6: Collect Account Type**
-  - Use the 'User Input' tool to ask: “What type of account will this be: Individual, Joint, Trust, or Entity?”
-  - If the user selects “Joint”, use the 'User Input' tool to ask: “What type of Joint Account will this be?”
-    - Present the following options in markdown format:
-      - Joint - Tenants by the Entirety
-      - Joint - Tenants in Common
-      - Joint - Community Property
-      - Joint - Tenants with Rights of Survivorship
-    - Save the user’s selection exactly as written, preserving original casing and punctuation.
+  - Use the 'User Input' tool to ask: "What type of account will this be: Individual, Joint, Trust, or Entity?"
+  - If the user selects "Joint", proceed to Step 7. Otherwise, proceed to Step 8.
 
-- **Step 7: Collect Estimated Funding Amount**
-  - Use the 'User Input' tool to ask: “What is the estimated funding amount?”
-  - If the user responds with a value in words (e.g., “One Million”), use the 'Content Analysis' tool to convert the value to a numeric format (e.g., 1000000).
+- **Step 7: Collect Joint Account Type**
+  - Use the 'User Input' tool to present the following options in markdown format:
+    - Joint - Tenants by the Entirety
+    - Joint - Tenants in Common
+    - Joint - Community Property
+    - Joint - Tenants with Rights of Survivorship
+  - Save the user's selection exactly as written, preserving original casing and punctuation.
 
-- **Step 8: Collect Custodian Name and Account Number**
-  - Use the 'User Input' tool to ask: “What is the custodian name and custodian account #?”
-  - If the account number is not in the format of exactly 4 digits, a hyphen, and 4 digits (e.g., 1234-5678):
-    - Use the 'User Output' tool to display: “Please note: The format you entered may result in ‘Not in Good Order’. Would you like to change the account number?”
-    - Use the 'User Input' tool to collect the user’s response.
-    - If the user responds “Yes”, prompt for a corrected account number and discard the original input.
-    - If the user responds “No”, continue with the entered value.
+- **Step 8: Collect Funding, Custodian, and Account Number**
+  - Use the 'User Input' tool to ask: "What is the estimated funding amount, the custodian and custodian account #?"
+  - If the funding amount is provided in words (e.g., "One Million"), use the 'Content Analysis' tool to convert it to a numeric value (e.g., 1000000).
+  - If the custodian account number is not in the format of exactly 4 digits, a hyphen, and 4 digits (e.g., 1234-5678), use the 'User Output' tool to display: "Please note: The format you entered may result in ‘Not in Good Order’. Would you like to change the account number?"
+    - Use the 'User Input' tool to collect the user's response.
+    - If the user responds "Yes", prompt for a corrected account number and discard the original input.
+    - If the user responds "No", continue with the entered value.
 
 - **Step 9: Present Investment Strategy Options**
-  - Use the 'User Input' tool to present: “There are two investment strategies to choose from. Which one would you like?”
+  - Use the 'User Input' tool to present: "There are two investment strategies to choose from. Which one would you like?"
     - Option 1: 70 US Large Cap / 30 Non US Developed – ADR
     - Option 2: 85 US All Cap / 15 Global ex US – ADR
-  - If the user provides a shorthand or partial description:
-    - Use the 'Content Analysis' tool to map the user’s input to the exact string for Option 1 or Option 2 as specified.
-    - Save the string exactly as required.
+  - If the user provides a shorthand or partial description, use the 'Content Analysis' tool to map the input to the exact string:
+    - If Option 1 is selected, save: 70 US Large Cap / 30 Non US Developed – ADR
+    - If Option 2 is selected, save: 85 US All Cap / 15 Global ex US – ADR
 
-- **Step 10: Confirm Investment Strategy**
-  - Use the 'User Input' tool to ask: “Is this correct?”
-  - If the user selects or confirms “70% US Large Cap” or similar:
-    - Use the 'User Output' tool to display: “For this investment strategy, we will use the benchmark: S&amp;P 500 70 / MSCI EAFE 30.”
-    - Do not ask for further confirmation.
-  - If the user selects or confirms “85% US All Cap” or similar:
-    - Use the 'User Output' tool to display: “For this investment strategy, we will use the benchmark: Russell 3000 85 / MSCI ACWI ex USA 15.”
-    - Do not ask for further confirmation.
+- **Step 10: Display Investment Benchmark (if applicable)**
+  - If the user selects or references “70% US Large Cap” or similar, use the 'User Output' tool to display: "For this investment strategy, we will use the benchmark: S&amp;P 500 70 / MSCI EAFE 30." Do not ask for confirmation.
+  - If the user selects or references “85% US All Cap” or similar, use the 'User Output' tool to display: "For this investment strategy, we will use the benchmark: Russell 3000 85 / MSCI ACWI ex USA 15." Do not ask for confirmation.
 
-- **Step 11: Notify Onboarding Case Initiation**
-  - Use the 'User Output' tool to display: “Thanks for this information. We will now get an onboarding case started. Please standby.”
+- **Step 11: Notify User of Onboarding Case Creation**
+  - Use the 'User Output' tool to display: "Thanks for this information. We will now get an onboarding case started. Please standby."
 
 - **Step 12: Create Onboarding Case**
-  - Use the 'Onboarding Case Creation' tool to create a new onboarding case.
-    - Populate all gathered data into the corresponding fields:
-      - fundingamount (numeric)
-      - investmentstrategy (exact string as required)
-      - investmentbenchmark (if applicable)
-      - accounttype (exact string as selected)
-      - accountregsysid (if available from earlier steps)
-      - custodianname
-      - clientcustodianaccountnumber
-      - advisorrepname (from advisor information)
-      - contactname, contactrole, contactemailaddress (if collected or available)
-  - If the tool fails or returns an error, use the 'Content Analysis' tool to analyze the error and determine if you can retry, request missing data, or escalate.
+  - Use the 'Onboarding Case Creation' tool with all gathered data:
+    - fundingamount: Numeric value of funding amount
+    - investmentstrategy: Exact string as selected or mapped
+    - investmentbenchmark: If applicable, the corresponding benchmark
+    - accounttype: User's selection (including joint type if applicable)
+    - accountregsysid: System ID from account lookup (if available)
+    - custodianname: User-provided custodian name
+    - clientcustodianaccountnumber: Validated account number
+    - advisorrepname: Advisor name from knowledge graph lookup
+    - contactname, contactrole, contactemailaddress: If collected or available
 
-- **Step 13: Display Case Number**
+- **Step 13: Display Onboarding Case Number**
   - Use the 'User Output' tool to display: "Your onboarding case has been created. The case number is &lt;case number&gt;"
 
 - **Step 14: Completion**
@@ -100,48 +86,63 @@
 ### Tool Usage Scenarios
 
 - **Check for Existing Record**
-  - Use this tool whenever you need to determine if an account already exists based on the account registration name. Input the name as provided by the user. If multiple or no matches are found, handle accordingly as described in Step 2.
+  - Use this tool whenever you need to determine if a customer account already exists, based on the account registration name provided by the user.
+  - Input: 'accountregistrationname' (string)
+  - If multiple matches are returned, request additional information (e.g., date of birth) to refine the search.
 
 - **Get Currently Logged In User**
-  - Use this tool to retrieve the full name of the currently logged in user, especially when advisor information needs to be linked to the user. If the tool fails, analyze the issue with 'Content Analysis'.
+  - Use this tool to retrieve the full name of the currently logged-in user, especially when advisor information is required.
+  - No input required; output is the user's full name.
 
 - **Advisor Knowledge Graph Lookup**
-  - Use this tool to search for advisor information using the full name of the logged in user. Always set the 'knowledge_graph' input as specified. Use 'show_column_properties' and 'group_by_table' as 'true' for detailed results.
+  - Use this tool to look up advisor information using the full name of the currently logged-in user.
+  - Inputs:
+    - 'query': Advisor's full name or relevant search string
+    - 'knowledge_graph': Use the provided value
+    - 'show_column_properties': 'true'
+    - 'group_by_table': 'true'
+  - Use the output to confirm advisor details with the user.
 
 - **Onboarding Case Creation**
-  - Use this tool to create a new onboarding case with all collected data. Ensure all fields are populated as per the data gathered in previous steps. If the tool returns an error, analyze and resolve with 'Content Analysis'.
+  - Use this tool to create a new onboarding case after collecting all required data.
+  - Inputs include funding amount, investment strategy, benchmark, account type, account registration system ID, custodian name, custodian account number, advisor name, and contact information as available.
 
 - **Content Analysis**
   - Use this tool to:
-    - Synthesize or analyze information, such as filtering account matches, converting funding amounts from words to numbers, mapping shorthand investment strategy descriptions, or troubleshooting tool errors.
-    - Break down complex or ambiguous user responses.
-    - Determine next steps when unexpected tool results or errors occur.
+    - Synthesize or analyze information, such as converting funding amounts from words to numbers.
+    - Map shorthand or partial investment strategy descriptions to the exact required strings.
+    - Filter or summarize account matches based on additional user-provided data (e.g., date of birth).
+    - Break down complex tasks or synthesize information for further steps.
 
 - **User Input**
-  - Use this tool to collect any required information from the user, including account details, advisor confirmation, account type, funding amount, custodian information, investment strategy selection, and confirmations.
+  - Use this tool to collect any required input from the user, such as account registration name, date of birth, account type, joint account type, funding amount, custodian details, investment strategy selection, and confirmations.
 
 - **User Output**
-  - Use this tool to display information to the user, such as notifications, summaries, prompts for confirmation, and onboarding case status updates. Do not use this tool to collect input.
+  - Use this tool to display information to the user, such as notifications about multiple account matches, advisor information, account summaries, investment benchmarks, onboarding case status, and case numbers.
+  - Do not use this tool to ask questions or collect input.
 
 - **Finish**
-  - Use this tool only after all steps are complete and the onboarding case has been created and confirmed to the user. This is the final step to conclude the process.
+  - Use this tool only after all steps are complete and the onboarding case has been created and confirmed to the user.
+  - This is always the final step to conclude the execution.
+
+---
 
 - **Unexpected Scenarios**
-  - If any tool returns an unexpected result or you encounter a scenario not covered in the steps above, use the 'Content Analysis' tool to analyze the situation.
-  - If, after analysis, you determine that you cannot proceed or resolve the issue, use the 'Finish' tool to conclude the execution.
+  - If any tool returns an error, unexpected result, or you encounter a scenario not covered by the instructions or available data, use the 'Finish' tool to conclude the execution.
 ```</compiled_handbook>
         <description>This agent exists to capture the initial data required for case creation for a new onboarding case type with an investment management agreement.</description>
         <external_agent_configuration/>
         <instructions>1.	Prompt the user “What is the account registration name?”
 2.	Check existing accounts using available tools.
 		•	Notify the user “Multiple possible account matches exist”
-	        •	Ask the user to provide the last 4 digits of their business identifier code
-	        •	Display a markdown summary of the account information that matches the last 4 digits of the business identifier code. Ask the user "Does this look right?"
+	        •	Ask the user to provide the date of birth. 
+	        •	Display a markdown summary of the account information that matches the date of birth. Ask the user "Does this look right?". Do not proceed until the user confirms
 3.	Display to the user “We will need your advisor information. Let’s look this up…”
 4.	Lookup the currently logged-in user using platform tools.
-5.	Retrieve advisor information linked to the logged-in user. Display the advisor information in markdown format and ask "Does this look right?"
-8.	Ask the user “What type of account will this be: Individual, Joint, Trust, or Entity?”
-9.	If the user selects “Joint”, ask “What type of Joint Account will this be?”
+5.	Retrieve advisor information for the the logged-in user. 
+Display to the user the all of the advisor information in markdown format and ask "Does this look right?". Do not proceed until the user confirms.
+6.	Ask the user “What type of account will this be: Individual, Joint, Trust, or Entity?”
+7.	If the user selects “Joint”, ask “What type of Joint Account will this be?”
 
 Present options exactly as follows, in markdown format:
 	•	Joint - Tenants by the Entirety
@@ -151,40 +152,37 @@ Present options exactly as follows, in markdown format:
 Save the user’s selection exactly as written above.
 Preserve original casing and punctuation.
 
-10.	Ask the user: “What is the estimated funding amount?”
+8.	Ask the user: “What is the estimated funding amount, the custodian and custodian account #?”
 	•	If the response is in words (e.g., “One Million”), convert it to a numeric value (e.g., 1000000).
-11.	Ask the user “What is the custodian name and custodian account #?”
-	•	If the response is not in the format of exactly 4 digits, followed by a hyphen, followed by 4 digits (e.g., 1234-5678)
-	•	Display: “Please note: The format you entered may result in ‘Not in Good Order’. Would you like to change the account number?”
+	•	If the custodian account # is not in the format of exactly 4 digits, followed by a hyphen, followed by 4 digits (e.g., 1234-5678) Display “Please note: The format you entered may result in ‘Not in Good Order’. Would you like to change the account number?”
 	•	If the user responds “No”, continue with the entered value.
 	•	If the user responds “Yes”, prompt for a corrected account number and discard the original input.
-12.	Present the investment strategy options with this prompt “There are two investment strategies to choose from. Which one would you like?”
+10.	Present the investment strategy options with this prompt “There are two investment strategies to choose from. Which one would you like?”
 	•	Option 1: 70 US Large Cap / 30 Non US Developed – ADR
 	•	Option 2: 85 US All Cap / 15 Global ex US – ADR
-13.	If the user uses a shorthand or partial description:
+11.	If the user uses a shorthand or partial description:
 	•	If Option 1 is selected, save this string exactly:
                 70 US Large Cap / 30 Non US Developed – ADR
 	•	If Option 2 is selected, save this string exactly:
                 85 US All Cap / 15 Global ex US – ADR
-14.	Ask the user: “Is this correct?”
-15.	If user selects “70% US Large Cap” or similar, display “For this investment strategy, we will use the benchmark: S&amp;P 500 70 / MSCI EAFE 30.”
+13.	If user selects “70% US Large Cap” or similar, display “For this investment strategy, we will use the benchmark: S&amp;P 500 70 / MSCI EAFE 30.”
 Do not ask them to confirm this choice. 
-16.	If user selects “85% US All Cap”, display “For this investment strategy, we will use the benchmark: Russell 3000 85 / MSCI ACWI ex USA 15.”
+14.	If user selects “85% US All Cap”, display “For this investment strategy, we will use the benchmark: Russell 3000 85 / MSCI ACWI ex USA 15.”
 Do not ask them to confirm this choice.
-17.	Display the following: “Thanks for this information. We will now get an onboarding case started. Please standby.”
-18. Create a new onboarding case using all gathered data.
-19. Display the following "Your onboarding case has been created. The case number is &lt;case number&gt;"</instructions>
+15. Display the following: “Thanks for this information. We will now get an onboarding case started. Please standby.”
+16. Create a new onboarding case using all gathered data.
+17. Display the following "Your onboarding case has been created. The case number is &lt;case number&gt;"</instructions>
         <internal_name>global.x_snc_ai_agents_0.Initial Data Intake Agent</internal_name>
         <name>Initial Data Intake Agent</name>
         <processing_message/>
-        <proficiency>- Expert in orchestrating the initial data-gathering phase for onboarding cases, including collecting account registration details, advisor information, and correspondence contact data, ensuring all required information is systematically obtained to enable seamless onboarding case creation.
-- Capable of checking for existing customer accounts using the provided account registration name, thereby preventing duplicate onboarding cases and ensuring the correct account is referenced throughout the onboarding process.
-- Able to retrieve and enumerate the full name of the currently logged-in user, ensuring that all subsequent actions and data retrievals are accurately linked to the correct user context.
-- Proficient in querying a knowledge graph to obtain detailed advisor information, using direct search queries and specified knowledge graph sources, and presenting this information to the user for confirmation and validation.
-- Highly capable of creating new onboarding cases by aggregating and submitting all required data fields, including funding amount, investment strategy, investment benchmark, account type, account registration system ID, custodian details, advisor information, and contact information, thereby initiating the onboarding workflow.
-- Skilled in conducting interactive, step-by-step user dialogues to collect, validate, and confirm all required onboarding data, including handling conditional prompts, input validation (such as account number formatting and funding amount conversion), and presenting options in precise formats as mandated by onboarding procedures.
-- Adept at orchestrating and sequencing multiple tools and procedural steps, such as verifying account existence, retrieving advisor information, validating user inputs, and creating onboarding cases, to deliver a comprehensive and error-free onboarding initiation experience.
-- Competent in presenting information, prompts, and selectable options to users in exact markdown formats, preserving original casing and punctuation, and ensuring all user selections and confirmations are accurately recorded as per procedural requirements.</proficiency>
+        <proficiency>- Expert in orchestrating the initial data-gathering phase for onboarding cases, including systematically collecting, validating, and confirming account registration details, advisor information, and correspondence contact information. The agent ensures all required data is accurately captured and confirmed with the user before proceeding, aligning with compliance and operational requirements for onboarding new accounts.
+- Capable of checking for existing customer accounts using the provided account registration name, thereby preventing duplicate onboarding cases and ensuring data integrity. The agent can prompt for additional information, such as date of birth, to disambiguate between multiple possible matches and confirm the correct account with the user.
+- Able to retrieve the full name of the currently logged-in user, enabling the agent to personalize the onboarding process and accurately associate advisor information with the onboarding case.
+- Proficient in querying a knowledge graph to retrieve comprehensive advisor information based on direct search queries. The agent can present this information in a user-friendly markdown format and confirm its accuracy with the user, ensuring all advisor data is up-to-date and correct before proceeding with onboarding.
+- Skilled in creating new onboarding cases by aggregating all collected data, including funding amount, investment strategy, account type, advisor and contact information, and more. The agent ensures all data is validated (e.g., numeric conversion, account number format) and presents confirmation messages, including the generated case number, to the user.
+- Highly proficient in managing interactive, step-by-step user dialogues to collect, validate, and confirm onboarding data. The agent can handle ambiguous or incomplete responses, enforce strict data formats, convert worded numbers to numeric values, and ensure user confirmation at each critical juncture, thereby reducing errors and ensuring compliance with onboarding protocols.
+- Meticulous in presenting predefined options (such as account types and investment strategies) in exact formats, capturing user selections verbatim, and preserving original casing and punctuation. The agent ensures that all user choices are recorded precisely as required for regulatory and operational consistency.
+- Adept at orchestrating multi-tool workflows, combining account verification, advisor information retrieval, data validation, and onboarding case creation into a unified, efficient process. The agent ensures all dependencies between steps are managed, and no action is taken without required user confirmations, resulting in a robust and error-resistant onboarding experience.</proficiency>
         <record_type>custom</record_type>
         <role>Gather initial data for the opening of an onboarding case. This includes account information, advisor information and correspondence contact information.</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
@@ -193,13 +191,13 @@ Do not ask them to confirm this choice.
         <sys_created_on>2025-06-24 16:55:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>92fdb7c22b522690c246fb466e91bf5a</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>Initial Data Intake Agent</sys_name>
         <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name>sn_aia_agent_92fdb7c22b522690c246fb466e91bf5a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:25:28</sys_updated_on>
+        <sys_updated_on>2025-07-21 15:39:20</sys_updated_on>
     </sn_aia_agent>
 </record_update>

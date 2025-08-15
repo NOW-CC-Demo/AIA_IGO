@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This tool exists to write to the work notes when the agent begins the validation process</description>
+        <input_schema>[{"name":"casenumber","description":""},{"name":"message","description":""}]</input_schema>
+        <name>Initial Work Notes Update</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var gr = new GlideRecord('x_snc_ai_agents_0_fso_sma_onboarding');
+    gr.addQuery('number', inputs.case_number);
+    gr.query();
+    gr.next();
+    gr.work_notes = inputs.message;
+    gr.update();
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 23:31:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c68369493b7aea104c5b3fb693e45aab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Initial Work Notes Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sn_aia_tool_c68369493b7aea104c5b3fb693e45aab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 23:31:26</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

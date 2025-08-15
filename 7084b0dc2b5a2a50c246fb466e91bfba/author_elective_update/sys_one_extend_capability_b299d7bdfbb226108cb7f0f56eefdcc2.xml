@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="DELETE">
+        <active>true</active>
+        <description>This skill assist in investigating the root cause of IT problems and also help in analysis.</description>
+        <external>true</external>
+        <metadata>{"isGuidedStep":false}</metadata>
+        <name>Clone of Problem investigator skill</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 16:02:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b299d7bdfbb226108cb7f0f56eefdcc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Clone of Problem investigator skill</sys_name>
+        <sys_package display_value="AI Agents Platform Usecase" source="sn_aia_uc">1bb78ad9432f9210dfc2d4b9f9b8f2bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>sys_one_extend_capability_b299d7bdfbb226108cb7f0f56eefdcc2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 16:02:45</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="DELETE" query="documentkey=b299d7bdfbb226108cb7f0f56eefdcc2"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</application>
+        <file_path/>
+        <instance_id>f9c1ad3e3b402250c55a348aa4e45af4</instance_id>
+        <instance_name>cpcallwfdemo</instance_name>
+        <name>sys_one_extend_capability_b299d7bdfbb226108cb7f0f56eefdcc2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability"><sys_one_extend_capability action="INSERT_OR_UPDATE"><active>true</active><description>This skill assist in investigating the root cause of IT problems and also help in analysis.</description><external>true</external><metadata>{"isGuidedStep":false}</metadata><name>Clone of Problem investigator skill</name><short_description/><sys_class_name>sys_one_extend_capability</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-18 16:02:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b299d7bdfbb226108cb7f0f56eefdcc2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Clone of Problem investigator skill</sys_name><sys_package display_value="AI Agents Platform Usecase" source="sn_aia_uc">1bb78ad9432f9210dfc2d4b9f9b8f2bf</sys_package><sys_policy/><sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope><sys_update_name>sys_one_extend_capability_b299d7bdfbb226108cb7f0f56eefdcc2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-18 16:02:45</sys_updated_on><type>skill</type></sys_one_extend_capability><sys_translated_text action="delete_multiple" query="documentkey=b299d7bdfbb226108cb7f0f56eefdcc2"/></record_update>]]></payload>
+        <payload_hash>-1728915385</payload_hash>
+        <record_name>Clone of Problem investigator skill</record_name>
+        <reverted_from/>
+        <source>0616b4102b9a2a50c246fb466e91bfa5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 16:02:45</sys_created_on>
+        <sys_id>7699d7bdfbb226108cb7f0f56eefdcc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1981e4613060000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 16:02:45</sys_updated_on>
+        <type>OneExtend Capability</type>
+        <update_guid>7a99d7bd6eb22610fbc5c8913ce0aac3</update_guid>
+        <update_guid_history>7a99d7bd6eb22610fbc5c8913ce0aac3:-1728915385</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-18 16:02:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_one_extend_capability">sys_one_extend_capability</sys_db_object>
+        <sys_id>3014c5649cf247d8a077e74a32ff5bd9</sys_id>
+        <sys_metadata>b299d7bdfbb226108cb7f0f56eefdcc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Clone of Problem investigator skill</sys_name>
+        <sys_package display_value="AI Agents Platform Usecase" source="sn_aia_uc">1bb78ad9432f9210dfc2d4b9f9b8f2bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_scope_delete display_value="">1e1fd311ad4b49fa98779c648a084309</sys_scope_delete>
+        <sys_update_name>sys_one_extend_capability_b299d7bdfbb226108cb7f0f56eefdcc2</sys_update_name>
+        <sys_update_version display_value="sys_one_extend_capability_b299d7bdfbb226108cb7f0f56eefdcc2">7699d7bdfbb226108cb7f0f56eefdcc4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-18 16:02:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

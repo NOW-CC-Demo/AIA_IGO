@@ -10,13 +10,13 @@
         <max_auto_executions>10</max_auto_executions>
         <name>Source of Wealth Lookup (Knowledge Graph)</name>
         <output_transformation_strategy>none</output_transformation_strategy>
-        <pre_message/>
+        <pre_message>Let's see if a source of wealth already exists...</pre_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-07 16:10:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>2fd13a9efb262e108cb7f0f56eefdc64</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Source of Wealth Lookup (Knowledge Graph)</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
@@ -24,7 +24,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_2fd13a9efb262e108cb7f0f56eefdc64</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-07 16:10:24</sys_updated_on>
+        <sys_updated_on>2025-07-15 21:26:22</sys_updated_on>
         <tool display_value="AIA Knowledge Graph">3b8c4f4fc3e022100e94313a05013167</tool>
         <tool_attributes>{}</tool_attributes>
     </sn_aia_agent_tool_m2m>

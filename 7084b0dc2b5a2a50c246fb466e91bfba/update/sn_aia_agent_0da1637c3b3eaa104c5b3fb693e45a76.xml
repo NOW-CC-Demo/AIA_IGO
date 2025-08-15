@@ -2,72 +2,85 @@
     <sn_aia_agent action="INSERT_OR_UPDATE">
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
-- **Step 1: Analyze the Mission and Requirements**
-  - Use the 'Content Analysis' tool to synthesize and break down the mission: "Create a new investor suitability record."
-  - In your analysis, consider what information is required, what is missing, and what steps are necessary to fulfill the mission.
-  - If the mission or requirements are unclear, ambiguous, or missing details, use this tool to clarify your own understanding and plan the next steps.
+- **Step 1: Initiate Web Search for Tour de France Leader**
+  - As per the instructions, your first action is to perform a web search to find the current leader of the Tour de France.
+  - Use the 'Tour De France' tool for this purpose, as it is an External_Tool designed to search, scrape, and synthesize answers for Tour de France-related queries.
+  - Set the 'query' input to a phrase such as "current leader of Tour de France".
+  - Optionally, you may adjust other parameters:
+    - 'country': Use the default "united_states" unless the user specifies a different country.
+    - 'max_tokens': Use the default value unless a more concise or detailed answer is required.
+    - 'num': Use the default value of 3 to retrieve multiple results for synthesis.
+    - 'search_type': Use the default "ai_answers".
+    - 'site': Leave blank unless the user requests results from a specific domain.
+  - If the tool returns a clear answer, proceed to Step 2.
+  - If the tool fails to return a result, returns ambiguous information, or encounters an error, proceed to Step 3.
 
-- **Step 2: Gather Required User Input**
-  - Review the inputs required by the 'Investor Suitability Record Producer' tool. The only input is 'tax_exemp0' (Is the account tax exempt?), which is optional.
-  - If you do not have enough information to proceed (for example, if you do not know whether the account is tax exempt), use the 'User Input' tool to prompt the user for this information.
-    - Example prompt: "Is the account tax exempt? Please answer yes or no."
-  - Wait for the user's response before proceeding.
+- **Step 2: Present the Synthesized Result to the User**
+  - Use the 'User Output' tool to display the synthesized answer about the current leader of the Tour de France to the user.
+  - Populate the 'message' input with the answer obtained from the 'Tour De France' tool.
+  - If available, include 'references' to the original sources for transparency.
+  - After presenting the result, proceed to Step 6 to conclude the mission.
 
-- **Step 3: Create the Investor Suitability Record**
-  - Once you have the necessary information (including the value for 'tax_exemp0', if provided by the user), use the 'Investor Suitability Record Producer' tool to create the new investor suitability record.
-    - Input the value for 'tax_exemp0' as obtained from the user, or leave it blank if the user did not provide it and it is not mandatory.
-  - Monitor the tool's output for success or failure.
+- **Step 3: Analyze and Synthesize Information (If Needed)**
+  - If the result from the 'Tour De France' tool is unclear, incomplete, or requires further synthesis, use the 'Content Analysis' tool.
+  - Input a detailed analysis prompt such as: "Analyze the search results to determine the most likely current leader of the Tour de France."
+  - Use the output from this tool to clarify or synthesize the information.
+  - If a clear answer is obtained, return to Step 2 to present it to the user.
+  - If the information remains insufficient or ambiguous, proceed to Step 4.
 
-- **Step 4: Handle Success and Failure Scenarios**
-  - If the 'Investor Suitability Record Producer' tool successfully creates the record, proceed to the next step.
-  - If the tool fails or returns an unexpected result:
-    - Use the 'Content Analysis' tool to analyze the error or unexpected output.
-    - If the issue can be resolved by clarifying or correcting the input, return to Step 2 to gather the correct information from the user.
-    - If the issue cannot be resolved or is outside the scope of your tools, proceed to Step 6 to finish.
+- **Step 4: Collect Additional Input from the User (If Required)**
+  - If you are unable to determine the current leader due to lack of information, ambiguity, or conflicting results, use the 'User Input' tool.
+  - Prompt the user with a message such as: "I was unable to determine the current leader of the Tour de France. Would you like to specify a particular stage, date, or provide more details?"
+  - Wait for the user's input and use the new information to refine your search by returning to Step 1 with updated parameters.
 
-- **Step 5: Inform the User of the Outcome**
-  - Use the 'User Output' tool to inform the user that the investor suitability record has been created.
-    - Do not ask any questions in this message; only provide information about the successful creation.
-    - If applicable, include any relevant details or references as provided by the 'Investor Suitability Record Producer' tool.
+- **Step 5: Handle Unexpected or Unresolvable Scenarios**
+  - If, after repeated attempts, you are still unable to obtain or synthesize the required information, or if the user provides input that is outside the scope of your tools, use the 'User Output' tool to inform the user that the mission cannot be completed with the available resources.
+  - Example message: "I am unable to find the current leader of the Tour de France with the information and tools available."
+  - Proceed to Step 6 to conclude the execution.
 
 - **Step 6: Completion**
-  - Use the 'Finish' tool to conclude the execution once the mission has been achieved or if you encounter an unresolvable issue.
+  - Once the mission is achieved—either by successfully providing the answer or by determining that it cannot be completed—use the 'Finish' tool to conclude the execution.
 
 ---
 
 **Tool Usage Scenarios and Guidance**
 
-- **Investor Suitability Record Producer**
-  - Use this tool whenever you need to create a new investor suitability record as per the mission.
-  - Input: 'tax_exemp0' (boolean, optional). Obtain this from the user if not already known.
-  - Use this tool in Step 3 after gathering all required information.
+- **Tour De France**
+  - Use this tool whenever you need to search for or retrieve information specifically related to the Tour de France, especially when the mission involves web search or up-to-date event data.
+  - Always prioritize this tool for any Tour de France-related queries before considering other tools.
+  - Inputs:
+    - 'query' (mandatory): Clearly state the information you are seeking.
+    - 'country', 'max_tokens', 'num', 'search_type', 'site' (optional): Adjust as needed based on user input or scenario requirements.
+  - Expected output: Synthesized answer to the search query.
 
 - **Content Analysis**
-  - Use this tool to analyze, synthesize, or break down complex instructions, ambiguous requirements, or unexpected tool outputs.
-  - Use in Step 1 to clarify the mission and in Step 4 to analyze errors or unexpected results.
+  - Use this tool when you need to analyze, synthesize, or clarify information obtained from other tools, or when the results are complex, ambiguous, or require further reasoning.
+  - Input: Provide a detailed analysis prompt describing the problem or the synthesis required.
+  - Expected output: A clearer, more concise, or synthesized version of the information.
 
 - **User Input**
-  - Use this tool whenever you need to collect information from the user that is required for any subsequent tool, especially if the information is not already available.
-  - Use in Step 2 to ask the user for the 'tax_exemp0' value or any other missing information.
+  - Use this tool whenever you require additional information, clarification, or preferences from the user to proceed with the mission.
+  - Input: A clear prompt message requesting the needed information.
+  - Expected output: User-provided input to refine your actions.
 
 - **User Output**
-  - Use this tool to inform the user of the outcome of their request or to provide any necessary information.
-  - Use in Step 5 to communicate the successful creation of the investor suitability record or to provide any other relevant information.
+  - Use this tool to present information, results, or status updates to the user.
+  - Input: A message containing the information to display, and optionally, references to source material.
+  - Do not use this tool to ask questions or collect input.
 
 - **Finish**
-  - Use this tool only when the mission has been completed successfully or if you encounter an unresolvable issue that prevents further progress.
-  - Always use as a separate, final step (Step 6).
+  - Use this tool only when the mission has been completed, either successfully or after determining that it cannot be completed.
+  - This step must always be executed as a separate, final action.
 ```</compiled_handbook>
         <description>Just a test</description>
         <external_agent_configuration/>
-        <instructions>Create a new investor suitability record</instructions>
+        <instructions>Perform a web search to find current leader of tour de france.</instructions>
         <internal_name>global.x_snc_ai_agents_0.Scratch Agent</internal_name>
         <name>Scratch Agent</name>
         <processing_message/>
-        <proficiency>- Expert in validating and verifying the creation of investor suitability records, ensuring that all processes and data entries conform to required standards and expectations for investor suitability. The agent is proficient in identifying discrepancies, confirming compliance, and supporting the integrity of investor suitability workflows.
-- Capable of initiating and managing the creation of new investor suitability records, following a structured action plan to ensure that all necessary steps are completed accurately and efficiently.
-- Proficient in utilizing the 'Investor Suitability Record Producer' tool to generate investor suitability records, leveraging its features to input relevant data and produce accurate records as required.
-- Able to specify and process the 'tax_exemp0' input when creating investor suitability records, ensuring that the tax exemption status of the account is correctly reflected in the record, thereby supporting compliance and accuracy.</proficiency>
+        <proficiency>- Expert in conducting verification and validation tasks, with a focus on systematically assessing the accuracy, completeness, and reliability of information or processes. The agent is ideally suited for roles that require objective evaluation, fact-checking, and confirmation of current states or outcomes.
+- Proficient in executing targeted web searches to obtain the most current and relevant information about ongoing events, such as identifying the current leader of the Tour de France. The agent can interpret task requirements and translate them into effective search queries to deliver accurate, up-to-date results.
+- Utilizes the 'Tour De France' TOOL to perform advanced web searches, leveraging configurable parameters such as country of results, maximum response length, number of search results, specific search queries, response type, and targeted domains. This enables the agent to efficiently gather, synthesize, and present detailed and accurate information about the Tour de France, tailored to the requirements of each task.</proficiency>
         <record_type>custom</record_type>
         <role>Testing</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
@@ -76,13 +89,13 @@
         <sys_created_on>2025-07-15 14:05:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>0da1637c3b3eaa104c5b3fb693e45a76</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Scratch Agent</sys_name>
         <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name>sn_aia_agent_0da1637c3b3eaa104c5b3fb693e45a76</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 14:17:44</sys_updated_on>
+        <sys_updated_on>2025-07-18 14:55:19</sys_updated_on>
     </sn_aia_agent>
 </record_update>

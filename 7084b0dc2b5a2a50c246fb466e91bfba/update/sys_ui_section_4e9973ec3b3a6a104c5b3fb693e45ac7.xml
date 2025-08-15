@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Description" section_id="4e9973ec3b3a6a104c5b3fb693e45ac7" sys_domain="global" table="x_snc_ai_agents_0_fso_sma_onboarding" version="3" view="workspace">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
+            <element>short_description</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-14 21:10:06</sys_created_on>
-            <sys_id>c699b3ec3b3a6a104c5b3fb693e45aab</sys_id>
+            <sys_created_on>2025-07-25 16:23:09</sys_created_on>
+            <sys_id>39616b88fbc7a2508cb7f0f56eefdc66</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Description" display_value="Description" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">4e9973ec3b3a6a104c5b3fb693e45ac7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-14 21:10:06</sys_updated_on>
+            <sys_updated_on>2025-07-25 16:23:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-25 16:23:09</sys_created_on>
+            <sys_id>75616b88fbc7a2508cb7f0f56eefdc67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_snc_ai_agents_0_fso_sma_onboarding" sys_domain="global" view="cd4610235c6312104f3496f8659cf696">4e9973ec3b3a6a104c5b3fb693e45ac7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-25 16:23:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

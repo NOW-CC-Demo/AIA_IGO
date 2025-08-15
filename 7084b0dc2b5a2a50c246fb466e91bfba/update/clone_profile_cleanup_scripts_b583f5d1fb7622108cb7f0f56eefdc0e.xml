@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="clone_profile_cleanup_scripts">
+    <clone_profile_cleanup_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cleanup_script display_value="Apply remote changes for SC app">011290de771961105d8df4b39f5a99cb</cleanup_script>
+        <clone_profile>1a5371d1fb7622108cb7f0f56eefdc27</clone_profile>
+        <order>200</order>
+        <profile display_value="AI Instance Clone">1a5371d1fb7622108cb7f0f56eefdc27</profile>
+        <profile_name>AI Instance Clone</profile_name>
+        <source_table>clone_profile</source_table>
+        <sys_class_name>clone_profile_cleanup_scripts</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-16 19:19:49</sys_created_on>
+        <sys_id>b583f5d1fb7622108cb7f0f56eefdc0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_update_name>clone_profile_cleanup_scripts_b583f5d1fb7622108cb7f0f56eefdc0e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-16 19:19:49</sys_updated_on>
+    </clone_profile_cleanup_scripts>
+</record_update>

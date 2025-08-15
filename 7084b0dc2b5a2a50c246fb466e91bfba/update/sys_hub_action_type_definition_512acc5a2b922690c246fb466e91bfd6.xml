@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>512acc5a2b922690c246fb466e91bfd6</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>Check for Existing Account</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_512acc5a2b922690c246fb466e91bfd6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:48</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:20</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -224,10 +224,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:47:21</sys_created_on>
         <sys_id>cd6bccda2b922690c246fb466e91bfd8</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:04:14</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:17:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd6bccda2b922690c246fb466e91bfd8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -252,9 +252,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:47:21</sys_created_on>
         <sys_id>c96bccda2b922690c246fb466e91bfef</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:04:14</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:17:24</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var inputName = inputs.accountregistrationname ? inputs.accountregistrationname.trim() : '';&#13;
     gs.info('[Debug] Input accountregistrationname: [' + inputName + ']');&#13;
@@ -274,10 +274,10 @@
                 city: String(accountGR.getValue('city')),&#13;
                 state: String(accountGR.getValue('state')),&#13;
                 zip: String(accountGR.getValue('zip')),&#13;
-                businessidentifiercode: String(accountGR.getValue('fso_business_identifier_code'))&#13;
+                dateofbirth: String(accountGR.getValue('u_date_of_birth')),&#13;
             });&#13;
         }&#13;
-&#13;
+        gs.info('[Debug] Date of Birth: ' + accountGR.getValue('u_date_of_birth'));&#13;
         gs.info('[Debug] Matches found: ' + outputs.matches.length);&#13;
     } else {&#13;
         gs.warn('[Debug] Input was empty or undefined');&#13;
@@ -415,14 +415,14 @@
         <name>FD82998cc55f32ea102355c88c3c832d90</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>7084b0dc2b5a2a50c246fb466e91bfba</scope_name>
-        <serialized_content>{"FlowDesigner:FD82998cc55f32ea102355c88c3c832d90":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"},"businessidentifiercode":"String","businessidentifiercode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"businessidentifiercode\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"acaed670-8d25-4d47-85c4-166392e986a3\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD82998cc55f32ea102355c88c3c832d90\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD82998cc55f32ea102355c88c3c832d90.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD82998cc55f32ea102355c88c3c832d90\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD82998cc55f32ea102355c88c3c832d90":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"dateofbirth":"String","dateofbirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateofbirth\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"83b98069-d6bb-495e-83e4-c56978c5c153\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD82998cc55f32ea102355c88c3c832d90\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD82998cc55f32ea102355c88c3c832d90.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD82998cc55f32ea102355c88c3c832d90\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-15 16:58:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46998cc53b32ea104c5b3fb693e45a90</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -430,7 +430,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:43</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:18</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -718,14 +718,14 @@
         <name>FD02998cc50132ea101ba5b2df8b82849e</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>7084b0dc2b5a2a50c246fb466e91bfba</scope_name>
-        <serialized_content>{"FlowDesigner:FD02998cc50132ea101ba5b2df8b82849e":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"},"businessidentifiercode":"String","businessidentifiercode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"businessidentifiercode\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"acaed670-8d25-4d47-85c4-166392e986a3\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD02998cc50132ea101ba5b2df8b82849e\",\"child_label\":\"matches_child0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"child_type_label\":\"Object\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD02998cc50132ea101ba5b2df8b82849e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD02998cc50132ea101ba5b2df8b82849e\",\"child_label\":\"matches_child0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"child_type_label\":\"Object\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD02998cc50132ea101ba5b2df8b82849e":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"dateofbirth":"String","dateofbirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateofbirth\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"83b98069-d6bb-495e-83e4-c56978c5c153\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD02998cc50132ea101ba5b2df8b82849e\",\"child_label\":\"matches_child0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"child_type_label\":\"Object\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD02998cc50132ea101ba5b2df8b82849e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD02998cc50132ea101ba5b2df8b82849e\",\"child_label\":\"matches_child0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"child_type_label\":\"Object\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-15 16:58:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2998cc53b32ea104c5b3fb693e45a9e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -733,7 +733,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:43</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:18</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -888,14 +888,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:42:27</sys_created_on>
         <sys_id>914a449a2b922690c246fb466e91bf48</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:43</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1020,17 +1020,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Check for Existing Account">512acc5a2b922690c246fb466e91bfd6</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e79bc41e2b922690c246fb466e91bf6f","name":"plan","plan_signature":null}}</plan>
-        <snapshot>29d5f0c53b36ea104c5b3fb693e45a13</snapshot>
+        <snapshot>a877e1a53b7a62104c5b3fb693e45a21</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:48:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e79bc41e2b922690c246fb466e91bf6f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:48</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:20</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1241,10 +1241,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:48:19</sys_created_on>
         <sys_id>cf9b841e2b922690c246fb466e91bfdd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:46</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:19</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cf9b841e2b922690c246fb466e91bfdd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1255,9 +1255,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:48:19</sys_created_on>
         <sys_id>439bc41e2b922690c246fb466e91bf0a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:46</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:19</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var inputName = inputs.accountregistrationname ? inputs.accountregistrationname.trim() : '';&#13;
     gs.info('[Debug] Input accountregistrationname: [' + inputName + ']');&#13;
@@ -1277,10 +1277,10 @@
                 city: String(accountGR.getValue('city')),&#13;
                 state: String(accountGR.getValue('state')),&#13;
                 zip: String(accountGR.getValue('zip')),&#13;
-                businessidentifiercode: String(accountGR.getValue('fso_business_identifier_code'))&#13;
+                dateofbirth: String(accountGR.getValue('u_date_of_birth')),&#13;
             });&#13;
         }&#13;
-&#13;
+        gs.info('[Debug] Date of Birth: ' + accountGR.getValue('u_date_of_birth'));&#13;
         gs.info('[Debug] Matches found: ' + outputs.matches.length);&#13;
     } else {&#13;
         gs.warn('[Debug] Input was empty or undefined');&#13;
@@ -1432,14 +1432,14 @@
         <name>FDcdd5b0c5e436ea10870027680cf95c53</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>7084b0dc2b5a2a50c246fb466e91bfba</scope_name>
-        <serialized_content>{"FlowDesigner:FDcdd5b0c5e436ea10870027680cf95c53":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"},"businessidentifiercode":"String","businessidentifiercode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"businessidentifiercode\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"acaed670-8d25-4d47-85c4-166392e986a3\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDcdd5b0c5e436ea10870027680cf95c53\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDcdd5b0c5e436ea10870027680cf95c53.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDcdd5b0c5e436ea10870027680cf95c53\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDcdd5b0c5e436ea10870027680cf95c53":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"dateofbirth":"String","dateofbirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateofbirth\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"83b98069-d6bb-495e-83e4-c56978c5c153\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDcdd5b0c5e436ea10870027680cf95c53\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDcdd5b0c5e436ea10870027680cf95c53.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDcdd5b0c5e436ea10870027680cf95c53\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-15 20:11:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81d5b0c53b36ea104c5b3fb693e45a54</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1447,7 +1447,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:45</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:19</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1735,14 +1735,14 @@
         <name>FDd9d5b0c52436ea10919209cb533b05b4</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>7084b0dc2b5a2a50c246fb466e91bfba</scope_name>
-        <serialized_content>{"FlowDesigner:FDd9d5b0c52436ea10919209cb533b05b4":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"},"businessidentifiercode":"String","businessidentifiercode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"businessidentifiercode\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"acaed670-8d25-4d47-85c4-166392e986a3\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd9d5b0c52436ea10919209cb533b05b4\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd9d5b0c52436ea10919209cb533b05b4.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd9d5b0c52436ea10919209cb533b05b4\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDd9d5b0c52436ea10919209cb533b05b4":{"$COCollectionField":[{"matches_child0":{"zip":"String","zip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"zip\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"c486df70-9517-4d06-be33-e013ef86a18c\"}"},"dateofbirth":"String","dateofbirth.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateofbirth\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"83b98069-d6bb-495e-83e4-c56978c5c153\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"641bf381-f63d-4a74-93fa-dd9ac5ba7d31\"}"},"sysid":"String","sysid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sysid\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"d60b3965-dc74-47c5-bb29-8b3d8053c142\"}"},"street":"String","street.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"street\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"38c7e599-f3a7-4b27-ad23-89b3e401a995\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"814b769b-000a-4091-a361-2df3755959be\"}"},"state":"String","state.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"state\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"31d94090-0653-4a6d-8549-0b9dd0d6001f\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd9d5b0c52436ea10919209cb533b05b4\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd9d5b0c52436ea10919209cb533b05b4.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"60b57ec3-088c-4624-adab-07aa510ec871\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"matches\",\"mandatory\":\"false\",\"child_name\":\"matches_child0\",\"uiUniqueId\":\"a063d13f-8dd8-44b7-a381-6288f53b34c8\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd9d5b0c52436ea10919209cb533b05b4\",\"child_label\":\"matches_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"dd7df130-050f-45bc-bf71-f838e81a0bb3\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a893b964-1be5-4d16-8203-8b35b5de3a7b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-15 20:11:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9dd5b0c53b36ea104c5b3fb693e45ab4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1750,7 +1750,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:46</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:19</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -1905,14 +1905,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-24 17:48:19</sys_created_on>
         <sys_id>df9bc41e2b922690c246fb466e91bf16</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-15 20:11:46</sys_updated_on>
+        <sys_updated_on>2025-07-15 22:19:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2036,6 +2036,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>512acc5a2b922690c246fb466e91bfd6</sys_id>
         <latest_snapshot>479b841e2b922690c246fb466e91bfd1</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

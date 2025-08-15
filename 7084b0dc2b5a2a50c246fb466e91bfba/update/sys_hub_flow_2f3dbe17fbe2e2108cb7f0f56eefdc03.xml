@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2472000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1283281000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,14 +15,14 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>docintel_task_processing_flow__onboarding_case___populate_onboarding_case_details</internal_name>
-        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","usedInstances":{"74240503-f8ea-434b-8353-7d3337e18885":["record"]},"attributes":{}},{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"2 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
         <master_snapshot>971eba97fbe2e2108cb7f0f56eefdcdf</master_snapshot>
         <master_snapshot_digest/>
         <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>2f1efa97fbe2e2108cb7f0f56eefdc31</remote_trigger_id>
+        <remote_trigger_id>919c97483bc7ee104c5b3fb693e45ac9</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</sys_name>
         <sys_overrides/>
         <sys_package display_value="AI Agents - IMA In-Good-Order" source="x_snc_ai_agents_0">7084b0dc2b5a2a50c246fb466e91bfba</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name>sys_hub_flow_2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:06</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -53,8 +53,9 @@
     <sys_variable_value action="delete_multiple" query="document_key=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_snc_ai_agents_0_fso_sma_onboarding">active=true^state=1<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <condition table="x_snc_ai_agents_0_fso_sma_onboarding">active=true^state=1^contact_type=email<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item display_value="Email" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="email"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -68,15 +69,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-10 19:37:51</sys_created_on>
+        <sys_created_on>2025-07-25 16:02:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2f1efa97fbe2e2108cb7f0f56eefdc31</sys_id>
+        <sys_id>919c97483bc7ee104c5b3fb693e45ac9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 19:37:51</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:06</sys_updated_on>
         <table>x_snc_ai_agents_0_fso_sma_onboarding</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -86,14 +87,14 @@
         <identifier>2f3dbe17fbe2e2108cb7f0f56eefdc03</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-10 20:15:17</sys_created_on>
-        <sys_id>bba64f57fb26e2108cb7f0f56eefdc2d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-07-25 16:02:06</sys_created_on>
+        <sys_id>dd9c97483bc7ee104c5b3fb693e45ac9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
-        <trigger display_value="">2f1efa97fbe2e2108cb7f0f56eefdc31</trigger>
+        <sys_updated_on>2025-07-25 16:02:06</sys_updated_on>
+        <trigger display_value="">919c97483bc7ee104c5b3fb693e45ac9</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT INbba64f57fb26e2108cb7f0f56eefdc2d"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT INdd9c97483bc7ee104c5b3fb693e45ac9"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT INa73dbe17fbe2e2108cb7f0f56eefdc06"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -291,17 +292,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:34:03</sys_created_on>
         <sys_id>373dbe17fbe2e2108cb7f0f56eefdc75</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 19:49:05</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:01:58</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203reNuHNEtQImkLlUlXopS4i/x7h7pZ1sWXOOnayYsBkfRwzvDMmSHvvuky9KdTGo54JDH36O0yGhH9QjfsIRmwvk1d17BM02BWv+e4zLRw37LOe4Z+pgfYpQEsnWA3oPDtc0lDjoPJckFhWKphxPFczc0xJ1iKcKlfyDCmZzoLxXxC54sAS1jMcBDBoAgJDfUL80xP/5bbgL8nOIjV9yOKuIewj/CUchkhA7FIoGiOkeCuwCHx+RSWEz8Cw8s/8n+NuOcTWA8zCxyCZal2+aZ7Mz8gIeX6xd09uK9ge8zDjkUNzzZtyzIMgGq6A9s1LWJjarTBrrkqW9CvcNFHSTmhpITcCExIMbnhwbJcMYO4gsE0iI+R/y9YPzfUOkbBd49mc+UnysFnw95M+B69WUhf8Gwk8zObFEE8558z/1XYKMNxIIuwwUgcgT26UC4rJ3KP2O1MPIyLDT/6PEWXTwbCw0H5hSXwy40ljVTAmR9A6FEWm0jEYer9+PryZnyF/vwwufzleozG17eT8ehycn2lP6W40D+xsph5mPuCMjhP5Vl/9GmgDpDHcxe8OdMjL/QX8oMn/aQg2NPZS9D9UnDip/FsUN4rpqKqrxVyVE67iOWmPDCMkl5eZdciG3AK7q/YMGyiyPMVMMn822ymwdfr33fIgMEAY0JxRwa4rCMSLW7KlqBUkW3KhXxkl2ToGcZ3SodcyZ6bDXNBaHBVZUnGTeTzRSxVtB6wEjkpECYEVeKoloJP29Ijw/b0irkQxhy2QuVJNjMiDXgZ+U9+BEDvQAmKqKbOwDz7lJscx1wTcOTwo3lxCEGVWpE+bDQH4c+wst8KIqfBzPmX4BChOYqWEZrFLlqLKBo654456KL20FuLYJpkYPpO1++f1CnTgHqywlb2Jap+/epHkao+q/CWGNPDakAs0QHrtSKCGdTotLDeHyJsTQolNWrUZGwTQbaJm2ky5lJmGUMVE9OwgdbG0OhjRmzD8KyN1O50WNa4/ioit5/ERWmWBTvkVD3ahfOKwcE+hE3W2Z7bsRQ7ciW9PELXahXB3qsklAzNhq92J+oLN1aYJErBya6V4dWLAgvEAyjRMwqCi72/p6GIOalLprKp+VxbrdB+yCP/42kJZrU4MBHSzXjXV5wOyoPLwopEZcfLl82CkA1uk36bma5De9QAxbdB7N2+47gethgbDobUMjsJ3OrQSUj+loRJ2jKuS2NbyZi0cXgP4f/+Dh4k/zkbW8U/m3vrMv8woxwByBAFSsgbaj8NfEKLucPEoLFVsrqX1QRhBzVg547XN4dDbwgaCGrAetTFZs/qY2c4sM/723Bucky2YP9f7r1K8pUjHUrxJZs6rieh46R0RKXMnhL3bV84XA3S/2SPM9Warg5US6VKhNpnwX8ardZptxRqZ/psckIVvtrH7AJaMVB7U6hdIWeNvg2Q/gzja0jVxaTjzN/bbb+WYcl6KFtu+88J6NaXANo77zvMbi8AzNmsCt1ojr4x3FGFkk49a2vAds3ypFUsyoas3tI949xrbMpN21ua0fcblIMa4CJlO58/nuPsu2gw0n7xkC5DeUuRYNXicyU0mNBgE81nWu4tJZq71OSMwmEEcEeCDTW1+4lVnWrRbSIvU+1N487ulI1eA4a1vO0/IWAv00bU8mjjO1FLvLZ1CZQMcb9vd1wTnfqjUZtLWzw++n5hb1FJ2jRqY33cz27dZmuFrJzxOid2bAjeMOpXe/Jq8eJIa/n9fwXbRD34JAAA</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203heNuHNEtQImkLpSlXopR4F/n3DnWzrIsvcdK1kxcDIunhnOGZM0Pefddl6E+nNByJSGLh0dtlNCL6hW7YQzJgfZu6rmGZpsGsfs9xmWnhvmWd9wz9TOfYpRyWTrDLKXz7QtJQYD5ZLigMSzWMBJ6ruTkWBMsgXOoXMozpmc7CYD6h8wXHEhYzzCMYDEJCQ/3CPNPTv+U24O8J5rH6fkSR8BD2EZ5SISNkIBYFKJpjFAg3wCHxxRSWEz8Cw8s/83+NhOcTWA8zCxyCZal2+a57M5+TkAr94u4e3FewPeZhx6KGZ5u2ZRkGQDXdge2aFrExNdpg11yVLehXuOijpIJQUkJuBCakmNwIvixXzCCuYDAN4mPkfwPr54Zaxyj47tFsrvxEOfhs2JsFvkdvFtIPRDaS+ZlNBjyei8+Z/ypslOGYyyJsMBJHYI8ulMvKidwjdjsLHsbFhh99kaLLJ3ngYV5+YQn8cmNJIxVw5nMIPcpiEwVxmHo/vr68GV+hvz5MLn+7HqPx9e1kPLqcXF/pTyku9G+sLGYe5r6gDM5TedYffcrVAYp47oI3Z3rkhf5CfvCknxQEezp7CbpfBoL4aTwblPeKqajqa4UcldMuYrkpDwyjpJdX2bXIBpyC+zs2DJso8nwFTDL/Nr/CPySsQIqQ2RidY5/vkASDAcaE4o4kcFlHMFo8lS1xqYLblA75yC750DOMH5QRuZg9NyHmAaH8qkqUjJ7IF4tYqmg9YKVzMkCYEFSJo1oKPm3LkAxbM01eM0HCWMDmqDzbZpqkR1CexSc/Auh3IA9FnFNnYJ59yk2OY6EFQAL40bw4hDBLrcgpNppDNcgwsT8KaqfhzRmZ4BChOYqWEZrFLlqLMRo654456CL70FuLaZp5YPpO1++f1LlTTj1Z4S/7ElW/fvejSJWkVXhLjOnxNSCW6CAPtCKCGdTotLDeH6J2TQolNWrUSvwmgmyTO9NkzKXMMoYqJqZhA62NodHHjNiG4Vkbqd3psKxx/VVkbz/Ri9Is4zvkVD3ahfOKwXwfwibrbM/tWIodubZeHqFrtRph71UkSoZmw1e7E/WFuy1MEqXgZNdaoRa8alFgPHgAJXpGQXCx9880DGJB6pKpbGq+0FYrtJ/yyP98WoJZLQ4sCOlmvOsrTgflwWVhRaKyDRbLZkHIBrdJv81M16E9aoDi2yD2bt9xXA9bjA0HQ2qZnQRudegkJH9LwiRtGdelsa1kTNo4vIfw/3gHD5L/nI2t4p/NvXWZf5hRgQBkiLgS8obaT7lPaDF3mBg0tkpWN7WaIOygBuzc8frmcOgNQQNBDViPutjsWX3sDAf2eX8bzk2OyRbs/8tNWEm+cqRDKb5kU8f1TnSclI6olNn74r7ti4CrQfqf7MWmWtPVgWqpVAWh9jkQv4xW67RbCrUzfUg5oQpf7WN2Aa0YqL0p1G4gZ42+DZD+CuNrSNXFpOPM39ttv5ZhyXooW277zwno1pcA2jvvO8xuLwDM2awK3WiOvjHcUYWSTj1ra8B2zfKkVSzKhqze0j3j3Gtsyk3bW5rR9xuUgxrgImU7nz+e4+y7aDDSfvGQLkN5S1HAqsXnKtBgQoNNNJ9pubeUaO5SkzMKh8HhjgQbamr3E6s61aLbRF6m2pvGnd0pG70GDGt5239CwF6mjajl0cZ3opZ4besSKBnift/uuCY69UejNpe2eHz0/cLeopK0adTG+rif3brN1gpZOeN1TuzYELxh1K/25NXixZHW8vv/AJLDmtwNJQAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN333dbe17fbe2e2108cb7f0f56eefdc73,bf3dbe17fbe2e2108cb7f0f56eefdc74"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN333dbe17fbe2e2108cb7f0f56eefdc73,46a5658d3b7aea104c5b3fb693e45af2,bf3dbe17fbe2e2108cb7f0f56eefdc74"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
         <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
@@ -311,19 +312,42 @@
         <display_text/>
         <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
         <generation_source/>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:34:03</sys_created_on>
         <sys_id>333dbe17fbe2e2108cb7f0f56eefdc73</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:36</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-25 16:07:00</sys_updated_on>
         <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
         <updation_source/>
-        <values>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</values>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 23:40:43</sys_created_on>
+        <sys_id>46a5658d3b7aea104c5b3fb693e45af2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-25 16:07:00</sys_updated_on>
+        <ui_id>74240503-f8ea-434b-8353-7d3337e18885</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPVZW0gKA3RIWExMIKVlxYZE3sSWutY2dth9Kt+t93kjhtVRAfEntAm5vnw37veV58v2JKsgk7QJlmJ9mRGGfj8ShNR8cHWX40zrORHANixgbMQIlU6VBYJ2n9CLpuAqvVmUMIKHk2FLVzaMJ6TXmpfKVheRfLKCLmSkvKs8n9w4BV4GjHgI5NVnup90LSkKOm0pse0z7GsKyatbSiLgkXV33wMnZOYya5mFKGmho4WTpg+BTQSCQgBWiPA1aCkRCsW7JJcDUFiLS8Nnq5qZgrEzqiJTx59YdOPkibugKJmYgibJY8CtSFiykEuKWdRajdRi+rBPpOE4kF1Dqc7ca6gusqKGu6lgC57rutrktz1SnCNhvs3EftCQRWDc8GeUeruJ3bxU0P8lyZVpJIUVsBerOCEJzK69DAWTHU2GpcQlUpM+OVs4+qbSYo5XCmaTEstF3QmV7NzBBEg3tIqsLwnOLTNnwHTjUkvtE21LweML/0Zxq831IhDfnvukHSEYsUeKtCKwFvJ6FpFk5V4ZSOesQIfD2IQ58fvjZh4mQ7UDt7bgf/iXsjOCgOMzrc85QX3nJfAuHILThJKjz3wYURqtX7o354B9reDz/aKXgZfbTEs9jlbm9y1SWiIQ4/zRDHX8kQkcaXd8RbPkhHr/5pdyapHX2/44GFdb+4sUT4Z52mY3llF8mp98qHpLAu2f5eTUCt1axRMJmDT24DOHozku/O0u15kicJc0xOQwAxLzt/7Dnnn571MS++Q7Hei+cKtfQvSNgbEUsiGZB3ku6ZMSaTu5jcvFCf5sjsKG2/L+TL/+ahevgLldqQq58JAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
@@ -334,16 +358,16 @@
         <display_text/>
         <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">2f3dbe17fbe2e2108cb7f0f56eefdc03</flow>
         <generation_source/>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:34:03</sys_created_on>
         <sys_id>bf3dbe17fbe2e2108cb7f0f56eefdc74</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:36</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-25 16:07:00</sys_updated_on>
         <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
@@ -414,7 +438,7 @@
         <description>DocDataExtractor Flow Template for processing a task</description>
         <flow_priority/>
         <internal_name>docintel_task_processing_flow__onboarding_case___populate_onboarding_case_details</internal_name>
-        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Incident Record","reference":"x_snc_ai_agents_0_fso_sma_onboarding","reference_display":"FSO SMA Onboarding","type":"reference","base_type":"reference","usedInstances":{"74240503-f8ea-434b-8353-7d3337e18885":["record"]},"attributes":{}},{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"2 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","usedInstances":{"e2811581-0914-4d91-927c-174f01c976b4":["record"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
         <master>true</master>
         <name>DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details</name>
         <natlang/>
@@ -431,7 +455,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>971eba97fbe2e2108cb7f0f56eefdcdf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -439,7 +463,7 @@
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:05</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -523,14 +547,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:50</sys_created_on>
         <sys_id>9f1eba97fbe2e2108cb7f0f56eefdcf9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -607,14 +631,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:50</sys_created_on>
         <sys_id>db1eba97fbe2e2108cb7f0f56eefdce1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:16</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -642,17 +666,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:51</sys_created_on>
         <sys_id>e71efa97fbe2e2108cb7f0f56eefdc14</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 19:49:11</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:05</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203reNuHNEtQImkLlUlXopS4i/x7h7pZ1sWXOOnayYsBkfRwzvDMmSHvvuky9KdTGo54JDH36O0yGhH9QjfsIRmwvk1d17BM02BWv+e4zLRw37LOe4Z+pgfYpQEsnWA3oPDtc0lDjoPJckFhWKphxPFczc0xJ1iKcKlfyDCmZzoLxXxC54sAS1jMcBDBoAgJDfUL80xP/5bbgL8nOIjV9yOKuIewj/CUchkhA7FIoGiOkeCuwCHx+RSWEz8Cw8s/8n+NuOcTWA8zCxyCZal2+aZ7Mz8gIeX6xd09uK9ge8zDjkUNzzZtyzIMgGq6A9s1LWJjarTBrrkqW9CvcNFHSTmhpITcCExIMbnhwbJcMYO4gsE0iI+R/y9YPzfUOkbBd49mc+UnysFnw95M+B69WUhf8Gwk8zObFEE8558z/1XYKMNxIIuwwUgcgT26UC4rJ3KP2O1MPIyLDT/6PEWXTwbCw0H5hSXwy40ljVTAmR9A6FEWm0jEYer9+PryZnyF/vwwufzleozG17eT8ehycn2lP6W40D+xsph5mPuCMjhP5Vl/9GmgDpDHcxe8OdMjL/QX8oMn/aQg2NPZS9D9UnDip/FsUN4rpqKqrxVyVE67iOWmPDCMkl5eZdciG3AK7q/YMGyiyPMVMMn822ymwdfr33fIgMEAY0JxRwa4rCMSLW7KlqBUkW3KhXxkl2ToGcZ3SodcyZ6bDXNBaHBVZUnGTeTzRSxVtB6wEjkpECYEVeKoloJP29Ijw/b0irkQxhy2QuVJNjMiDXgZ+U9+BEDvQAmKqKbOwDz7lJscx1wTcOTwo3lxCEGVWpE+bDQH4c+wst8KIqfBzPmX4BChOYqWEZrFLlqLKBo654456KL20FuLYJpkYPpO1++f1CnTgHqywlb2Jap+/epHkao+q/CWGNPDakAs0QHrtSKCGdTotLDeHyJsTQolNWrUZGwTQbaJm2ky5lJmGUMVE9OwgdbG0OhjRmzD8KyN1O50WNa4/ioit5/ERWmWBTvkVD3ahfOKwcE+hE3W2Z7bsRQ7ciW9PELXahXB3qsklAzNhq92J+oLN1aYJErBya6V4dWLAgvEAyjRMwqCi72/p6GIOalLprKp+VxbrdB+yCP/42kJZrU4MBHSzXjXV5wOyoPLwopEZcfLl82CkA1uk36bma5De9QAxbdB7N2+47gethgbDobUMjsJ3OrQSUj+loRJ2jKuS2NbyZi0cXgP4f/+Dh4k/zkbW8U/m3vrMv8woxwByBAFSsgbaj8NfEKLucPEoLFVsrqX1QRhBzVg547XN4dDbwgaCGrAetTFZs/qY2c4sM/723Bucky2YP9f7r1K8pUjHUrxJZs6rieh46R0RKXMnhL3bV84XA3S/2SPM9Warg5US6VKhNpnwX8ardZptxRqZ/psckIVvtrH7AJaMVB7U6hdIWeNvg2Q/gzja0jVxaTjzN/bbb+WYcl6KFtu+88J6NaXANo77zvMbi8AzNmsCt1ojr4x3FGFkk49a2vAds3ypFUsyoas3tI949xrbMpN21ua0fcblIMa4CJlO58/nuPsu2gw0n7xkC5DeUuRYNXicyU0mNBgE81nWu4tJZq71OSMwmEEcEeCDTW1+4lVnWrRbSIvU+1N487ulI1eA4a1vO0/IWAv00bU8mjjO1FLvLZ1CZQMcb9vd1wTnfqjUZtLWzw++n5hb1FJ2jRqY33cz27dZmuFrJzxOid2bAjeMOpXe/Jq8eJIa/n9fwXbRD34JAAA</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/+VY227jNhD9FUFPLZACuvgS5W2bZFED203heNuHNEtQImkLpSlXopR4F/n3DnWzrIsvcdK1kxcDIunhnOGZM0Pefddl6E+nNByJSGLh0dtlNCL6hW7YQzJgfZu6rmGZpsGsfs9xmWnhvmWd9wz9TOfYpRyWTrDLKXz7QtJQYD5ZLigMSzWMBJ6ruTkWBMsgXOoXMozpmc7CYD6h8wXHEhYzzCMYDEJCQ/3CPNPTv+U24O8J5rH6fkSR8BD2EZ5SISNkIBYFKJpjFAg3wCHxxRSWEz8Cw8s/83+NhOcTWA8zCxyCZal2+a57M5+TkAr94u4e3FewPeZhx6KGZ5u2ZRkGQDXdge2aFrExNdpg11yVLehXuOijpIJQUkJuBCakmNwIvixXzCCuYDAN4mPkfwPr54Zaxyj47tFsrvxEOfhs2JsFvkdvFtIPRDaS+ZlNBjyei8+Z/ypslOGYyyJsMBJHYI8ulMvKidwjdjsLHsbFhh99kaLLJ3ngYV5+YQn8cmNJIxVw5nMIPcpiEwVxmHo/vr68GV+hvz5MLn+7HqPx9e1kPLqcXF/pTyku9G+sLGYe5r6gDM5TedYffcrVAYp47oI3Z3rkhf5CfvCknxQEezp7CbpfBoL4aTwblPeKqajqa4UcldMuYrkpDwyjpJdX2bXIBpyC+zs2DJso8nwFTDL/Nr/CPySsQIqQ2RidY5/vkASDAcaE4o4kcFlHMFo8lS1xqYLblA75yC750DOMH5QRuZg9NyHmAaH8qkqUjJ7IF4tYqmg9YKVzMkCYEFSJo1oKPm3LkAxbM01eM0HCWMDmqDzbZpqkR1CexSc/Auh3IA9FnFNnYJ59yk2OY6EFQAL40bw4hDBLrcgpNppDNcgwsT8KaqfhzRmZ4BChOYqWEZrFLlqLMRo654456CL70FuLaZp5YPpO1++f1LlTTj1Z4S/7ElW/fvejSJWkVXhLjOnxNSCW6CAPtCKCGdTotLDeH6J2TQolNWrUSvwmgmyTO9NkzKXMMoYqJqZhA62NodHHjNiG4Vkbqd3psKxx/VVkbz/Ri9Is4zvkVD3ahfOKwXwfwibrbM/tWIodubZeHqFrtRph71UkSoZmw1e7E/WFuy1MEqXgZNdaoRa8alFgPHgAJXpGQXCx9880DGJB6pKpbGq+0FYrtJ/yyP98WoJZLQ4sCOlmvOsrTgflwWVhRaKyDRbLZkHIBrdJv81M16E9aoDi2yD2bt9xXA9bjA0HQ2qZnQRudegkJH9LwiRtGdelsa1kTNo4vIfw/3gHD5L/nI2t4p/NvXWZf5hRgQBkiLgS8obaT7lPaDF3mBg0tkpWN7WaIOygBuzc8frmcOgNQQNBDViPutjsWX3sDAf2eX8bzk2OyRbs/8tNWEm+cqRDKb5kU8f1TnSclI6olNn74r7ti4CrQfqf7MWmWtPVgWqpVAWh9jkQv4xW67RbCrUzfUg5oQpf7WN2Aa0YqL0p1G4gZ42+DZD+CuNrSNXFpOPM39ttv5ZhyXooW277zwno1pcA2jvvO8xuLwDM2awK3WiOvjHcUYWSTj1ra8B2zfKkVSzKhqze0j3j3Gtsyk3bW5rR9xuUgxrgImU7nz+e4+y7aDDSfvGQLkN5S1HAqsXnKtBgQoNNNJ9pubeUaO5SkzMKh8HhjgQbamr3E6s61aLbRF6m2pvGnd0pG70GDGt5239CwF6mjajl0cZ3opZ4besSKBnift/uuCY69UejNpe2eHz0/cLeopK0adTG+rif3brN1gpZOeN1TuzYELxh1K/25NXixZHW8vv/AJLDmtwNJQAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT IN631efa97fbe2e2108cb7f0f56eefdc14,ef1efa97fbe2e2108cb7f0f56eefdc12"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=971eba97fbe2e2108cb7f0f56eefdcdf^sys_idNOT IN5ba5a58d3b7aea104c5b3fb693e45ad2,631efa97fbe2e2108cb7f0f56eefdc14,ef1efa97fbe2e2108cb7f0f56eefdc12"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 23:40:48</sys_created_on>
+        <sys_id>5ba5a58d3b7aea104c5b3fb693e45ad2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 23:40:48</sys_updated_on>
+        <ui_id>74240503-f8ea-434b-8353-7d3337e18885</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPVZW0gKA3RIWExMIKVlxYZE3sSWutY2dth9Kt+t93kjhtVRAfEntAm5vnw37veV58v2JKsgk7QJlmJ9mRGGfj8ShNR8cHWX40zrORHANixgbMQIlU6VBYJ2n9CLpuAqvVmUMIKHk2FLVzaMJ6TXmpfKVheRfLKCLmSkvKs8n9w4BV4GjHgI5NVnup90LSkKOm0pse0z7GsKyatbSiLgkXV33wMnZOYya5mFKGmho4WTpg+BTQSCQgBWiPA1aCkRCsW7JJcDUFiLS8Nnq5qZgrEzqiJTx59YdOPkibugKJmYgibJY8CtSFiykEuKWdRajdRi+rBPpOE4kF1Dqc7ca6gusqKGu6lgC57rutrktz1SnCNhvs3EftCQRWDc8GeUeruJ3bxU0P8lyZVpJIUVsBerOCEJzK69DAWTHU2GpcQlUpM+OVs4+qbSYo5XCmaTEstF3QmV7NzBBEg3tIqsLwnOLTNnwHTjUkvtE21LweML/0Zxq831IhDfnvukHSEYsUeKtCKwFvJ6FpFk5V4ZSOesQIfD2IQ58fvjZh4mQ7UDt7bgf/iXsjOCgOMzrc85QX3nJfAuHILThJKjz3wYURqtX7o354B9reDz/aKXgZfbTEs9jlbm9y1SWiIQ4/zRDHX8kQkcaXd8RbPkhHr/5pdyapHX2/44GFdb+4sUT4Z52mY3llF8mp98qHpLAu2f5eTUCt1axRMJmDT24DOHozku/O0u15kicJc0xOQwAxLzt/7Dnnn571MS++Q7Hei+cKtfQvSNgbEUsiGZB3ku6ZMSaTu5jcvFCf5sjsKG2/L+TL/+ahevgLldqQq58JAAA=</values>
+    </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
         <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
@@ -662,16 +709,16 @@
         <display_text/>
         <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
         <generation_source/>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:51</sys_created_on>
         <sys_id>631efa97fbe2e2108cb7f0f56eefdc14</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 19:37:51</sys_updated_on>
+        <sys_updated_on>2025-07-15 23:40:49</sys_updated_on>
         <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
@@ -685,16 +732,16 @@
         <display_text/>
         <flow display_value="DocIntel Task Processing Flow - Onboarding Case  - Populate Onboarding Case Details">971eba97fbe2e2108cb7f0f56eefdcdf</flow>
         <generation_source/>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:50</sys_created_on>
         <sys_id>ef1efa97fbe2e2108cb7f0f56eefdc12</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="AI Agents - IMA In-Good-Order">7084b0dc2b5a2a50c246fb466e91bfba</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 19:37:50</sys_updated_on>
+        <sys_updated_on>2025-07-25 16:02:05</sys_updated_on>
         <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
         <updation_source/>
         <values>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</values>
@@ -754,25 +801,25 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</sys_id>
         <latest_snapshot>971eba97fbe2e2108cb7f0f56eefdcdf</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2f3dbe17fbe2e2108cb7f0f56eefdc03^sys_idNOT IN6f1efa97fbe2e2108cb7f0f56eefdc33"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6f1efa97fbe2e2108cb7f0f56eefdc33","name":"plan","plan_signature":null}}</plan>
         <plan_id>2f3dbe17fbe2e2108cb7f0f56eefdc03</plan_id>
-        <snapshot>6cc6cf57fb26e2108cb7f0f56eefdcf9</snapshot>
+        <snapshot>09bdd780fbc7a2508cb7f0f56eefdc32</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-10 19:37:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f1efa97fbe2e2108cb7f0f56eefdc33</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 20:15:17</sys_updated_on>
-        <trigger display_value="">2f1efa97fbe2e2108cb7f0f56eefdc31</trigger>
+        <sys_updated_on>2025-07-25 16:02:06</sys_updated_on>
+        <trigger display_value="">919c97483bc7ee104c5b3fb693e45ac9</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2f3dbe17fbe2e2108cb7f0f56eefdc03"/>
 </record_update>
